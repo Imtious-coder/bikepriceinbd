@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 declare global {
   interface Window {
@@ -15,8 +15,9 @@ export default function GAPageTracker() {
 
   useEffect(() => {
     if (!window.gtag) return;
-    const url = pathname + (searchParams.toString() ? `?${searchParams.toString()}` : '');
-    window.gtag('config', process.env.NEXT_PUBLIC_GA_ID as string, {
+    const url =
+      pathname + (searchParams.toString() ? `?${searchParams.toString()}` : "");
+    window.gtag("config", process.env.NEXT_PUBLIC_GA_ID as string, {
       page_path: url,
     });
   }, [pathname, searchParams]);

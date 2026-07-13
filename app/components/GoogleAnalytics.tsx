@@ -10,7 +10,7 @@ export default function GoogleAnalytics() {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-CSFPMVKKRH"`}
         strategy="afterInteractive"
       />
       <Script id="ga4-init" strategy="afterInteractive">
