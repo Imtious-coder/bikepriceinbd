@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ReactGA from "react-ga4";
 import "./globals.css";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,18 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // GA4
-  const GA4_ID = "G-CSFPMVKKRH";
-  ReactGA.initialize(GA4_ID);
-  ReactGA.send({
-    hitType: "pageview",
-    page: window.location.pathname,
-    title: "Portfolio",
-  });
+  // const GA4_ID = "G-CSFPMVKKRH";
+  // ReactGA.initialize(GA4_ID);
+  // ReactGA.send({
+  //   hitType: "pageview",
+  //   page: window.location.pathname,
+  //   title: "Portfolio",
+  // });
   return (
     <html lang="en">
       <body className={inter.className}>
         {children}
-        {/* <GoogleAnalytics /> */}
+        <GoogleAnalytics />
         {/* <Suspense fallback={null}>
           <GAPageTracker />
         </Suspense> */}
