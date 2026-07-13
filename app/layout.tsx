@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import GoogleAnalytics from "./components/GoogleAnalytics";
+import { Suspense } from "react";
+import GAPageTracker from "./components/GAPageTracker";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children} <GoogleAnalytics />
+        <Suspense fallback={null}>
+          <GAPageTracker />
+        </Suspense>
+      </body>
     </html>
   );
 }
