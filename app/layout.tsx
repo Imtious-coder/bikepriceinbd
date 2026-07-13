@@ -20,10 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children} <GoogleAnalytics />
-        <Suspense fallback={null}>
+        {children} 
+        {/* <GoogleAnalytics /> */}
+        {/* <Suspense fallback={null}>
           <GAPageTracker />
-        </Suspense>
+        </Suspense> */}
       </body>
     </html>
   );
