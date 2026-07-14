@@ -7097,7 +7097,7 @@ export const bikes: OBike[] = [
     description: "Hero Karizma XMR 210 Price in Bangladesh is 425000 BDT. This sports is powered by 200cc, which generates a maximum power of 25.15 Bhp @ 9250 RPM, and its maximum torque is 20.4 NM @ 7250 RPM. Hero Karizma XMR 210 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 163.5 kg and top speed is approximately 140 Kmph (Approx). Check Hero Karizma XMR 210 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     colors: [],
     images: {
-      primary: "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-karizma-xmr-21065d1b9e46d86d.webp",
+      primary: "https://bdrider.com/storage/companies/gallery/fd59fe3a-65d2-46ca-a75c-fa49ce2ef8a5.png",
     },
     mileage: {},
     showroom: "",

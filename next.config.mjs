@@ -6,6 +6,11 @@ const nextConfig = {
         hostname: "www.bikebd.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "bdrider.com",
+        pathname: "/**",
+      },
     ],
   },
 };

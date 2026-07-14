@@ -25,9 +25,9 @@ function BikeCard({ bike }: { bike: OBike }) {
   return (
     <Link
       href={`/bikes/${bike.slug}`}
-      className="group block [perspective:1200px]"
+      className="group block [perspective:1200px] min-h-[353px]"
     >
-      <div className="relative rounded-2xl overflow-hidden bg-white border border-blue-100 shadow-[0_4px_16px_-6px_rgba(30,64,175,0.12)] transition-all duration-500 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.015] group-hover:shadow-[0_18px_36px_-12px_rgba(30,64,175,0.22)] group-hover:border-blue-300">
+      <div className=" min-h-[353px] relative rounded-2xl overflow-hidden bg-white border border-blue-100 shadow-[0_4px_16px_-6px_rgba(30,64,175,0.12)] transition-all duration-500 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.015] group-hover:shadow-[0_18px_36px_-12px_rgba(30,64,175,0.22)] group-hover:border-blue-300">
         {/* Image */}
         <div className="relative h-52 bg-gradient-to-b from-slate-50 to-blue-50/60 overflow-hidden">
           <Image
@@ -48,11 +48,11 @@ function BikeCard({ bike }: { bike: OBike }) {
         </div>
 
         {/* Content */}
-        <div className="relative p-5">
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-1">
+        <div className="relative p-4">
+          <p className="text-xs font-semibold text-blue-600 mb-2">
             {bike.brand}
           </p>
-          <h3 className="text-slate-900 font-bold text-lg leading-snug mb-3 group-hover:text-blue-700 transition-colors">
+          <h3 className="text-slate-900 font-bold text-md leading-snug mb-3 group-hover:text-blue-700 transition-colors">
             {bike.name}
           </h3>
 
@@ -100,17 +100,17 @@ function BikeCard({ bike }: { bike: OBike }) {
 
           {/* Price */}
           <div className="flex items-center justify-between">
-            <span className="text-2xl font-extrabold text-slate-900 tracking-tight">
+            <span className="text-md font-extrabold text-slate-900 tracking-tight">
               {bike?.price}
             </span>
             <span className="text-sm text-blue-600 font-semibold group-hover:underline group-hover:text-blue-700">
-              View details →
+              All Details →
             </span>
           </div>
         </div>
 
         {/* Signature: throttle-fill bar, quiet until hover */}
-        <div className="h-[3px] w-full bg-blue-50">
+        <div className="absolute bottom-0 h-[3px] w-full bg-blue-50">
           <div className="h-full w-full origin-left scale-x-0 bg-blue-600 transition-transform duration-500 ease-out group-hover:scale-x-100" />
         </div>
       </div>
@@ -140,8 +140,6 @@ export default function HomePage() {
 
   const filterOptions = ["All", ...allBrands];
 
-  // Filter which brand buttons are visible based on the search text.
-  // "All" always stays visible so users can clear the brand filter easily.
   const visibleFilterOptions = useMemo(() => {
     const query = brandSearch.trim().toLowerCase();
     if (!query) return filterOptions;
@@ -155,7 +153,6 @@ export default function HomePage() {
       <MotoHeader />
       <BikeHero />
       <BrowseByCategory />
-      <CompareBikes />
 
       {/* Filter bar (brand-based) + search */}
       <div className="bg-white border-b border-blue-100">
@@ -180,17 +177,13 @@ export default function HomePage() {
               value={brandSearch}
               onChange={(e) => setBrandSearch(e.target.value)}
               placeholder="Search brand..."
-              className="w-full pl-9 pr-8 py-2 rounded-full text-sm font-medium bg-slate-50 border border-slate-200
-                         text-slate-900 placeholder:text-slate-400
-                         focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 focus:bg-white
-                         transition-all duration-300"
+              className="w-full pl-9 pr-8 py-2 rounded-full text-sm font-medium bg-slate-50 border border-slate-200  text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all duration-300"
             />
             {brandSearch && (
               <button
                 onClick={() => setBrandSearch("")}
                 aria-label="Clear brand search"
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center
-                           text-slate-400 hover:text-blue-600 transition-colors"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center text-slate-400 hover:text-blue-600 transition-colors"
               >
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -253,7 +246,10 @@ export default function HomePage() {
             <BikeCard key={bike.slug} bike={bike} />
           ))}
         </div>
-      </main>
+      </main> 
+
+      {/* Compare */}
+      <CompareBikes />
 
       {/* Showroom */}
       <Trustedshowrooms />
