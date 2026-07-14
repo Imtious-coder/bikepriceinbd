@@ -236,10 +236,10 @@ export default function MotoHeader() {
 
   const MAIN_NAV: NavItem[] = [
     { label: "Blogs", href: "/blogs" },
-    { label: "Bikes", href: "/" },
+    { label: "Bikes", href: "/BikesPage" },
     { label: "About Us", href: "/about" },
-    { label: "Market", href: "/market" },
-    { label: "Brands", href: "/", dropdown: brandDropdown },
+    // { label: "Market", href: "/market" },
+    // { label: "Brands", href: "/", dropdown: brandDropdown },
   ];
 
   function closeEverything() {
@@ -564,7 +564,7 @@ export default function MotoHeader() {
                 style={{ background: "rgba(17,85,245,0.15)" }}
                 aria-hidden="true"
               />
-              <a
+              {/* <a
                 href="#configure"
                 className="group relative inline-flex items-center gap-1.5 px-5 py-2.5 overflow-hidden rounded-full outline-none"
                 style={{
@@ -588,7 +588,7 @@ export default function MotoHeader() {
                   style={{ background: "#4FB8FF" }}
                   aria-hidden="true"
                 />
-              </a>
+              </a> */}
             </div>
 
             {/* Mobile toggle */}
