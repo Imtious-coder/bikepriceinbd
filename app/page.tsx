@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 import BrowseByCategory from "./components/Brand";
 import CompareBikes from "./components/CompareBikes";
 import MotoHeader from "./components/Header";
-import BikeHero from "./components/Hero";
+import PromoBanner from "./components/Hero";
 import Popularbikes from "./components/Popularbikes";
 import RidersReviews from "./components/RidersReviews";
 import Trustedshowrooms from "./components/Trustedshowrooms";
@@ -151,7 +151,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#F6F9FC]">
       <MotoHeader />
-      <BikeHero />
+      <PromoBanner />
       <BrowseByCategory />
 
       {/* Filter bar (brand-based) + search */}

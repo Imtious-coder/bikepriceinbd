@@ -1,6 +1,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
+      { protocol: "https", hostname: "commons.wikimedia.org" },
       {
         protocol: "https",
         hostname: "www.bikebd.com",
