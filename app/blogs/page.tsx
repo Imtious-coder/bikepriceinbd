@@ -43,37 +43,15 @@ export default function BlogsPage() {
   }, [rest, activeCategory, search]);
 
   return (
-    <div className="min-h-screen bg-[#F6F9FC]">
-      {/* Header */}
-      <header className="bg-white border-b border-blue-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-[0_4px_10px_rgba(37,99,235,0.3)]">
-              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
-              </svg>
-            </div>
-            <span className="font-bold text-slate-900 text-lg tracking-tight">BD Bikes</span>
-          </Link>
-          <Link
-            href="/"
-            className="text-sm font-medium text-slate-500 hover:text-blue-600 flex items-center gap-1 transition-colors"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            All Bikes
-          </Link>
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-[#F6F9FC] relative top-[116px]">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Heading */}
         <h1 className="text-center text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
           Bike <span className="text-blue-600">Blogs</span> &amp; Guides
         </h1>
         <p className="text-center text-sm text-slate-500 mb-10">
-          Reviews, comparisons, and buying advice for the Bangladeshi motorcycle market.
+          Reviews, comparisons, and buying advice for the Bangladeshi motorcycle
+          market.
         </p>
 
         {/* Featured post */}
@@ -120,8 +98,18 @@ export default function BlogsPage() {
         {/* Filters */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8">
           <div className="relative flex-shrink-0 w-full sm:w-64">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+            <svg
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-400 pointer-events-none"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
             </svg>
             <input
               type="text"
@@ -150,7 +138,9 @@ export default function BlogsPage() {
         </div>
 
         <p className="text-sm text-slate-400 mb-6">
-          <span className="font-semibold text-slate-700">{filteredPosts.length}</span>{" "}
+          <span className="font-semibold text-slate-700">
+            {filteredPosts.length}
+          </span>{" "}
           {filteredPosts.length === 1 ? "article" : "articles"}
         </p>
 
