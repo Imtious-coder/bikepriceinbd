@@ -43,7 +43,7 @@ export default function BlogsPage() {
   }, [rest, activeCategory, search]);
 
   return (
-    <div className="min-h-screen bg-[#F6F9FC] relative top-[116px]">
+    <div className="min-h-screen bg-[#F6F9FC] relative top-[65px] md:top-[116px]">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Heading */}
         <h1 className="text-center text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">

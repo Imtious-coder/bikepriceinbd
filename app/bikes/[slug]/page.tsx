@@ -137,7 +137,7 @@ export default async function BikeDetailPage({
     .slice(0, 4);
 
   return (
-    <div className="min-h-screen bg-[#F6F9FC] pb-24 lg:pb-8 relative top-[116px]">
+    <div className="min-h-screen bg-[#F6F9FC] pb-24 lg:pb-8 relative top-[65px] md:top-[116px]">
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex items-center gap-2 text-sm text-slate-400">

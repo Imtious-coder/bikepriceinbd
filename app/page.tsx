@@ -121,12 +121,12 @@ function BikeCard({ bike }: { bike: OBike }) {
 export default function HomePage() {
   // Derive brand list dynamically from bike data
   const allBrands = useMemo(
-    () => Array.from(new Set(bikes.map((b) => b.brand))).sort(),
+    () => Array.from(new Set(bikes.map((b) => b.brand))),
     [],
   );
 
   const defaultBrand = useMemo(() => {
-    const bajaj = allBrands.find((b) => b.toLowerCase() === "bajaj");
+    const bajaj = allBrands.find((b) => b.toLowerCase() === "suzuki");
     return bajaj ?? allBrands[0] ?? "All";
   }, [allBrands]);
 

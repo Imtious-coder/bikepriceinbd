@@ -12,6 +12,21 @@ const nextConfig = {
         hostname: "bdrider.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "imgbb.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
+        pathname: "/**",
+      },
     ],
   },
 };

@@ -101,6 +101,20 @@ const MONOGRAM_SHADES = [
   { bg: "bg-indigo-50", text: "text-indigo-700", border: "border-indigo-100" },
 ];
 
+const BRAND_LOGOS: Record<string, string> = {
+  Honda: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Logo.jpg?v=1786298708",
+  Lifan: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_1.jpg?v=1786299052",
+  Suzuki: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_4.png?v=1786299052",
+  Bajaj: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_1.png?v=1786299053",
+  Yamaha: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images.jpg?v=1786299051",
+  Hero: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images.png?v=1786299052",
+  Runner: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_3.png?v=1786299052",
+  CFMOTO: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_3.jpg?v=1786299052",
+  // H Power: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_2.jpg?v=1786299052",
+  TVS: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_2.png?v=1786299052",
+  // ...add the rest of your brands
+};
+
 function parseNumber(raw?: string): number | null {
   if (!raw) return null;
   const digits = raw.replace(/[^\d]/g, "");
@@ -208,21 +222,21 @@ export default function BrowseByCategory() {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F6F9FC]">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-8">
+        <h2 className="text-center text-lg md:text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4 md:mb-8">
           Browse Bikes <span className="text-blue-600">By</span>
         </h2>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex flex-wrap justify-center gap-1 bg-white border border-blue-100 rounded-full p-1.5 shadow-sm">
+        <div className="flex justify-center mb-4 md:mb-10">
+          <div className="flex flex-nowrap justify-start overflow-x-auto scrollbar-hide gap-1 bg-white border border-blue-100 rounded-full p-1.5 shadow-sm">
             {TABS.map((tab) => (
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                className={`flex items-center justify-center min-w-[160px] gap-1.5 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeTab === tab.key
                     ? "bg-blue-600 text-white shadow-[0_4px_14px_rgba(37,99,235,0.35)]"
-                    : "text-slate-500 hover:text-blue-600 hover:bg-blue-50"
+                    : "text-blue-600 bg-blue-50 border-blue-600"
                 }`}
               >
                 {tab.icon}
@@ -234,64 +248,71 @@ export default function BrowseByCategory() {
 
         {/* Brand tab */}
         {activeTab === "brand" && (
-          <>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
-              {visibleBrands.map(({ brand, count }, i) => {
-                const shade = MONOGRAM_SHADES[i % MONOGRAM_SHADES.length];
-                return (
-                  <button
-                    key={brand}
-                    onClick={() =>
-                      setSelection({
-                        title: brand,
-                        matches: bikes.filter((b) => b.brand === brand),
-                      })
-                    }
-                    className="group flex flex-col items-center gap-3 bg-white border border-blue-100 rounded-2xl p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-[0_12px_28px_-12px_rgba(37,99,235,0.3)]"
-                  >
-                    <div
-                      className={`w-14 h-14 rounded-xl ${shade.bg} ${shade.border} border flex items-center justify-center font-bold text-lg ${shade.text} group-hover:scale-105 transition-transform`}
-                    >
-                      {monogram(brand)}
-                    </div>
-                    <div>
-                      <p className="font-bold text-slate-900 text-sm">
-                        {brand}
-                      </p>
-                      <p className="text-xs text-slate-400 mt-0.5">
-                        {count} {count === 1 ? "model" : "models"}
-                      </p>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-
-            {brandCounts.length > INITIAL_BRAND_COUNT && (
-              <div className="flex justify-center mt-8">
-                <button
-                  onClick={() => setShowAllBrands((v) => !v)}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm hover:bg-blue-500 transition-all shadow-[0_4px_14px_rgba(37,99,235,0.35)]"
+  <>
+    <div className="grid grid-cols-3 md:grid-cols-5 gap-2.5 md:gap-5">
+      {visibleBrands.map(({ brand, count }, i) => {
+        const shade = MONOGRAM_SHADES[i % MONOGRAM_SHADES.length];
+        return (
+          <button
+            key={brand}
+            onClick={() =>
+              setSelection({
+                title: brand,
+                matches: bikes.filter((b) => b.brand === brand),
+              })
+            }
+            className="group flex flex-col items-center gap-3 bg-white border border-blue-100 rounded-md p-3 text-center transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-[0_12px_28px_-12px_rgba(37,99,235,0.3)]"
+          >
+            <div className="relative w-full aspect-square rounded-xl overflow-hidden p-3 group-hover:scale-105 transition-transform">
+              {BRAND_LOGOS[brand] ? (
+                <Image
+                  src={BRAND_LOGOS[brand]}
+                  alt={`${brand} logo`}
+                  fill
+                  className="object-contain rounded-md"
+                  sizes="(max-width: 768px) 33vw, 20vw"
+                />
+              ) : (
+                <div
+                  className={`w-full h-full rounded-xl ${shade.bg} ${shade.border} border flex items-center justify-center`}
                 >
-                  {showAllBrands ? "Show Fewer Brands" : "View More Brands"}
-                  <svg
-                    className={`w-4 h-4 transition-transform ${showAllBrands ? "rotate-180" : ""}`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d={showAllBrands ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-                    />
-                  </svg>
-                </button>
-              </div>
-            )}
-          </>
-        )}
+                  <span className={`font-bold text-lg ${shade.text}`}>
+                    {monogram(brand)}
+                  </span>
+                </div>
+              )}
+            </div>
+            <p className="font-bold text-slate-900 text-sm">{brand}</p>
+          </button>
+        );
+      })}
+    </div>
+
+    {brandCounts.length > INITIAL_BRAND_COUNT && (
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={() => setShowAllBrands((v) => !v)}
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm hover:bg-blue-500 transition-all shadow-[0_4px_14px_rgba(37,99,235,0.35)]"
+        >
+          {showAllBrands ? "Show Fewer Brands" : "View More Brands"}
+          <svg
+            className={`w-4 h-4 transition-transform ${showAllBrands ? "rotate-180" : ""}`}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d={showAllBrands ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
+            />
+          </svg>
+        </button>
+      </div>
+    )}
+  </>
+)}
 
         {/* Budget tab */}
         {activeTab === "budget" && (

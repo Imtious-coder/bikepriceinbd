@@ -295,7 +295,7 @@ export default function PromoBanner() {
 
   return (
     <section
-      className="relative w-full mx-auto aspect-[820/312] overflow-hidden shadow-2xl top-[116px]"
+      className="relative w-full mx-auto aspect-[820/312] md:aspect-[1000/312] overflow-hidden shadow-2xl top-[65px] md:top-[116px] mb-4 md:mb-[70px]"
       style={{ background: "#1C1D1F" }}
       aria-label="Street racing motorcycle promo banner"
     >
@@ -407,7 +407,7 @@ export default function PromoBanner() {
 
       {/* motorcycle */}
       <div
-        className={`absolute inset-y-0 left-[16%] md:left-[22%] w-[52%] md:w-[46%] flex items-center justify-center transition-all duration-700 ${
+        className={`absolute inset-y-0 left-[22%] md:left-[27%] w-[52%] md:h-[330px] md:w-[46%] flex items-center justify-center transition-all duration-700 ${
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
@@ -470,7 +470,7 @@ export default function PromoBanner() {
       </div>
 
       {/* social row */}
-      <div className="absolute bottom-3 right-4 md:right-6 flex flex-col items-end gap-1">
+      {/* <div className="absolute bottom-3 right-4 md:right-6 flex flex-col items-end gap-1">
         <div className="flex items-center gap-1.5">
           {socials.map((s) => (
             <a
@@ -486,8 +486,7 @@ export default function PromoBanner() {
             </a>
           ))}
         </div>
-        {/* <span className="text-[8px] font-semibold text-white tracking-wide">YOUR WEBSITE HERE</span> */}
-      </div>
+      </div> */}
 
       {/* phone */}
       <div className="absolute bottom-3 left-4 flex items-center gap-1.5">

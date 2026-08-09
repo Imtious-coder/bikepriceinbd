@@ -291,21 +291,19 @@ export default function MotoHeader() {
               onFocus={() => setLogoHover(true)}
               onBlur={() => setLogoHover(false)}
             >
-              <WheelMark spinning={logoHover} />
-              <span className="flex flex-col leading-none">
-                <span
-                  className="font-black tracking-[-0.04em]"
-                  style={{ fontSize: "1.35rem", color: "#0B1B3A" }}
-                >
-                  MOTO<span style={{ color: "#1155F5" }}>X</span>
-                </span>
-                <span
-                  className="text-[9px] font-bold tracking-[0.22em] uppercase"
-                  style={{ color: "rgba(17,85,245,0.55)", marginTop: "1px" }}
-                >
-                  Superbike Series
-                </span>
-              </span>
+              <div className="relative w-11 h-11 shrink-0">
+                <div className="absolute -inset-[3px] rounded-full bg-[conic-gradient(from_0deg,#1155F5,#60A5FA,#FFFFFF,#1155F5)] animate-spin-slow" />
+
+                <div className="absolute inset-0 rounded-full bg-white" />
+
+                <Image
+                  src="https://i.ibb.co/BHhH4TX4/logo.png"
+                  alt="Logo"
+                  width={44}
+                  height={44}
+                  className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] rounded-full object-cover"
+                />
+              </div>
             </Link>
 
             {/* Desktop main nav */}
@@ -558,13 +556,13 @@ export default function MotoHeader() {
                   </>
                 )}
               </div>
-
+{/*
               <span
                 className="w-px h-5"
                 style={{ background: "rgba(17,85,245,0.15)" }}
                 aria-hidden="true"
               />
-              {/* <a
+              <a
                 href="#configure"
                 className="group relative inline-flex items-center gap-1.5 px-5 py-2.5 overflow-hidden rounded-full outline-none"
                 style={{
@@ -827,7 +825,7 @@ export default function MotoHeader() {
             ))}
 
             {/* Sub-nav links, flattened for mobile */}
-            <div
+            {/* <div
               className="mt-4 pt-4"
               style={{ borderTop: "1px solid rgba(11,27,58,0.06)" }}
             >
@@ -877,7 +875,7 @@ export default function MotoHeader() {
                 Configure Your Moto
               </span>
               <span aria-hidden="true">→</span>
-            </a>
+            </a> */}
           </div>
         </div>
       </header>
