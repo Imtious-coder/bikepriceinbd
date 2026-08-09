@@ -91,7 +91,7 @@ export const bikes: OBike[] = [
     colors: ["Matt Blue", "Matt Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-23dd3c67-6177-433e-b92d-6084657a41e9.webp?v=1786304572",
     },
 
     mileage: {
@@ -190,7 +190,7 @@ export const bikes: OBike[] = [
     colors: ["Yellow-Black", "Red-Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-34d69f7d-29f9-4cd8-89ec-a8817b1589a8.webp?v=1786304747",
     },
 
     mileage: {
@@ -289,7 +289,7 @@ export const bikes: OBike[] = [
     colors: ["Moto GP", "Nitro Neon"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_4.jpg?v=1786305998",
     },
 
     mileage: {},
@@ -385,7 +385,7 @@ export const bikes: OBike[] = [
     colors: ["Matt Black", "Matt Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_1_50081bcb-eae8-4272-a076-9dfe496c847e.jpg?v=1786305612",
     },
 
     mileage: {},
@@ -481,7 +481,7 @@ export const bikes: OBike[] = [
     colors: ["Lemon Silver", "Blue Silver", "Orange Silver", "Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-0806ac1c-cf66-4029-a150-58cc8b800462.webp?v=1786304747",
     },
 
     mileage: {},
@@ -577,7 +577,7 @@ export const bikes: OBike[] = [
     colors: ["Metallic Matte Titanium Silver", "Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_2_ff401d3d-e320-40e1-ae0d-87417618ab22.jpg?v=1786305614",
     },
 
     mileage: {},
@@ -678,7 +678,7 @@ export const bikes: OBike[] = [
     ],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product.png?v=1786306169",
     },
 
     mileage: {},
@@ -686,7 +686,7 @@ export const bikes: OBike[] = [
   },
   {
     slug: "New_Suzuki_Gixxer",
-    name: "New Suzuki Gixxerc",
+    name: "New Suzuki Gixxer",
     brand: "Suzuki",
     cc: "150",
     bike_type: "Standard",
@@ -774,7 +774,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Orange Silver", "Black", "Lemon Silver"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-588912f5-fbaf-4731-bc3a-3ae12a25be57.webp?v=1786304747",
     },
 
     mileage: {},
@@ -870,7 +870,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Orange Silver", "Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product1.png?v=1786306311",
     },
 
     mileage: {},
@@ -967,7 +967,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Green", "Red", "Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_3_491a3cf3-46f8-488f-ab7f-52619b24111e.jpg?v=1786305876",
     },
 
     mileage: {},
@@ -1063,7 +1063,7 @@ export const bikes: OBike[] = [
     colors: ["Orange Silver", "Black", "Lemon Silver"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-270d0e60-526b-43a5-a6aa-3ee3c453117e.webp?v=1786304747",
     },
 
     mileage: {},
@@ -1159,7 +1159,7 @@ export const bikes: OBike[] = [
     colors: ["Matt Blue", "Matt Black", "Matt White"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-ccf20981-22d2-469a-930d-2b5d4cdc994e.webp?v=1786304747",
     },
 
     mileage: {},
@@ -1255,7 +1255,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Black", "Red"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-9de57718-6d36-46c0-80b2-0923309ae93a.webp?v=1786304747",
     },
 
     mileage: {},
@@ -1351,7 +1351,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Black", "Red"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-fdccb970-a68e-48a4-8ecd-071f054aa615.webp?v=1786304747",
     },
 
     mileage: {},
@@ -1447,7 +1447,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Grey", "Black", "Red"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-b5916a10-5272-4688-8004-9026805afd08.webp?v=1786304747",
     },
 
     mileage: {},
@@ -1544,7 +1544,7 @@ export const bikes: OBike[] = [
     colors: [],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/15m.png?v=1786306562",
     },
 
     mileage: {},
@@ -1641,7 +1641,7 @@ export const bikes: OBike[] = [
     colors: ["Metalic Grey", "Intensity White"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/v4.png?v=1786306563",
     },
 
     mileage: {},
@@ -1738,7 +1738,7 @@ export const bikes: OBike[] = [
     colors: [],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/15m.png?v=1786306562",
     },
 
     mileage: {},
@@ -1835,15 +1835,15 @@ export const bikes: OBike[] = [
     colors: ["Racing Blue", "Dark Night"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/v4.png?v=1786306563",
     },
 
     mileage: {},
     showroom: "",
   },
   {
-    slug: "Yamaha_R15_V3_Indonesia ",
-    name: "Yamaha R15 V3 Indonesia ",
+    slug: "Yamaha_R15_V3",
+    name: "Yamaha R15 V3",
     brand: "Yamaha",
     cc: "150",
     bike_type: "Sports",
@@ -1931,7 +1931,7 @@ export const bikes: OBike[] = [
     colors: ["Yellow", "Black", "Blue", "Silver"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/v3.png?v=1786306752",
     },
 
     mileage: {},
@@ -2027,7 +2027,7 @@ export const bikes: OBike[] = [
     colors: ["Army Green", "Black", "White", "Silver"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/xsr.jpg?v=1786307477",
     },
 
     mileage: {},
@@ -2128,7 +2128,7 @@ export const bikes: OBike[] = [
     ],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/mt2.png?v=1786306752",
     },
 
     mileage: {},
@@ -2224,7 +2224,7 @@ export const bikes: OBike[] = [
     colors: ["Thunder Grey", "Dark Knight", "Racing Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/v3_indian.jpg?v=1786307477",
     },
 
     mileage: {},
@@ -2321,7 +2321,7 @@ export const bikes: OBike[] = [
     colors: ["Grey Vermillion", "Metallic Black", "Racing Blue", "Silver"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/aerox.jpg?v=1786307477",
     },
 
     mileage: {},
@@ -2417,7 +2417,7 @@ export const bikes: OBike[] = [
     colors: ["Metallic Black", "Dark Matt Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/mt1.png?v=1786306751",
     },
 
     mileage: {},
@@ -2513,103 +2513,7 @@ export const bikes: OBike[] = [
     colors: ["Black", "Blue", "White"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
-    },
-
-    mileage: {},
-    showroom: "",
-  },
-  {
-    slug: "Yamaha_FZ_25",
-    name: "Yamaha FZ 25",
-    brand: "Yamaha",
-    cc: "250",
-    bike_type: "Naked Sports",
-    distributor: "Aci Motors Ltd",
-    model_year: "2025",
-    brand_origin: "Japan",
-    made_in: "India",
-    assembly: "Bangladesh",
-    launched: "2025-04-11",
-    price: "3,94,290 BDT",
-    engine: {
-      type: "4 Stroke Single Cylinder",
-      displacement: "249",
-      maximum_power: "20.52 Bhp @ 8000 RPM",
-      maximum_torque: "20.01 NM @ 6000 RPM",
-      bore: "74.0 Mm",
-      stroke: "58.0 Mm",
-      compression_ratio: "9.8:1",
-      valves: "2",
-      fuel_supply: "Fuel Injection (Fi)",
-      no_of_cylinders: "1",
-      engine_cooling: "Oil Cooled",
-      starting_method: "Electric",
-      engine_oil_grade: "10W40",
-      engine_oil_capacity: "1.55 L",
-    },
-    transmission: {
-      transmission_type: "Manual",
-      clutch_type: "Wet-multiplate",
-      no_of_gears: "5",
-      drive_type: "Chain Drive",
-    },
-    mileage_top_speed: {
-      mileage: "40 Kmpl (Approx)",
-      top_speed: "130 Kmph (Approx)",
-    },
-    chassis_suspension: {
-      chassis_type: "Diamond",
-      front_suspension: "Telescopic Forks",
-      rear_suspension: "7-Step Adjustable Monocross Suspension",
-    },
-    brakes: {
-      front_brake_type: "Single Disc",
-      rear_brake_type: "Single Disc",
-      front_brake_diameter: "282 Mm",
-      rear_brake_diameter: "220 Mm",
-      braking_system: "Dual Channel ABS",
-    },
-    wheel_tyres: {
-      front_tyre_size: "100/80-17",
-      rear_tyre_size: "140/70-17",
-      tyre_type: "Tubeless",
-      wheel_type: "Alloy",
-    },
-    dimensions: {
-      overall_length: "2015 Mm",
-      overall_width: "775 Mm",
-      height: "1075 Mm",
-      weight: "153 Kg",
-      ground_clearance: "160 Mm",
-      fuel_tank_capacity: "14 Liters",
-      Wheelbase: "1360 Mm",
-      seat_height: "795 Mm",
-    },
-    electricals: {
-      battery_type: "Mf",
-      battery_voltage: "12V 6Ah",
-      head_light: "LED",
-      tail_light: "LED",
-      indicators: "Halogen",
-    },
-    others: {
-      speedometer: "Digital",
-      odometer: "Digital",
-      rpm_meter: "Digital",
-      handle_type: "Pipe Handle Bar",
-      seat_type: "Split-Seat",
-      passenger_grab_rail: "Yes",
-      engine_kill_switch: "Yes",
-      additional_feature: "",
-    },
-    availability: "",
-    description:
-      "Yamaha FZ 25  Price In Bangladesh is 3,94,290 BDT . This Bike is powered by 250 Cc, which generates a maximum power of 20.52 Bhp @ 8000 rpm, and its maximum torque is 20.1 Nm @ 6000 rpm. Yamaha FZ 25 mileage in city 40 Kmpl (Approx) And on highway 45 Kmpl (Approx). It has a Dual Channel ABS Braking system with Tubeless tyres. Seat Height is 795mm, and Weight is 153 KG. Top Speed we got 130 KMPH (Approx). More in this page check Yamaha FZ 25 comparison, check out the Yamaha FZ 25 pros cons, view the Yamaha FZ 25 image player, and see the Yamaha FZ 25 price history to learn more before buy this motorcycle.",
-    colors: ["Black", "Blue", "White"],
-    images: {
-      primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fz25.jpg?v=1786307714",
     },
 
     mileage: {},
@@ -2706,7 +2610,7 @@ export const bikes: OBike[] = [
     colors: ["Racing Blue", "Cyan Metallic Grey"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fsz_hybrid.jpg?v=1786307714",
     },
 
     mileage: {},
@@ -2804,7 +2708,7 @@ export const bikes: OBike[] = [
     colors: ["Dark Matte Blue", "Matte Black", "Matte Copper", "Matte Titan"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzx.png?v=1786306929",
     },
 
     mileage: {},
@@ -2909,7 +2813,7 @@ export const bikes: OBike[] = [
     ],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzsv4.png?v=1786306929",
     },
 
     mileage: {},
@@ -3005,7 +2909,7 @@ export const bikes: OBike[] = [
     colors: ["Burning Red", "Midnight Black", "Dark Matt Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fazerv2.png?v=1786306929",
     },
 
     mileage: {},
@@ -3101,108 +3005,108 @@ export const bikes: OBike[] = [
     colors: ["Sparkle Green", "Sparkle Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/ray_9245f5a9-80b0-4e15-b8d1-4dcbf66da1f5.jpg?v=1786308267",
     },
 
     mileage: {},
     showroom: "",
   },
-  {
-    slug: "Yamaha_Fzs_V3_Bs6",
-    name: "Yamaha Fzs V3 Bs6",
-    brand: "Yamaha",
-    cc: "150",
-    bike_type: "Standard",
-    distributor: "Aci Motors Ltd",
-    model_year: "2019",
-    brand_origin: "Japan",
-    made_in: "India",
-    assembly: "Bangladesh",
-    launched: "2029-01-21",
-    price: "2,68,000 BDT",
-    engine: {
-      type: "Air cooled, 4 stroke, SI engine, SOHC",
-      displacement: "149",
-      maximum_power: "12.8 Bhp @ 8000 RPM",
-      maximum_torque: "12.8 NM @ 6000 RPM",
-      bore: "57.3 Mm",
-      stroke: "57.9 Mm",
-      compression_ratio: "9.5:1",
-      valves: "2",
-      fuel_supply: "Fuel Injection (Fi)",
-      no_of_cylinders: "1",
-      engine_cooling: "Air Cooled",
-      starting_method: "Electric",
-      engine_oil_grade: "10W30",
-      engine_oil_capacity: "1 L",
-    },
-    transmission: {
-      transmission_type: "Manual",
-      clutch_type: "Wet-multiplate",
-      no_of_gears: "5",
-      drive_type: "Chain Drive",
-    },
-    mileage_top_speed: {
-      mileage: "45 Kmpl (Approx)",
-      top_speed: "120 Kmph (Approx)",
-    },
-    chassis_suspension: {
-      chassis_type: "Diamond Frame",
-      front_suspension: "Telescopic Fork",
-      rear_suspension: "Monoshock",
-    },
-    brakes: {
-      front_brake_type: "Single Disc",
-      rear_brake_type: "Disk Disc",
-      front_brake_diameter: "282 Mm",
-      rear_brake_diameter: "220  Mm",
-      braking_system: "Single Channel ABS",
-    },
-    wheel_tyres: {
-      front_tyre_size: "100/80-17M/C 52P",
-      rear_tyre_size: "140/60R17M/C 63P",
-      tyre_type: "Tubeless",
-      wheel_type: "Alloy",
-    },
-    dimensions: {
-      overall_length: "1990 Mm",
-      overall_width: "780 Mm",
-      height: "1180 Mm",
-      weight: "137 Kg",
-      ground_clearance: "165 Mm",
-      fuel_tank_capacity: "12.8 Liters",
-      Wheelbase: "1330 Mm",
-      seat_height: "790 Mm",
-    },
-    electricals: {
-      battery_type: "Mf",
-      battery_voltage: "12V",
-      head_light: "LED",
-      tail_light: "LED",
-      indicators: "Halogen",
-    },
-    others: {
-      speedometer: "Digital",
-      odometer: "Digital",
-      rpm_meter: "Digital",
-      handle_type: "Pipe Handle Bar",
-      seat_type: "Single-Seat",
-      passenger_grab_rail: "Yes",
-      engine_kill_switch: "Yes",
-      additional_feature: "",
-    },
-    availability: "",
-    description:
-      "Yamaha Fzs V3 Bs6 Price in Bangladesh is Tk 268,000. This Bike is powered by 150cc, which generates a Maximum power of 12.80 Bhp @ 8000 rpm, and its maximum torque is 12.80 Nm @ 6000 rpm. Yamaha Fzs V3 Bs6 mileage we got in city 45 KM (Approx) and on highway 50 KM (Approx). It has a Single Channel ABS Brakeing system with Tubeless tyres. Seat Height is 790 mm, and Weight is 137 KG. Top Speed we got 120 KMPH. More in this page check Yamaha Fzs V3 Bs6 comparison, check out the Yamaha Fzs V3 Bs6 pros cons, view the Yamaha Fzs V3 Bs6 image player, and see the Yamaha Fzs V3 Bs6 price history to learn more before buy this motorcycle.",
-    colors: ["Dark Matte Blue", "Matte Red", "Matte Black"],
-    images: {
-      primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
-    },
+  // {
+  //   slug: "Yamaha_Fzs_V3_Bs6",
+  //   name: "Yamaha Fzs V3 Bs6",
+  //   brand: "Yamaha",
+  //   cc: "150",
+  //   bike_type: "Standard",
+  //   distributor: "Aci Motors Ltd",
+  //   model_year: "2019",
+  //   brand_origin: "Japan",
+  //   made_in: "India",
+  //   assembly: "Bangladesh",
+  //   launched: "2029-01-21",
+  //   price: "2,68,000 BDT",
+  //   engine: {
+  //     type: "Air cooled, 4 stroke, SI engine, SOHC",
+  //     displacement: "149",
+  //     maximum_power: "12.8 Bhp @ 8000 RPM",
+  //     maximum_torque: "12.8 NM @ 6000 RPM",
+  //     bore: "57.3 Mm",
+  //     stroke: "57.9 Mm",
+  //     compression_ratio: "9.5:1",
+  //     valves: "2",
+  //     fuel_supply: "Fuel Injection (Fi)",
+  //     no_of_cylinders: "1",
+  //     engine_cooling: "Air Cooled",
+  //     starting_method: "Electric",
+  //     engine_oil_grade: "10W30",
+  //     engine_oil_capacity: "1 L",
+  //   },
+  //   transmission: {
+  //     transmission_type: "Manual",
+  //     clutch_type: "Wet-multiplate",
+  //     no_of_gears: "5",
+  //     drive_type: "Chain Drive",
+  //   },
+  //   mileage_top_speed: {
+  //     mileage: "45 Kmpl (Approx)",
+  //     top_speed: "120 Kmph (Approx)",
+  //   },
+  //   chassis_suspension: {
+  //     chassis_type: "Diamond Frame",
+  //     front_suspension: "Telescopic Fork",
+  //     rear_suspension: "Monoshock",
+  //   },
+  //   brakes: {
+  //     front_brake_type: "Single Disc",
+  //     rear_brake_type: "Disk Disc",
+  //     front_brake_diameter: "282 Mm",
+  //     rear_brake_diameter: "220  Mm",
+  //     braking_system: "Single Channel ABS",
+  //   },
+  //   wheel_tyres: {
+  //     front_tyre_size: "100/80-17M/C 52P",
+  //     rear_tyre_size: "140/60R17M/C 63P",
+  //     tyre_type: "Tubeless",
+  //     wheel_type: "Alloy",
+  //   },
+  //   dimensions: {
+  //     overall_length: "1990 Mm",
+  //     overall_width: "780 Mm",
+  //     height: "1180 Mm",
+  //     weight: "137 Kg",
+  //     ground_clearance: "165 Mm",
+  //     fuel_tank_capacity: "12.8 Liters",
+  //     Wheelbase: "1330 Mm",
+  //     seat_height: "790 Mm",
+  //   },
+  //   electricals: {
+  //     battery_type: "Mf",
+  //     battery_voltage: "12V",
+  //     head_light: "LED",
+  //     tail_light: "LED",
+  //     indicators: "Halogen",
+  //   },
+  //   others: {
+  //     speedometer: "Digital",
+  //     odometer: "Digital",
+  //     rpm_meter: "Digital",
+  //     handle_type: "Pipe Handle Bar",
+  //     seat_type: "Single-Seat",
+  //     passenger_grab_rail: "Yes",
+  //     engine_kill_switch: "Yes",
+  //     additional_feature: "",
+  //   },
+  //   availability: "",
+  //   description:
+  //     "Yamaha Fzs V3 Bs6 Price in Bangladesh is Tk 268,000. This Bike is powered by 150cc, which generates a Maximum power of 12.80 Bhp @ 8000 rpm, and its maximum torque is 12.80 Nm @ 6000 rpm. Yamaha Fzs V3 Bs6 mileage we got in city 45 KM (Approx) and on highway 50 KM (Approx). It has a Single Channel ABS Brakeing system with Tubeless tyres. Seat Height is 790 mm, and Weight is 137 KG. Top Speed we got 120 KMPH. More in this page check Yamaha Fzs V3 Bs6 comparison, check out the Yamaha Fzs V3 Bs6 pros cons, view the Yamaha Fzs V3 Bs6 image player, and see the Yamaha Fzs V3 Bs6 price history to learn more before buy this motorcycle.",
+  //   colors: ["Dark Matte Blue", "Matte Red", "Matte Black"],
+  //   images: {
+  //     primary:
+  //       "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+  //   },
 
-    mileage: {},
-    showroom: "",
-  },
+  //   mileage: {},
+  //   showroom: "",
+  // },
   {
     slug: "Yamaha_FZs_Fi_Deluxe",
     name: "Yamaha FZs Fi Deluxe",
@@ -3294,7 +3198,7 @@ export const bikes: OBike[] = [
     colors: ["Majesty Red", "Metalic Grey", "Metalic Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzs_delux.jpg?v=1786308023",
     },
 
     mileage: {},
@@ -3390,7 +3294,7 @@ export const bikes: OBike[] = [
     colors: ["Dark Matte Blue", "Matte Black", "Matte Red", "Vintage Green"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzs_delux.jpg?v=1786308023",
     },
 
     mileage: {},
@@ -3486,7 +3390,7 @@ export const bikes: OBike[] = [
     colors: ["Dark Matte Blue", "Matte Black", "Matte Red", "Vintage Green"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzs_v3_abs.jpg?v=1786308024",
     },
 
     mileage: {},
@@ -3582,7 +3486,7 @@ export const bikes: OBike[] = [
     colors: ["Blue", "Black", "Grey", "Grey Metallic", "Black Metallic"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/fzsv2.png?v=1786306928",
     },
 
     mileage: {},
@@ -3678,7 +3582,7 @@ export const bikes: OBike[] = [
     colors: ["Racing Blue", "Rally Red"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/ray_street_rally.jpg?v=1786308266",
     },
 
     mileage: {},
@@ -3780,15 +3684,15 @@ export const bikes: OBike[] = [
     ],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/saluto.png?v=1786307143",
     },
 
     mileage: {},
     showroom: "",
   },
   {
-    slug: "Royal_Enfield_Meteor_350_Supernova",
-    name: "Royal Enfield Meteor 350 (Supernova)",
+    slug: "Royal_Enfield_Meteor_350",
+    name: "Royal Enfield Meteor 350",
     brand: "Royal Enfield",
     cc: "350",
     bike_type: "Cruiser",
@@ -3877,7 +3781,7 @@ export const bikes: OBike[] = [
     colors: ["Supernova Red", "Supernova Blue"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/meteor.jpg?v=1786308806",
     },
 
     mileage: {},
@@ -3974,303 +3878,303 @@ export const bikes: OBike[] = [
     colors: ["Chrome Red", "Chrome Bronze"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/classic.jpg?v=1786308806",
     },
 
     mileage: {},
     showroom: "",
   },
-  {
-    slug: "Royal_Enfield_Meteor_350_Stellar",
-    name: "Royal Enfield Meteor 350 (Stellar)",
-    brand: "Royal Enfield",
-    cc: "350",
-    bike_type: "Cruiser",
-    distributor: "IFAD Motors Ltd",
-    model_year: "2024",
-    brand_origin: "England",
-    made_in: "India",
-    assembly: "Bangladesh",
-    launched: "2024-10-21",
-    price: "4,83,000 BDT",
-    engine: {
-      type: "Single-Cylinder, 4 Stroke, Air-Oil Cooled Engine",
-      displacement: "349",
-      maximum_power: "20.12 Bhp @ 6100 RPM",
-      maximum_torque: "27 NM @ 4000 RPM",
-      bore: "72 Mm",
-      stroke: "85.8 Mm",
-      compression_ratio: "9.5:1",
-      valves: "2",
-      fuel_supply: "EFI",
-      no_of_cylinders: "1",
-      engine_cooling: "Air & Oil Cooled",
-      starting_method: "Electric",
-      engine_oil_grade: "15W50",
-      engine_oil_capacity: "1.7 L",
-    },
-    transmission: {
-      transmission_type: "Manual",
-      clutch_type: "Wet-multiplate",
-      no_of_gears: "5",
-      drive_type: "Chain Drive",
-    },
-    mileage_top_speed: {
-      mileage: "35 Kmpl (Approx)",
-      top_speed: "120 Kmph (Approx)",
-    },
-    chassis_suspension: {
-      chassis_type: "Twin Downtube Spine Frame",
-      front_suspension: "Telescopic, 41 mm forks, 130 mm travel",
-      rear_suspension:
-        "Twin tube emulsion Shock absorbers with 6-step adjustable preload",
-    },
-    brakes: {
-      front_brake_type: "Single Disc",
-      rear_brake_type: "Disc Brake",
-      front_brake_diameter: "300 Mm",
-      rear_brake_diameter: "270 Mm",
-      braking_system: "Dual Channel ABS",
-    },
-    wheel_tyres: {
-      front_tyre_size: "100/90-19 57P",
-      rear_tyre_size: "140/70-17 66P",
-      tyre_type: "Tubeless",
-      wheel_type: "Alloy",
-    },
-    dimensions: {
-      overall_length: "2140 Mm",
-      overall_width: "845 Mm",
-      height: "1140 Mm",
-      weight: "191 Kg",
-      ground_clearance: "170 Mm",
-      fuel_tank_capacity: "15 Liters",
-      Wheelbase: "1400 Mm",
-      seat_height: "765 Mm",
-    },
-    electricals: {
-      battery_type: "Mf",
-      battery_voltage: "12V 12Ah",
-      head_light: "LED",
-      tail_light: "LED",
-      indicators: "Halogen",
-    },
-    others: {
-      speedometer: "Analog",
-      odometer: "Digital",
-      rpm_meter: "Digital",
-      handle_type: "Cruiser Type",
-      seat_type: "Single-Seat",
-      passenger_grab_rail: "Yes",
-      engine_kill_switch: "Yes",
-      additional_feature: "",
-    },
-    availability: "",
-    description:
-      "Royal Enfield Meteor 350 Stellar (Blue/Black/Red)  Price in Bangladesh is TK 483,000. This Bike is powered by 350cc, which generates a Maximum power of 20.12 Bhp @ 6100.00 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield Meteor 350 Stellar mileage in city 35 KM (Approx.) and on highway 40 KM (Approx.). It has a Dual Channel ABS Braking System with tubeless tyres.  and Weight is 191 KG. Seat height is 765 mm. Top Speed is 120 KMPH (Approx.). More in this page check Royal Enfield Meteor 350 (Stellar)  comparison, check out the Royal Enfield Meteor 350 (Stellar) pros cons, view the Royal Enfield Meteor 350 (Stellar) image player, and see the Royal Enfield Meteor 350 (Stellar) price history to learn more before buy this  motorcycle.",
-    colors: ["Stellar Blue", "Stellar Black", "Stellar Red"],
-    images: {
-      primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
-    },
+  // {
+  //   slug: "Royal_Enfield_Meteor_350_Stellar",
+  //   name: "Royal Enfield Meteor 350 (Stellar)",
+  //   brand: "Royal Enfield",
+  //   cc: "350",
+  //   bike_type: "Cruiser",
+  //   distributor: "IFAD Motors Ltd",
+  //   model_year: "2024",
+  //   brand_origin: "England",
+  //   made_in: "India",
+  //   assembly: "Bangladesh",
+  //   launched: "2024-10-21",
+  //   price: "4,83,000 BDT",
+  //   engine: {
+  //     type: "Single-Cylinder, 4 Stroke, Air-Oil Cooled Engine",
+  //     displacement: "349",
+  //     maximum_power: "20.12 Bhp @ 6100 RPM",
+  //     maximum_torque: "27 NM @ 4000 RPM",
+  //     bore: "72 Mm",
+  //     stroke: "85.8 Mm",
+  //     compression_ratio: "9.5:1",
+  //     valves: "2",
+  //     fuel_supply: "EFI",
+  //     no_of_cylinders: "1",
+  //     engine_cooling: "Air & Oil Cooled",
+  //     starting_method: "Electric",
+  //     engine_oil_grade: "15W50",
+  //     engine_oil_capacity: "1.7 L",
+  //   },
+  //   transmission: {
+  //     transmission_type: "Manual",
+  //     clutch_type: "Wet-multiplate",
+  //     no_of_gears: "5",
+  //     drive_type: "Chain Drive",
+  //   },
+  //   mileage_top_speed: {
+  //     mileage: "35 Kmpl (Approx)",
+  //     top_speed: "120 Kmph (Approx)",
+  //   },
+  //   chassis_suspension: {
+  //     chassis_type: "Twin Downtube Spine Frame",
+  //     front_suspension: "Telescopic, 41 mm forks, 130 mm travel",
+  //     rear_suspension:
+  //       "Twin tube emulsion Shock absorbers with 6-step adjustable preload",
+  //   },
+  //   brakes: {
+  //     front_brake_type: "Single Disc",
+  //     rear_brake_type: "Disc Brake",
+  //     front_brake_diameter: "300 Mm",
+  //     rear_brake_diameter: "270 Mm",
+  //     braking_system: "Dual Channel ABS",
+  //   },
+  //   wheel_tyres: {
+  //     front_tyre_size: "100/90-19 57P",
+  //     rear_tyre_size: "140/70-17 66P",
+  //     tyre_type: "Tubeless",
+  //     wheel_type: "Alloy",
+  //   },
+  //   dimensions: {
+  //     overall_length: "2140 Mm",
+  //     overall_width: "845 Mm",
+  //     height: "1140 Mm",
+  //     weight: "191 Kg",
+  //     ground_clearance: "170 Mm",
+  //     fuel_tank_capacity: "15 Liters",
+  //     Wheelbase: "1400 Mm",
+  //     seat_height: "765 Mm",
+  //   },
+  //   electricals: {
+  //     battery_type: "Mf",
+  //     battery_voltage: "12V 12Ah",
+  //     head_light: "LED",
+  //     tail_light: "LED",
+  //     indicators: "Halogen",
+  //   },
+  //   others: {
+  //     speedometer: "Analog",
+  //     odometer: "Digital",
+  //     rpm_meter: "Digital",
+  //     handle_type: "Cruiser Type",
+  //     seat_type: "Single-Seat",
+  //     passenger_grab_rail: "Yes",
+  //     engine_kill_switch: "Yes",
+  //     additional_feature: "",
+  //   },
+  //   availability: "",
+  //   description:
+  //     "Royal Enfield Meteor 350 Stellar (Blue/Black/Red)  Price in Bangladesh is TK 483,000. This Bike is powered by 350cc, which generates a Maximum power of 20.12 Bhp @ 6100.00 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield Meteor 350 Stellar mileage in city 35 KM (Approx.) and on highway 40 KM (Approx.). It has a Dual Channel ABS Braking System with tubeless tyres.  and Weight is 191 KG. Seat height is 765 mm. Top Speed is 120 KMPH (Approx.). More in this page check Royal Enfield Meteor 350 (Stellar)  comparison, check out the Royal Enfield Meteor 350 (Stellar) pros cons, view the Royal Enfield Meteor 350 (Stellar) image player, and see the Royal Enfield Meteor 350 (Stellar) price history to learn more before buy this  motorcycle.",
+  //   colors: ["Stellar Blue", "Stellar Black", "Stellar Red"],
+  //   images: {
+  //     primary:
+  //       "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+  //   },
 
-    mileage: {},
-    showroom: "",
-  },
-  {
-    slug: "Royal_Enfield_Classic_350_Dark",
-    name: "Royal Enfield Classic 350 Dark",
-    brand: "Royal Enfield",
-    cc: "350",
-    bike_type: "Cruiser",
-    distributor: "IFAD Motors Ltd",
-    model_year: "2024",
-    brand_origin: "England",
-    made_in: "India",
-    assembly: "Bangladesh",
-    launched: "2024-10-21",
-    price: "4,47,700 BDT",
-    engine: {
-      type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
-      displacement: "349",
-      maximum_power: "19.93 Bhp @ 5250 RPM",
-      maximum_torque: "27 NM @ 4000 RPM",
-      bore: "72 Mm",
-      stroke: "85.8 Mm",
-      compression_ratio: "9.5:1",
-      valves: "2",
-      fuel_supply: "Fuel Injection (Fi)",
-      no_of_cylinders: "1",
-      engine_cooling: "Air & Oil Cooled",
-      starting_method: "Electric",
-      engine_oil_grade: "15W50",
-      engine_oil_capacity: "2.5 L",
-    },
-    transmission: {
-      transmission_type: "Manual",
-      clutch_type: "Wet-multiplate",
-      no_of_gears: "5",
-      drive_type: "Chain Drive",
-    },
-    mileage_top_speed: {
-      mileage: "35 Kmpl (Approx)",
-      top_speed: "120 Kmph (Approx)",
-    },
-    chassis_suspension: {
-      chassis_type: "Twin Downtube Spine Frame",
-      front_suspension:
-        "Twin tube emulsion shock absorbers with 6-step adjustable preload",
-      rear_suspension: "Telescopic, 41 mm forks, 130 mm travel",
-    },
-    brakes: {
-      front_brake_type: "Single Disc",
-      rear_brake_type: "Disc Brake",
-      front_brake_diameter: "300 Mm",
-      rear_brake_diameter: "153 Mm",
-      braking_system: "Single Channel ABS",
-    },
-    wheel_tyres: {
-      front_tyre_size: "100/90-19",
-      rear_tyre_size: "120/80-18",
-      tyre_type: "Tubeless",
-      wheel_type: "Alloy",
-    },
-    dimensions: {
-      overall_length: "2145 Mm",
-      overall_width: "745 Mm",
-      height: "1090 Mm",
-      weight: "195 Kg",
-      ground_clearance: "170 Mm",
-      fuel_tank_capacity: "13 Liters",
-      Wheelbase: "1390 Mm",
-      seat_height: "805 Mm",
-    },
-    electricals: {
-      battery_type: "Lead-Acid",
-      battery_voltage: "12V",
-      head_light: "Halogen",
-      tail_light: "Halogen",
-      indicators: "Halogen",
-    },
-    others: {
-      speedometer: "Analog",
-      odometer: "Digital",
-      rpm_meter: "Analog",
-      handle_type: "Cruiser Type",
-      seat_type: "Single-Seat",
-      passenger_grab_rail: "Yes",
-      engine_kill_switch: "Yes",
-      additional_feature: "",
-    },
-    availability: "",
-    description:
-      "Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black)  Price in Bangladesh is TK 447,700. This Bike is powered by 350cc, which generates a Maximum power of 19.93 Bhp @ 5250 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield  Classic 350 Dark mileage in city 35 KM (Approx.) and on highway is 40 km (Approx.). It has a Single Channel ABS Braking system with Tubeless tyres.  Weight is 195 KG. Seat height is 805 mm. Top Speed 120 KMPH (Approx.) More in this page check Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) comparison, check out the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) pros cons, view the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black)  image player, and see the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) price history to learn more before buy this  motorcycle.",
-    colors: ["Dark Stealth Black", "Dark Gunmetal Grey"],
-    images: {
-      primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
-    },
+  //   mileage: {},
+  //   showroom: "",
+  // },
+  // {
+  //   slug: "Royal_Enfield_Classic_350_Dark",
+  //   name: "Royal Enfield Classic 350 Dark",
+  //   brand: "Royal Enfield",
+  //   cc: "350",
+  //   bike_type: "Cruiser",
+  //   distributor: "IFAD Motors Ltd",
+  //   model_year: "2024",
+  //   brand_origin: "England",
+  //   made_in: "India",
+  //   assembly: "Bangladesh",
+  //   launched: "2024-10-21",
+  //   price: "4,47,700 BDT",
+  //   engine: {
+  //     type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
+  //     displacement: "349",
+  //     maximum_power: "19.93 Bhp @ 5250 RPM",
+  //     maximum_torque: "27 NM @ 4000 RPM",
+  //     bore: "72 Mm",
+  //     stroke: "85.8 Mm",
+  //     compression_ratio: "9.5:1",
+  //     valves: "2",
+  //     fuel_supply: "Fuel Injection (Fi)",
+  //     no_of_cylinders: "1",
+  //     engine_cooling: "Air & Oil Cooled",
+  //     starting_method: "Electric",
+  //     engine_oil_grade: "15W50",
+  //     engine_oil_capacity: "2.5 L",
+  //   },
+  //   transmission: {
+  //     transmission_type: "Manual",
+  //     clutch_type: "Wet-multiplate",
+  //     no_of_gears: "5",
+  //     drive_type: "Chain Drive",
+  //   },
+  //   mileage_top_speed: {
+  //     mileage: "35 Kmpl (Approx)",
+  //     top_speed: "120 Kmph (Approx)",
+  //   },
+  //   chassis_suspension: {
+  //     chassis_type: "Twin Downtube Spine Frame",
+  //     front_suspension:
+  //       "Twin tube emulsion shock absorbers with 6-step adjustable preload",
+  //     rear_suspension: "Telescopic, 41 mm forks, 130 mm travel",
+  //   },
+  //   brakes: {
+  //     front_brake_type: "Single Disc",
+  //     rear_brake_type: "Disc Brake",
+  //     front_brake_diameter: "300 Mm",
+  //     rear_brake_diameter: "153 Mm",
+  //     braking_system: "Single Channel ABS",
+  //   },
+  //   wheel_tyres: {
+  //     front_tyre_size: "100/90-19",
+  //     rear_tyre_size: "120/80-18",
+  //     tyre_type: "Tubeless",
+  //     wheel_type: "Alloy",
+  //   },
+  //   dimensions: {
+  //     overall_length: "2145 Mm",
+  //     overall_width: "745 Mm",
+  //     height: "1090 Mm",
+  //     weight: "195 Kg",
+  //     ground_clearance: "170 Mm",
+  //     fuel_tank_capacity: "13 Liters",
+  //     Wheelbase: "1390 Mm",
+  //     seat_height: "805 Mm",
+  //   },
+  //   electricals: {
+  //     battery_type: "Lead-Acid",
+  //     battery_voltage: "12V",
+  //     head_light: "Halogen",
+  //     tail_light: "Halogen",
+  //     indicators: "Halogen",
+  //   },
+  //   others: {
+  //     speedometer: "Analog",
+  //     odometer: "Digital",
+  //     rpm_meter: "Analog",
+  //     handle_type: "Cruiser Type",
+  //     seat_type: "Single-Seat",
+  //     passenger_grab_rail: "Yes",
+  //     engine_kill_switch: "Yes",
+  //     additional_feature: "",
+  //   },
+  //   availability: "",
+  //   description:
+  //     "Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black)  Price in Bangladesh is TK 447,700. This Bike is powered by 350cc, which generates a Maximum power of 19.93 Bhp @ 5250 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield  Classic 350 Dark mileage in city 35 KM (Approx.) and on highway is 40 km (Approx.). It has a Single Channel ABS Braking system with Tubeless tyres.  Weight is 195 KG. Seat height is 805 mm. Top Speed 120 KMPH (Approx.) More in this page check Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) comparison, check out the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) pros cons, view the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black)  image player, and see the Royal Enfield Classic 350 Dark (Gun Metal Grey/Stealth Black) price history to learn more before buy this  motorcycle.",
+  //   colors: ["Dark Stealth Black", "Dark Gunmetal Grey"],
+  //   images: {
+  //     primary:
+  //       "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+  //   },
 
-    mileage: {},
-    showroom: "",
-  },
-  {
-    slug: "Royal_Enfield_Classic_350_",
-    name: "Royal Enfield Classic 350",
-    brand: "Royal Enfield",
-    cc: "350",
-    bike_type: "Cruiser",
-    distributor: "IFAD Motors Ltd",
-    model_year: "2024",
-    brand_origin: "England",
-    made_in: "India",
-    assembly: "Bangladesh",
-    launched: "2024-10-21",
-    price: "4,32,500 BDT",
-    engine: {
-      type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
-      displacement: "349",
-      maximum_power: "19.93 Bhp @ 5250 RPM",
-      maximum_torque: "27 NM @ 4000 RPM",
-      bore: "72 Mm",
-      stroke: "85.8 Mm",
-      compression_ratio: "9.5:1",
-      valves: "2",
-      fuel_supply: "Fuel Injection (Fi)",
-      no_of_cylinders: "1",
-      engine_cooling: "Air & Oil Cooled",
-      starting_method: "Electric",
-      engine_oil_grade: "15W50",
-      engine_oil_capacity: "1.5 L",
-    },
-    transmission: {
-      transmission_type: "Manual",
-      clutch_type: "Wet-multiplate",
-      no_of_gears: "5",
-      drive_type: "Chain Drive",
-    },
-    mileage_top_speed: {
-      mileage: "35 Kmpl (Approx)",
-      top_speed: "120 Kmph (Approx)",
-    },
-    chassis_suspension: {
-      chassis_type: "Twin Downtube Spine Frame",
-      front_suspension:
-        "Twin tube emulsion shock absorbers with 6-step adjustable preload",
-      rear_suspension: "Telescopic, 41 mm forks, 130 mm travel",
-    },
-    brakes: {
-      front_brake_type: "Single Disc",
-      rear_brake_type: "Disc Brake",
-      front_brake_diameter: "300 Mm",
-      rear_brake_diameter: "153 Mm",
-      braking_system: "Single Channel ABS",
-    },
-    wheel_tyres: {
-      front_tyre_size: "100/90-19",
-      rear_tyre_size: "120/80-18",
-      tyre_type: "Tubeless",
-      wheel_type: "Spoke Wheel",
-    },
-    dimensions: {
-      overall_length: "2145 Mm",
-      overall_width: "785 Mm",
-      height: "1090 Mm",
-      weight: "195 Kg",
-      ground_clearance: "170 Mm",
-      fuel_tank_capacity: "13 Liters",
-      Wheelbase: "1390 Mm",
-      seat_height: "805 Mm",
-    },
-    electricals: {
-      battery_type: "Lead-Acid",
-      battery_voltage: "12V",
-      head_light: "Halogen",
-      tail_light: "Halogen",
-      indicators: "Halogen",
-    },
-    others: {
-      speedometer: "Analog",
-      odometer: "Digital",
-      rpm_meter: "Analog",
-      handle_type: "Pipe Handle Bar",
-      seat_type: "Single-Seat",
-      passenger_grab_rail: "Yes",
-      engine_kill_switch: "Yes",
-      additional_feature: "",
-    },
-    availability: "",
-    description:
-      "Royal Enfield Classic 350 (Halcyon Green/Black)  Price in Bangladesh TK 432,500. This Bike is powered by 350cc, which generates a Maximum power of 19.93 Bhp @ 5250 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield  Classic 350 Royal Enfield Classic 350 (Halcon Green/Black) mileage in city 35 KM (Approx.) and on highway is 40 km (Approx.). It has a Single Channel ABS Braking system with Tubeless tyres. Weight is 195 KG. Seat height is 805 mm. Top Speed 120 KMPH (Approx.) More in this page check Royal Enfield Classic 350 (Halcyon Green/Black) comparison, check out the Royal Enfield Classic 350 (Halcyon Green/Black) pros cons, view the Royal Enfield Classic 350 (Halcyon Green/Black) image player, and see the Royal Enfield Classic 350 (Halcyon Green/Black) price history to learn more before buy this motorcycle.",
-    colors: ["Halcyon Green", "Halcyon Black"],
-    images: {
-      primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
-    },
+  //   mileage: {},
+  //   showroom: "",
+  // },
+  // {
+  //   slug: "Royal_Enfield_Classic_350",
+  //   name: "Royal Enfield Classic 350",
+  //   brand: "Royal Enfield",
+  //   cc: "350",
+  //   bike_type: "Cruiser",
+  //   distributor: "IFAD Motors Ltd",
+  //   model_year: "2024",
+  //   brand_origin: "England",
+  //   made_in: "India",
+  //   assembly: "Bangladesh",
+  //   launched: "2024-10-21",
+  //   price: "4,32,500 BDT",
+  //   engine: {
+  //     type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
+  //     displacement: "349",
+  //     maximum_power: "19.93 Bhp @ 5250 RPM",
+  //     maximum_torque: "27 NM @ 4000 RPM",
+  //     bore: "72 Mm",
+  //     stroke: "85.8 Mm",
+  //     compression_ratio: "9.5:1",
+  //     valves: "2",
+  //     fuel_supply: "Fuel Injection (Fi)",
+  //     no_of_cylinders: "1",
+  //     engine_cooling: "Air & Oil Cooled",
+  //     starting_method: "Electric",
+  //     engine_oil_grade: "15W50",
+  //     engine_oil_capacity: "1.5 L",
+  //   },
+  //   transmission: {
+  //     transmission_type: "Manual",
+  //     clutch_type: "Wet-multiplate",
+  //     no_of_gears: "5",
+  //     drive_type: "Chain Drive",
+  //   },
+  //   mileage_top_speed: {
+  //     mileage: "35 Kmpl (Approx)",
+  //     top_speed: "120 Kmph (Approx)",
+  //   },
+  //   chassis_suspension: {
+  //     chassis_type: "Twin Downtube Spine Frame",
+  //     front_suspension:
+  //       "Twin tube emulsion shock absorbers with 6-step adjustable preload",
+  //     rear_suspension: "Telescopic, 41 mm forks, 130 mm travel",
+  //   },
+  //   brakes: {
+  //     front_brake_type: "Single Disc",
+  //     rear_brake_type: "Disc Brake",
+  //     front_brake_diameter: "300 Mm",
+  //     rear_brake_diameter: "153 Mm",
+  //     braking_system: "Single Channel ABS",
+  //   },
+  //   wheel_tyres: {
+  //     front_tyre_size: "100/90-19",
+  //     rear_tyre_size: "120/80-18",
+  //     tyre_type: "Tubeless",
+  //     wheel_type: "Spoke Wheel",
+  //   },
+  //   dimensions: {
+  //     overall_length: "2145 Mm",
+  //     overall_width: "785 Mm",
+  //     height: "1090 Mm",
+  //     weight: "195 Kg",
+  //     ground_clearance: "170 Mm",
+  //     fuel_tank_capacity: "13 Liters",
+  //     Wheelbase: "1390 Mm",
+  //     seat_height: "805 Mm",
+  //   },
+  //   electricals: {
+  //     battery_type: "Lead-Acid",
+  //     battery_voltage: "12V",
+  //     head_light: "Halogen",
+  //     tail_light: "Halogen",
+  //     indicators: "Halogen",
+  //   },
+  //   others: {
+  //     speedometer: "Analog",
+  //     odometer: "Digital",
+  //     rpm_meter: "Analog",
+  //     handle_type: "Pipe Handle Bar",
+  //     seat_type: "Single-Seat",
+  //     passenger_grab_rail: "Yes",
+  //     engine_kill_switch: "Yes",
+  //     additional_feature: "",
+  //   },
+  //   availability: "",
+  //   description:
+  //     "Royal Enfield Classic 350 (Halcyon Green/Black)  Price in Bangladesh TK 432,500. This Bike is powered by 350cc, which generates a Maximum power of 19.93 Bhp @ 5250 RPM, and its maximum torque is 27.00 NM @ 4000.00 RPM. Royal Enfield  Classic 350 Royal Enfield Classic 350 (Halcon Green/Black) mileage in city 35 KM (Approx.) and on highway is 40 km (Approx.). It has a Single Channel ABS Braking system with Tubeless tyres. Weight is 195 KG. Seat height is 805 mm. Top Speed 120 KMPH (Approx.) More in this page check Royal Enfield Classic 350 (Halcyon Green/Black) comparison, check out the Royal Enfield Classic 350 (Halcyon Green/Black) pros cons, view the Royal Enfield Classic 350 (Halcyon Green/Black) image player, and see the Royal Enfield Classic 350 (Halcyon Green/Black) price history to learn more before buy this motorcycle.",
+  //   colors: ["Halcyon Green", "Halcyon Black"],
+  //   images: {
+  //     primary:
+  //       "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+  //   },
 
-    mileage: {},
-    showroom: "",
-  },
+  //   mileage: {},
+  //   showroom: "",
+  // },
   {
     slug: "Royal_Enfield_Bullet_350",
     name: "Royal Enfield Bullet 350",
@@ -4362,7 +4266,7 @@ export const bikes: OBike[] = [
     colors: ["Black Gold", "Standard Black", "Standard Maroon"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/bullet.jpg?v=1786308806",
     },
 
     mileage: {},
@@ -4458,7 +4362,7 @@ export const bikes: OBike[] = [
     colors: ["Rebel Blue", "Rebel Red", "Rebel Black"],
     images: {
       primary:
-        "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp",
+        "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunter.jpg?v=1786308805",
     },
 
     mileage: {},
