@@ -150,6 +150,7 @@ export interface OBike {
   made_in: string;
   assembly: string;
   launched: string;
+  updated_at: string;
   price: string;
   engine: OEngine;
   transmission: OTransmission;

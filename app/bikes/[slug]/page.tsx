@@ -2,13 +2,65 @@ import { bikes, getBikeBySlug } from "@/data/bike";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 type SpecRecord = Record<string, string> | undefined | null;
 
+
+const BASE_URL = "https://bikepriceinbangladesh.com";
+
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+function getBike(slug: string) {
+  return bikes.find((bike) => bike.slug === slug);
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const bike = getBike(slug);
+
+  if (!bike) {
+    return {
+      title: "Bike Not Found | Bike Price in Bangladesh",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  return {
+    title: `${bike.name} Price in Bangladesh 2026 | Specs & Features`,
+
+    description: `${bike.name} price in Bangladesh 2026 is ${bike.price}. Check engine specifications, mileage, top speed, features, dimensions, colors and latest information.`,
+
+    alternates: {
+      canonical: `${BASE_URL}/bikes/${bike.slug}`,
+    },
+
+    openGraph: {
+      title: `${bike.name} Price in Bangladesh 2026`,
+      description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
+      url: `${BASE_URL}/bikes/${bike.slug}`,
+      type: "website",
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
+
 function formatPrice(price?: string): string {
   if (!price || price.trim() === "") return "Price on request";
-  // price arrives pre-formatted, e.g. "4,29,950 BDT" — don't parseInt it,
-  // that only reads up to the first comma and returns garbage.
   const cleaned = price.replace(/BDT/gi, "").trim();
   return cleaned ? `৳ ${cleaned}` : "Price on request";
 }
@@ -32,13 +84,10 @@ function colorSwatch(name: string): string {
   return key ? map[key] : "#1e3a8a";
 }
 
-// Human-friendly label from a snake_case spec key, e.g. "maximum_power" -> "Maximum Power"
 function formatLabel(key: string): string {
   return key.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-// Headline specs live across several nested objects in the data, not just `engine`.
-// Pull the specific fields we want to show as highlight cards, in priority order.
 function getHighlightSpecs(bike: {
   engine?: Record<string, any> | null;
   transmission?: Record<string, any> | null;
@@ -71,22 +120,6 @@ export async function generateStaticParams() {
   return bikes.map((bike) => ({ slug: bike.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const bike = getBikeBySlug(slug);
-  if (!bike) return { title: "Bike Not Found" };
-  return {
-    title: `${bike.name} Price in Bangladesh | BD Bikes`,
-    description:
-      bike.description ??
-      `${bike.name} price, engine and details in Bangladesh.`,
-  };
-}
-
 export default async function BikeDetailPage({
   params,
 }: {
@@ -95,11 +128,27 @@ export default async function BikeDetailPage({
   const { slug } = await params;
   const bike = getBikeBySlug(slug);
 
-  // Guard: if no bike matches this slug, show 404 immediately.
-  // Everything below this line can safely assume `bike` exists.
   if (!bike) {
     notFound();
   }
+
+  const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: bike.name,
+  description: bike.description,
+  brand: {
+    "@type": "Brand",
+    name: bike.brand,
+  },
+  category: "Motorcycle",
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "BDT",
+    price: Number(bike.price.replace(/[^\d]/g, "")),
+    url: `${BASE_URL}/bikes/${bike.slug}`,
+  },
+};
 
   const highlightSpecs = getHighlightSpecs(bike);
   const hasColors = Array.isArray(bike.colors) && bike.colors.length > 0;
@@ -111,7 +160,6 @@ export default async function BikeDetailPage({
     bike.showroom && !bike.showroom.includes("Feature Your Showroom");
   const imageSrc = bike.images?.primary || "/placeholder-bike.png";
 
-  // Full spec table is spread across several nested category objects in the data.
   const rawSpecSections = [
     { title: "Engine", data: bike.engine },
     { title: "Transmission", data: bike.transmission },
@@ -128,7 +176,6 @@ export default async function BikeDetailPage({
     .filter((section) => section.data && Object.keys(section.data).length > 0)
     .map((section) => ({
       title: section.title,
-      // cast to SpecRecord to satisfy the expected index signature
       data: section.data as unknown as SpecRecord,
     }));
 
@@ -155,6 +202,12 @@ export default async function BikeDetailPage({
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(productSchema),
+      }}
+    />
         <div className="bg-white rounded-2xl border border-blue-100 shadow-[0_8px_30px_-12px_rgba(30,64,175,0.18)] overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Image Panel */}
@@ -192,7 +245,7 @@ export default async function BikeDetailPage({
                   {bike.brand}
                 </p>
                 <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                  {bike.name}
+                  {bike.name} Price in Bangladesh 2026
                 </h1>
               </div>
 

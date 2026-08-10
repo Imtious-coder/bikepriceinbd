@@ -13,7 +13,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-20",
-    price: "4,29,950 BDT",
+    updated_at: "2026-08-10",
+    price:  "4,29,950 BDT",
     engine: {
       type: "4-Stroke, 1-Cylinder, Oil-cooled",
       displacement: "249",
@@ -112,7 +113,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "5,24,950 BDT",
+    updated_at: "2026-08-10",
+    price:  "5,24,950 BDT",
     engine: {
       type: "DOHC, liquid-cooled, single-cylinder",
       displacement: "149",
@@ -211,7 +213,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-20",
-    price: "4,29,950 BDT",
+    updated_at: "2026-08-10",
+price:  "4,29,950 BDT",
     engine: {
       type: "4-Stroke, 1-Cylinder, Oil-cooled",
       displacement: "249",
@@ -307,7 +310,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-20",
-    price: "3,79,950 BDT",
+    updated_at: "2026-08-10",
+price:  "3,79,950 BDT",
     engine: {
       type: "4-Stroke, 1-Cylinder, Oil-cooled",
       displacement: "249",
@@ -403,7 +407,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,29,950 BDT",
+    updated_at: "2026-08-10",
+price:  "3,29,950 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "155",
@@ -499,7 +504,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,19,950 BDT",
+    updated_at: "2026-08-10",
+price:  "3,19,950 BDT",
     engine: {
       type: "4-stroke, single cylinder, and air cooled, SOHC engine",
       displacement: "155",
@@ -595,7 +601,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2021",
-    price: "3,19,950 BDT",
+    updated_at: "2026-08-10",
+price:  "3,19,950 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "155",
@@ -696,7 +703,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-12-01",
-    price: "2,79,950 BDT",
+    updated_at: "2026-08-10",
+price:  "2,79,950 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1Cylinder",
       displacement: "154.9",
@@ -792,7 +800,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,49,950 BDT",
+    updated_at: "2026-08-10",
+price:  "2,49,950 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "154.9",
@@ -888,7 +897,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,40,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,40,000 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "124",
@@ -985,7 +995,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,30,950 BDT",
+    updated_at: "2026-08-10",
+price:  "2,30,950 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "155",
@@ -1081,7 +1092,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: " 2,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  " 2,15,000 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "124",
@@ -1177,7 +1189,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,00,950 BDT",
+    updated_at: "2026-08-10",
+price:  "2,00,950 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "154.9",
@@ -1273,7 +1286,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,41,950 BDT",
+    updated_at: "2026-08-10",
+price:  "1,41,950 BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "125",
@@ -1369,7 +1383,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,18,000  BDT",
+    updated_at: "2026-08-10",
+price:  "1,18,000  BDT",
     engine: {
       type: "Air-Cooled, 4-stroke, 1 Cylinder",
       displacement: "113",
@@ -1465,7 +1480,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-20",
-    price: "6,78,000 BDT",
+    updated_at: "2026-08-10",
+price:  "6,78,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve",
       displacement: "155",
@@ -1562,7 +1578,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-05-25",
-    price: "6,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "6,60,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve",
       displacement: "155",
@@ -1659,7 +1676,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-05-21",
-    price: "6,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "6,25,000 BDT",
     engine: {
       type: "155.1cc, Single Cylinder, Liquid Cooled, VVA",
       displacement: "155.11",
@@ -1756,7 +1774,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-05-22",
-    price: "6,10,000 BDT",
+    updated_at: "2026-08-10",
+price:  "6,10,000 BDT",
     engine: {
       type: "Single Cylinder, Liquid Cooled, VVA",
       displacement: "155.11",
@@ -1853,7 +1872,8 @@ export const bikes: OBike[] = [
     made_in: "Indonesia",
     assembly: "Indonesia",
     launched: "2017-04-11",
-    price: "5,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,50,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve, Fi, Single Cylinder",
       displacement: "155.11",
@@ -1949,7 +1969,8 @@ export const bikes: OBike[] = [
     made_in: "Thailand",
     assembly: "Thailand",
     launched: "",
-    price: "5,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,45,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve, VVA",
       displacement: "155.1",
@@ -2045,7 +2066,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-12-02",
-    price: "5,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,35,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve",
       displacement: "155",
@@ -2146,7 +2168,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-05-14",
-    price: "5,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,25,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, SOHC, 4-valve",
       displacement: "155.11",
@@ -2242,7 +2265,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "India",
     launched: "2023-11-28",
-    price: "5,24,929 BDT",
+    updated_at: "2026-08-10",
+price:  "5,24,929 BDT",
     engine: {
       type: "VVA, Liquid-cooled, 4-stroke, SOHC, 4-valve",
       displacement: "155",
@@ -2339,7 +2363,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2019-11-01",
-    price: "4,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,60,000 BDT",
     engine: {
       type: "155cc, Fuel-injected, Single Cylinder, Liquid Cooled",
       displacement: "155",
@@ -2435,7 +2460,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-04-11",
-    price: "3,99,290 BDT",
+    updated_at: "2026-08-10",
+price:  "3,99,290 BDT",
     engine: {
       type: "4 Stroke Single Cylinder",
       displacement: "249",
@@ -2509,7 +2535,7 @@ export const bikes: OBike[] = [
     },
     availability: "",
     description:
-      "Yamaha FZ25  price in Bangladesh is 3,99,290 BDT This Bike is powered by 250 Cc, which generates a maximum power of 20.52 Bhp @ 8000 rpm, and its maximum torque is 20.01 Nm @ 6000 rpm. Yamaha FZ25 mileage we got 40 Kmpl. It has a Dual Channel ABS Braking system with Tubeless tyres. Seat Height is 795 mm, and Weight is 153 KG. Top Speed: we got 130 KMPH. Buyers can enjoy various discounts and benefits. Welcome Offer: 5,000 Taka, Cashback Offer  Price 430,000 Taka, Comeback Offer: 14,000 Taka, Cashback Offer Price: 421,000 Taka, Get up to 14,000 Taka cashback when you exchange any 165cc+ bike for a Yamaha FZ25.",
+      "Yamaha FZ25  price in Bangladesh is 3,99,290 BDT This Bike is powered by 250 Cc, which generates a maximum power of 20.52 Bhp @ 8000 rpm, and its maximum torque is 20.01 Nm @ 6000 rpm. Yamaha FZ25 mileage we got 40 Kmpl. It has a Dual Channel ABS Braking system with Tubeless tyres. Seat Height is 795 mm, and Weight is 153 KG. Top Speed: we got 130 KMPH. Buyers can enjoy various discounts and benefits. Welcome Offer: 5,000 Taka, Cashback Offer  Price 430,000 Taka, Comeback Offer: 14,000 Taka, Cashback Offer price  421,000 Taka, Get up to 14,000 Taka cashback when you exchange any 165cc+ bike for a Yamaha FZ25.",
     colors: ["Black", "Blue", "White"],
     images: {
       primary:
@@ -2531,7 +2557,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2026-01-16",
-    price: "3,45,790 BDT",
+    updated_at: "2026-08-10",
+price:  "3,45,790 BDT",
     engine: {
       type: "Air cooled, 4-stroke, SOHC, 2-valve",
       displacement: "149",
@@ -2628,7 +2655,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2021-05-21",
-    price: "2,93,790 BDT",
+    updated_at: "2026-08-10",
+price:  "2,93,790 BDT",
     engine: {
       type: "Air cooled, 4-stroke, SOHC, 2-valve",
       displacement: "149",
@@ -2726,7 +2754,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-09-28",
-    price: "2,92,400 BDT",
+    updated_at: "2026-08-10",
+price:  "2,92,400 BDT",
     engine: {
       type: "4-stroke, SOHC, 2-valve, BS6 Phase 2",
       displacement: "149",
@@ -2831,7 +2860,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-30",
-    price: "2,71,290 BDT",
+    updated_at: "2026-08-10",
+price:  "2,71,290 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine, SOHC",
       displacement: "149",
@@ -2927,7 +2957,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2021-06-21",
-    price: "2,70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,70,000 BDT",
     engine: {
       type: "Air cooled, 4-stroke, SOHC, 2-valve",
       displacement: "125",
@@ -3023,7 +3054,8 @@ export const bikes: OBike[] = [
   //   made_in: "India",
   //   assembly: "Bangladesh",
   //   launched: "2029-01-21",
-  //   price: "2,68,000 BDT",
+  //   updated_at: "2026-08-10",
+  // price:  "2,68,000 BDT",
   //   engine: {
   //     type: "Air cooled, 4 stroke, SI engine, SOHC",
   //     displacement: "149",
@@ -3119,7 +3151,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,64,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,64,000 BDT",
     engine: {
       type: "Air cooled, 4-stroke, SOHC, 2-valve",
       displacement: "149",
@@ -3216,7 +3249,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2019-01-21",
-    price: "2,58,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,58,000 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine, SOHC",
       displacement: "149",
@@ -3312,7 +3346,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-05-14",
-    price: "2,52,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,52,000 BDT",
     engine: {
       type: "Air-cooled, 4-stroke SOHC, 2-valve",
       displacement: "149",
@@ -3408,7 +3443,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-05-14",
-    price: "2,31,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,31,900 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine, SOHC",
       displacement: "149",
@@ -3504,7 +3540,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-08-24",
-    price: "2,25,500 BDT",
+    updated_at: "2026-08-10",
+price:  "2,25,500 BDT",
     engine: {
       type: "Air-cooled, 4-stroke, SOHC, 2-valve",
       displacement: "113",
@@ -3600,7 +3637,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-12-07",
-    price: "1,63,429 BDT",
+    updated_at: "2026-08-10",
+price:  "1,63,429 BDT",
     engine: {
       type: "Air Cooled, Single Cylinder, 4-Stroke, 2-Valve, SOHC",
       displacement: "125",
@@ -3702,7 +3740,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-12-07",
-    price: "5,08,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,08,000 BDT",
     engine: {
       type: "Single-Cylinder, 4 Stroke, Air-Oil Cooled Engine",
       displacement: "349",
@@ -3799,7 +3838,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-10-21",
-    price: "4,83,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,83,000 BDT",
     engine: {
       type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
       displacement: "349",
@@ -3896,7 +3936,8 @@ export const bikes: OBike[] = [
   //   made_in: "India",
   //   assembly: "Bangladesh",
   //   launched: "2024-10-21",
-  //   price: "4,83,000 BDT",
+  //   updated_at: "2026-08-10",
+// price:  "4,83,000 BDT",
   //   engine: {
   //     type: "Single-Cylinder, 4 Stroke, Air-Oil Cooled Engine",
   //     displacement: "349",
@@ -3993,7 +4034,8 @@ export const bikes: OBike[] = [
   //   made_in: "India",
   //   assembly: "Bangladesh",
   //   launched: "2024-10-21",
-  //   price: "4,47,700 BDT",
+  //   updated_at: "2026-08-10",
+// price:  "4,47,700 BDT",
   //   engine: {
   //     type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
   //     displacement: "349",
@@ -4090,7 +4132,8 @@ export const bikes: OBike[] = [
   //   made_in: "India",
   //   assembly: "Bangladesh",
   //   launched: "2024-10-21",
-  //   price: "4,32,500 BDT",
+  //   updated_at: "2026-08-10",
+// price:  "4,32,500 BDT",
   //   engine: {
   //     type: "4 Stroke, Air-Oil Cooled Engine, Spark Ignition, Single Cylinder",
   //     displacement: "349",
@@ -4187,7 +4230,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-10-21",
-    price: "4,17,500 BDT",
+    updated_at: "2026-08-10",
+price:  "4,17,500 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, Air-Oil cooled",
       displacement: "349.34",
@@ -4284,7 +4328,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-10-21",
-    price: "3,71,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,71,500 BDT",
     engine: {
       type: "Single Cylinder, Air-Oil Cooled, 4-Stroke, SOHC Engine",
       displacement: "349.34",
@@ -4380,7 +4425,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2024-12-19",
-    price: "4,58,500 BDT",
+    updated_at: "2026-08-10",
+price:  "4,58,500 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, DOHC, 4 valves",
       displacement: "298",
@@ -4476,7 +4522,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2024-12-19",
-    price: "3,88,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,88,500 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, DOHC, 4 valves",
       displacement: "279",
@@ -4577,7 +4624,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2025-07-27",
-    price: "4,28,500 BDT",
+    updated_at: "2026-08-10",
+price:  "4,28,500 BDT",
     engine: {
       type: "Single-cylinder, liquid, cooled, DOHC 4 valves",
       displacement: "292.4",
@@ -4673,7 +4721,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2024-12-19",
-    price: "3,48,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,48,500 BDT",
     engine: {
       type: "Single-cylinder, liquid, cooled, DOHC 4 valves",
       displacement: "249",
@@ -4769,7 +4818,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2024-12-19",
-    price: "4,48,500 BDT",
+    updated_at: "2026-08-10",
+price:  "4,48,500 BDT",
     engine: {
       type: "Single Cylinder Water-cooled Engine",
       displacement: "249",
@@ -4865,7 +4915,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "Bangladesh",
     launched: "2026-04-24",
-    price: "3,38,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,38,500 BDT",
     engine: {
       type: "Single-cylinder inline, 4-stroke, liquid-cooled, SOHC",
       displacement: "249",
@@ -4961,7 +5012,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2025-09-08",
-    price: "2,87,500 BDT",
+    updated_at: "2026-08-10",
+price:  "2,87,500 BDT",
     engine: {
       type: "229cc, Air cooled, 4 stroke, Single cylinder, SOHC",
       displacement: "229",
@@ -5057,7 +5109,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2024-12-19",
-    price: "3,58,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,58,500 BDT",
     engine: {
       type: "Single cylinder,2-Valve, SOHC, Liquid-Cooled",
       displacement: "149",
@@ -5153,7 +5206,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,78,500 BDT",
+    updated_at: "2026-08-10",
+price:  "3,78,500 BDT",
     engine: {
       type: "Single-cylinder inline, liquid-cooled, 4-valve",
       displacement: "149.5",
@@ -5250,7 +5304,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,47,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,47,900 BDT",
     engine: {
       type: "Oil Cooled, 4 Stroke, SI Engine",
       displacement: "159.7",
@@ -5343,7 +5398,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-09-04",
-    price: "2,19,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,19,900 BDT",
     engine: {
       type: "Oil cooled, 4 stroke, SI engine",
       displacement: "159.7",
@@ -5436,7 +5492,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,47,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,47,900 BDT",
     engine: {
       type: "Oil Cooled, 4 Stroke, SI Engine",
       displacement: "159.7",
@@ -5529,7 +5586,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,99,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,99,900 BDT",
     engine: {
       type: "SI, 4- stroke, Oil-Cooled",
       displacement: "159.73",
@@ -5622,7 +5680,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-07-21",
-    price: "1,94,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,94,999 BDT",
     engine: {
       type: "Air-Cooled, 159.7cc, 4-stroke, Single cylinder",
       displacement: "159.7",
@@ -5715,7 +5774,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-01-17",
-    price: "1,89,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,89,999 BDT",
     engine: {
       type: "SI, 4 Stroke, Air Cooled",
       displacement: "159.7",
@@ -5808,7 +5868,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-03-06",
-    price: "1,69,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,69,900 BDT",
     engine: {
       type: "Air & oil-cooled 3V engine",
       displacement: "124.76",
@@ -5901,7 +5962,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2016-02-10",
-    price: "1,44,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,44,999 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "124.53",
@@ -5994,7 +6056,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-12-10",
-    price: "1,44,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,44,900 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "124.53",
@@ -6087,7 +6150,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,27,990 BDT",
+    updated_at: "2026-08-10",
+price:  "1,27,990 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "124.53",
@@ -6180,7 +6244,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-01-09",
-    price: "1,24,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,24,999 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "109.7",
@@ -6273,7 +6338,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-08-12",
-    price: "1,20,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,20,999 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "109.7",
@@ -6366,7 +6432,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-01-09",
-    price: "1,14,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,14,900 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "99.7",
@@ -6459,7 +6526,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,03,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,03,900 BDT",
     engine: {
       type: "Single Cylinder, 4-Stroke",
       displacement: "99.7",
@@ -6552,7 +6620,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "95,999 BDT",
+    updated_at: "2026-08-10",
+price:  "95,999 BDT",
     engine: {
       type: "Air cooled, 4 stroke",
       displacement: "99.7",
@@ -6645,7 +6714,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2021-08-24",
-    price: "2,04,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,04,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "124.8",
@@ -6738,7 +6808,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,64,999 BDT",
+    updated_at: "2026-08-10",
+price:  "1,64,999 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "109.7",
@@ -6831,7 +6902,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-01-17",
-    price: "1,53,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,53,900 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "125",
@@ -6925,7 +6997,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-02-12",
-    price: "4,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,25,000 BDT",
     engine: {
       type: "4-Stroke, 4 Valve, Single Cylinder Liquid Cooled, DOHC",
       displacement: "210",
@@ -7018,7 +7091,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-05-18",
-    price: "2,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,50,000 BDT",
     engine: {
       type: "4 Stroke, Air-Oil Cooled, 4 Valve",
       displacement: "163.2",
@@ -7111,7 +7185,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-02-07",
-    price: "2,40,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,40,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "163",
@@ -7204,7 +7279,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-15",
-    price: "2,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,15,000 BDT",
     engine: {
       type: "Single cylinder, 4-stroke, Air-cooled",
       displacement: "149.2",
@@ -7297,7 +7373,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,10,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,10,000 BDT",
     engine: {
       type: "Air Cooled, 4 Stroke, SI Engine",
       displacement: "124.6",
@@ -7390,7 +7467,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-05-16",
-    price: "2,10,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,10,000 BDT",
     engine: {
       type: "Air cooled, 4 Stroke 2 Valve Single cylinder OHC",
       displacement: "163",
@@ -7483,7 +7561,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2021-08-29",
-    price: "2,07,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,07,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.2",
@@ -7576,7 +7655,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,00,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,00,000 BDT",
     engine: {
       type: "Air Cooled, 4 Stroke 2 Valve Single Cylinder OHC",
       displacement: "163",
@@ -7669,7 +7749,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,96,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,96,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.2",
@@ -7762,7 +7843,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,90,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,90,000 BDT",
     engine: {
       type: "Air cooled, 4 Stroke 2 Valve Single cylinder",
       displacement: "149",
@@ -7855,7 +7937,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-10",
-    price: "1,90,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,90,000 BDT",
     engine: {
       type: "Air-cooled, 4 Stroke, SI Engine",
       displacement: "110.9",
@@ -7948,7 +8031,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,77,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,77,500 BDT",
     engine: {
       type: "Air Cooled, 4 - stroke single cylinder OHC",
       displacement: "149",
@@ -8041,7 +8125,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,77,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,77,000 BDT",
     engine: {
       type: "Air - Cooled, 4 - Stroke Single Cylinder OHC",
       displacement: "110.9",
@@ -8134,7 +8219,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-10-24",
-    price: "1,75,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,75,000 BDT",
     engine: {
       type: "Air cooled, 4 stroke, Single cylinder",
       displacement: "125",
@@ -8227,7 +8313,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2026-02-06",
-    price: "1,68,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,68,000 BDT",
     engine: {
       type: "Air cooled, Single cylinder, 4-stroke, 2-valve, i3s",
       displacement: "124.7",
@@ -8320,7 +8407,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,65,000 BDT",
     engine: {
       type: "Air-cooled, 4-stroke Single Cylinder OHC",
       displacement: "102",
@@ -8413,7 +8501,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-11-28",
-    price: "1,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,60,000 BDT",
     engine: {
       type: "Air cooled 4 stroke",
       displacement: "124.7",
@@ -8506,7 +8595,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-08-14",
-    price: "1,59,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,59,000 BDT",
     engine: {
       type: "4 – Stroke, Single Cylinder, i3S",
       displacement: "110",
@@ -8599,7 +8689,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,58,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,58,500 BDT",
     engine: {
       type: "Air Cooled, 4 Stroke 2 Valve Single Cylinder",
       displacement: "149",
@@ -8692,7 +8783,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-11-23",
-    price: "1,52,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,52,000 BDT",
     engine: {
       type: "Air-cooled , 4 – stroke single cylinder OHC with i3s",
       displacement: "124.7",
@@ -8785,7 +8877,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,50,000 BDT",
     engine: {
       type: "Air cooled, 4 - stroke",
       displacement: "124.7",
@@ -8878,7 +8971,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,45,000 BDT",
     engine: {
       type: "Air Cooled, 4- Stroke Single Cylinder OHC",
       displacement: "109.15",
@@ -8971,7 +9065,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2022-08-12",
-    price: "1,33,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,33,000 BDT",
     engine: {
       type: "Air cooled, 4 - Stroke Single Cylinder OHC",
       displacement: "97.2",
@@ -9064,7 +9159,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,29,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,29,000 BDT",
     engine: {
       type: "Air cooled, 4 - Stroke Single Cylinder OHC",
       displacement: "97.2",
@@ -9157,7 +9253,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,26,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,26,000 BDT",
     engine: {
       type: "Air Cooled, 4 - Stroke Single Cylinder OHC",
       displacement: "97.2",
@@ -9250,7 +9347,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,25,000 BDT",
     engine: {
       type: "Air Cooled, 4- Stroke Single Cylinder OHC",
       displacement: "109.15",
@@ -9343,7 +9441,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-03-04",
-    price: "1,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,25,000 BDT",
     engine: {
       type: "Air cooled, 4 - Stroke Single Cylinder OHC",
       displacement: "97.2",
@@ -9436,7 +9535,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,17,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,17,000 BDT",
     engine: {
       type: "Air cooled, 4 - stroke single cylinder OHC",
       displacement: "97.2",
@@ -9529,7 +9629,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,16,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,16,000 BDT",
     engine: {
       type: "Air cooled, 4 - stroke single cylinder OHC",
       displacement: "97.2",
@@ -9623,7 +9724,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "",
     launched: "",
-    price: "7,55,000 BDT",
+    updated_at: "2026-08-10",
+price:  "7,55,000 BDT",
     engine: {
       type: "Single Cylinder, DOHC, Liquid-Cooled, 4-Valve",
       displacement: "149",
@@ -9716,7 +9818,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Indonesia",
     launched: "2021-06-08",
-    price: "6,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "6,50,000 BDT",
     engine: {
       type: "4 Stroke, Single cylinder, Liquid-cooled",
       displacement: "149.16",
@@ -9809,7 +9912,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Indonesia",
     launched: "",
-    price: "5,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,20,000 BDT",
     engine: {
       type: "4 Step, DOHC 4 Valve",
       displacement: "149.16",
@@ -9902,7 +10006,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Thailand",
     launched: "",
-    price: "5,10,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,10,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "153.01",
@@ -9995,7 +10100,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Indonesia",
     launched: "",
-    price: "4,95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,95,000 BDT",
     engine: {
       type: "4 Stroke, 2 Vales, SOHC",
       displacement: "150",
@@ -10088,7 +10194,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Thailand",
     launched: "",
-    price: "4,75,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,75,000 BDT",
     engine: {
       type: "Liquid-cooled, 4-stroke, PGM-FI",
       displacement: "149",
@@ -10181,7 +10288,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "",
     launched: "",
-    price: "4,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,50,000 BDT",
     engine: {
       type: "Single-cylinder, four-stroke, air-cooled",
       displacement: "124.9",
@@ -10274,7 +10382,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Indonesia",
     launched: "",
-    price: "4,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,45,000 BDT",
     engine: {
       type: "Single Cylinder, Liquid Cooled, SOHC 4 Stroke 4 Valve, eSP+",
       displacement: "156.9",
@@ -10367,7 +10476,8 @@ export const bikes: OBike[] = [
     made_in: "Japan",
     assembly: "Indonesia",
     launched: "",
-    price: "3,80,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,80,000 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, DOHC, 4 valves",
       displacement: "149.16",
@@ -10460,7 +10570,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-12-20",
-    price: "3,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,15,000 BDT",
     engine: {
       type: "4 Stroke, PGM-FI, SI Engine",
       displacement: "184.4",
@@ -10553,7 +10664,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2024-09-27",
-    price: "2,89,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,89,000 BDT",
     engine: {
       type: "4 Stroke, PGM-FI, SI Engine",
       displacement: "184.4",
@@ -10646,7 +10758,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2025-02-12",
-    price: "2,40,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,40,000 BDT",
     engine: {
       type: "4 Stroke, SI, BS-VI Engine",
       displacement: "163",
@@ -10739,7 +10852,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2024-12-13",
-    price: "2,32,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,32,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "162",
@@ -10832,7 +10946,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,25,000 BDT",
     engine: {
       type: "Fan Cooled, 4 Stroke, BS-VI Engine",
       displacement: "124",
@@ -10925,7 +11040,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-07-13",
-    price: "2,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,25,000 BDT",
     engine: {
       type: "4 Stroke, BS-VI",
       displacement: "163.71",
@@ -11018,7 +11134,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2018-08-05",
-    price: "1,99,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,99,000 BDT",
     engine: {
       type: "Fan Cooled, 4 Stroke, SI, BS-IV Engine",
       displacement: "109.19",
@@ -11111,7 +11228,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2024-07-13",
-    price: "1,99,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,99,000 BDT",
     engine: {
       type: "4 Stroke, BS-VI,",
       displacement: "162.71",
@@ -11204,7 +11322,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2019-12-14",
-    price: "1,95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,95,000 BDT",
     engine: {
       type: "Air cooled, 4-Stroke, SI",
       displacement: "163",
@@ -11297,7 +11416,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2019-12-14",
-    price: "1,92,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,92,500 BDT",
     engine: {
       type: "Air cooled, 4-Stroke, SI",
       displacement: "162.71",
@@ -11390,7 +11510,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2026-02-09",
-    price: "1,67,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,67,000 BDT",
     engine: {
       type: "4 Stroke, SI Engine",
       displacement: "123.94",
@@ -11483,7 +11604,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2023-11-18",
-    price: "1,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,65,000 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "123.94",
@@ -11576,7 +11698,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2019-07-08",
-    price: "1,51,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,51,000 BDT",
     engine: {
       type: "Air cooled, 4 stroke, SI engine",
       displacement: "125",
@@ -11669,7 +11792,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2019-01-18",
-    price: "1,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,45,000 BDT",
     engine: {
       type: "Air cooled, 4 stroke, BS-IV engine",
       displacement: "109.19",
@@ -11762,7 +11886,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2020-12-23",
-    price: "1,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,25,000 BDT",
     engine: {
       type: "Air cooled, 4-Stroke, BS-IV",
       displacement: "110",
@@ -11855,7 +11980,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "",
     launched: "",
-    price: "1,17,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,17,000 BDT",
     engine: {
       type: "4 Stroke, SI, BS-VI Engine",
       displacement: "98.98",
@@ -11948,7 +12074,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2023-03-31",
-    price: "1,11,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,11,000 BDT",
     engine: {
       type: "4 Stroke, SI Engine",
       displacement: "98.98",
@@ -12042,7 +12169,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-05-02",
-    price: "3,65,100 BDT",
+    updated_at: "2026-08-10",
+price:  "3,65,100 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "249.07",
@@ -12135,7 +12263,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2026-01-10",
-    price: "3,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,60,000 BDT",
     engine: {
       type: "4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "249.07",
@@ -12228,7 +12357,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-05-02",
-    price: "3,50,100 BDT",
+    updated_at: "2026-08-10",
+price:  "3,50,100 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "249.07",
@@ -12321,7 +12451,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-11-23",
-    price: "3,30,100 BDT",
+    updated_at: "2026-08-10",
+price:  "3,30,100 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "249.07",
@@ -12414,7 +12545,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2026-01-11",
-    price: "2,81,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,81,000 BDT",
     engine: {
       type: "4 Stroke, Single Cylinder, SOHC, 2 Valve, Air Cooled, FI",
       displacement: "164.82",
@@ -12507,7 +12639,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2019-02-05",
-    price: "2,74,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,74,000 BDT",
     engine: {
       type: "4-stroke",
       displacement: "160",
@@ -12600,7 +12733,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-01-21",
-    price: "2,67,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,67,000 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "164.82",
@@ -12693,7 +12827,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2025-01-20",
-    price: "2,37,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,37,000 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, SOHC, 2 valve, Oil cooled, FI",
       displacement: "164.82",
@@ -12786,7 +12921,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2024-05-05",
-    price: "2,29,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,29,000 BDT",
     engine: {
       type: "Single Cylinder, 4 Stroke, SOHC, 2 Valve",
       displacement: "164.82",
@@ -12879,7 +13015,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2019-07-28",
-    price: "2,27,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,27,000 BDT",
     engine: {
       type: "1 cylinder, 4 stroke, 2 valves",
       displacement: "149.5",
@@ -12972,7 +13109,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2018-03-05",
-    price: "2,17,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,17,000 BDT",
     engine: {
       type: "4-Stroke, 2-Valve, Twin Spark BSVI Compliant DTS-i FI Engine",
       displacement: "149.5",
@@ -13065,7 +13203,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,10,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,10,000 BDT",
     engine: {
       type: "4-Stroke, 2-Valve, Twin Spark BSIV Compliant DTS-i",
       displacement: "149",
@@ -13158,7 +13297,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2017-12-03",
-    price: "2,05,200 BDT",
+    updated_at: "2026-08-10",
+price:  "2,05,200 BDT",
     engine: {
       type: "4-Stroke, 2-Valve, Twin Spark BSIV Compliant DTS-i",
       displacement: "149",
@@ -13251,7 +13391,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "2023-12-22",
-    price: "1,69,850 BDT",
+    updated_at: "2026-08-10",
+price:  "1,69,850 BDT",
     engine: {
       type: "4 stroke, air cooled, 4-valve, single cylinder, SOHC",
       displacement: "124.45",
@@ -13344,7 +13485,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,62,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,62,000 BDT",
     engine: {
       type: "4 stroke, DTs-i",
       displacement: "125",
@@ -13437,7 +13579,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,49,600 BDT",
+    updated_at: "2026-08-10",
+price:  "1,49,600 BDT",
     engine: {
       type: "4 Stroke",
       displacement: "115.5",
@@ -13530,7 +13673,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,40,100 BDT",
+    updated_at: "2026-08-10",
+price:  "1,40,100 BDT",
     engine: {
       type: "Single cylinder, four-stroke, Air-cooled",
       displacement: "115",
@@ -13623,7 +13767,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,34,350 BDT",
+    updated_at: "2026-08-10",
+price:  "1,34,350 BDT",
     engine: {
       type: "102 CC,Single Cylinder 4 stroke Air cooled engine",
       displacement: "102",
@@ -13716,7 +13861,8 @@ export const bikes: OBike[] = [
     made_in: "India",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,20,100 BDT",
+    updated_at: "2026-08-10",
+price:  "1,20,100 BDT",
     engine: {
       type: "4 Stroke",
       displacement: "99.27",
@@ -13810,7 +13956,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,89,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,89,000 BDT",
     engine: {
       type: "Vertical Single Cylinder, Four Stroke Air Cooled",
       displacement: "164.74",
@@ -13903,7 +14050,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2025-09-04",
-    price: "1,69,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,69,000 BDT",
     engine: {
       type: "4 Stroke Petrol Engine",
       displacement: "124.6",
@@ -13996,7 +14144,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2020-12-06",
-    price: "1,67,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,67,000 BDT",
     engine: {
       type: "Vertical type, 4-stroke, CBF engine, chain transmission",
       displacement: "150",
@@ -14089,7 +14238,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2017-12-06",
-    price: "1,59,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,59,000 BDT",
     engine: {
       type: "Single-cylinder, Air-cooled, Vertical type, 4-stroke, CBF En",
       displacement: "150",
@@ -14182,7 +14332,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,55,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,55,000 BDT",
     engine: {
       type: "Air-cooled, 4 stroke Petrol Engine",
       displacement: "124.84",
@@ -14275,7 +14426,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,55,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,55,000 BDT",
     engine: {
       type: "Single cylinder, SOHC, 4 Stroke, Dual valve, Air-cooled",
       displacement: "124.84",
@@ -14368,7 +14520,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,55,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,55,000 BDT",
     engine: {
       type: "Single cylinder, SOHC, 4 Stroke, Dual valve, Air-cooled",
       displacement: "124.84",
@@ -14461,7 +14614,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,20,000 BDT",
     engine: {
       type: "Single Cylinder, 4 Stroke Dual Valve, SOHC",
       displacement: "110",
@@ -14554,7 +14708,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "2025-10-10",
-    price: "1,09,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,09,000 BDT",
     engine: {
       type: "Single Cylinder 4 Stroke Air Cooled",
       displacement: "97.35",
@@ -14647,7 +14802,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,08,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,08,000 BDT",
     engine: {
       type: "Single Cylinder, Four Stroke, Air Cooled, Petrol Engine",
       displacement: "109.1",
@@ -14740,7 +14896,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,06,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,06,000 BDT",
     engine: {
       type: "Single Cylinder, 4 Stroke, Air Cooled, Petrol Engine",
       displacement: "100.53",
@@ -14833,7 +14990,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "95,000 BDT",
     engine: {
       type: "",
       displacement: "95.74",
@@ -14926,7 +15084,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "95,000 BDT",
     engine: {
       type: "Single Cylinder, Four Stroke, Air Cooled, Petrol Engine",
       displacement: "95.7",
@@ -15019,7 +15178,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "93,000 BDT",
+    updated_at: "2026-08-10",
+price:  "93,000 BDT",
     engine: {
       type: "4-stroke, Single Cylinder, Air-cooled",
       displacement: "85",
@@ -15112,7 +15272,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "92,000 BDT",
+    updated_at: "2026-08-10",
+price:  "92,000 BDT",
     engine: {
       type: "Four stroke, single cylinder. dual valves, SOHC",
       displacement: "109.1",
@@ -15205,7 +15366,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "84,000 BDT",
+    updated_at: "2026-08-10",
+price:  "84,000 BDT",
     engine: {
       type: "Four stroke Petrol engine",
       displacement: "79",
@@ -15298,7 +15460,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "64,000 BDT",
+    updated_at: "2026-08-10",
+price:  "64,000 BDT",
     engine: {
       type: "Single cylinder, 4-stroke, wind-cooled",
       displacement: "86",
@@ -15391,7 +15554,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "4,43,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,43,000 BDT",
     engine: {
       type: "Liquid Cooled, 4-Stroke, DOHC, Single Cylinder Engine",
       displacement: "124.7",
@@ -15484,7 +15648,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,70,000 BDT",
     engine: {
       type: "Single-cylinder, 4-stroke, 4V, DOHC",
       displacement: "125",
@@ -15577,7 +15742,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,00,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,00,000 BDT",
     engine: {
       type: "Single-cylinder, 4-stroke, 4V, DOHC",
       displacement: "124.7",
@@ -15671,7 +15837,8 @@ export const bikes: OBike[] = [
     made_in: "South Kore",
     assembly: "Bangladesh",
     launched: "",
-    price: "5,85,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,85,000 BDT",
     engine: {
       type: "SOHC 8 valves 60° V-2 cylinder Liquid-cooled",
       displacement: "339",
@@ -15764,7 +15931,8 @@ export const bikes: OBike[] = [
     made_in: "South Korea",
     assembly: "Bangladesh",
     launched: "2025-03-29",
-    price: "5,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "5,35,000 BDT",
     engine: {
       type: "V-Twin bicylinder 60 (4stroke) single camshaft (SOHC) Single overhead camshaft, 4valves per cylinder",
       displacement: "300",
@@ -15857,7 +16025,8 @@ export const bikes: OBike[] = [
     made_in: "South Korea",
     assembly: "Bangladesh",
     launched: "2025-03-24",
-    price: "4,85,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,85,000 BDT",
     engine: {
       type: "Liquid cooled, SOHC, 8 Valves, V-twin",
       displacement: "295.9",
@@ -15950,7 +16119,8 @@ export const bikes: OBike[] = [
     made_in: "South Korea",
     assembly: "Bangladesh",
     launched: "2025-03-24",
-    price: "4,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "4,45,000 BDT",
     engine: {
       type: "DOCH 8 Valves V-TWIN",
       displacement: "249",
@@ -16043,7 +16213,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,80,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,80,000 BDT",
     engine: {
       type: "Single cylinder, four-stroke",
       displacement: "149.3",
@@ -16136,7 +16307,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,20,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "",
@@ -16229,7 +16401,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2020-09-10",
-    price: "2,95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,95,000 BDT",
     engine: {
       type: "4-stroke",
       displacement: "165",
@@ -16322,7 +16495,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,95,000 BDT",
     engine: {
       type: "Single cylinder, four-stroke",
       displacement: "149.3",
@@ -16415,7 +16589,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,85,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,85,000 BDT",
     engine: {
       type: "Vertical Single-Cylinder, Water-Cooled, Four-Stroke",
       displacement: "150",
@@ -16508,7 +16683,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,75,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,75,000 BDT",
     engine: {
       type: "Vertical Single Cylinder, four valve, liquid cooled, four stroke",
       displacement: "165",
@@ -16601,7 +16777,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,28,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,28,000 BDT",
     engine: {
       type: "Single Cylinder, 4 Stroke, Liquid Cooled, SOHC",
       displacement: "165",
@@ -16694,7 +16871,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,14,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,14,000 BDT",
     engine: {
       type: "4 Stroke, Single cylinder, Liquid-cooled, SOHC",
       displacement: "165",
@@ -16787,7 +16965,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,99,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,99,000 BDT",
     engine: {
       type: "4 Stroke",
       displacement: "150",
@@ -16880,7 +17059,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,90,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,90,000 BDT",
     engine: {
       type: "Four stroke, single cylinder, air cooled",
       displacement: "165",
@@ -16973,7 +17153,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,84,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,84,000 BDT",
     engine: {
       type: "Single-Cylinder, Forced Air-Cooled, Four-Stroke",
       displacement: "",
@@ -17066,7 +17247,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,35,000 BDT",
     engine: {
       type: "Four stroke, single cylinder, air cooled",
       displacement: "125",
@@ -17159,7 +17341,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,25,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,25,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "125",
@@ -17252,7 +17435,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,15,000 BDT",
     engine: {
       type: "4-stroke, air-cooled, single cylinder",
       displacement: "100",
@@ -17345,7 +17529,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "86,000 BDT",
+    updated_at: "2026-08-10",
+price:  "86,000 BDT",
     engine: {
       type: "Vertical single-cylinder",
       displacement: "98.74",
@@ -17438,7 +17623,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "85,000 BDT",
+    updated_at: "2026-08-10",
+price:  "85,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "97.78",
@@ -17531,7 +17717,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "70,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "82.74",
@@ -17624,7 +17811,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2025-08-31",
-    price: "4,14,900 BDT",
+    updated_at: "2026-08-10",
+price:  "4,14,900 BDT",
     engine: {
       type: "Hyper Quadra, SOHC, 4 valve Liquid-cooled",
       displacement: "249.6",
@@ -17717,7 +17905,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,74,999 BDT",
+    updated_at: "2026-08-10",
+price:  "3,74,999 BDT",
     engine: {
       type: "4 strokes, SOHC, Hyper 4 valves",
       displacement: "165",
@@ -17810,7 +17999,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,70,000 BDT",
     engine: {
       type: "4 strokes, SOHC, Hyper 4 valves",
       displacement: "164.6",
@@ -17903,7 +18093,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2021-02-23",
-    price: "3,24,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,24,000 BDT",
     engine: {
       type: "Liquid-Cooled, 4-Stroke, 2-Valves, SOHC, Single Cylinder",
       displacement: "164.6",
@@ -17997,7 +18188,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2025-05-01",
-    price: "2,59,999 BDT",
+    updated_at: "2026-08-10",
+price:  "2,59,999 BDT",
     engine: {
       type: "4 Stroke, SOHC 4 Valve, liquid Cooled",
       displacement: "174.6",
@@ -18090,7 +18282,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "2025-05-01",
-    price: "2,39,999 BDT",
+    updated_at: "2026-08-10",
+price:  "2,39,999 BDT",
     engine: {
       type: "4 stroke, SOHC, 4 valves Liquid-cooled",
       displacement: "154.4",
@@ -18183,7 +18376,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "",
+    updated_at: "2026-08-10",
+price:  "",
     engine: {
       type: "4-Cylinder，16V，Liquid-Cooled",
       displacement: "401",
@@ -18276,7 +18470,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,15,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "164.7",
@@ -18369,7 +18564,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,67,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,67,500 BDT",
     engine: {
       type: "",
       displacement: "149.4",
@@ -18462,7 +18658,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,09,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,09,500 BDT",
     engine: {
       type: "",
       displacement: "124",
@@ -18555,7 +18752,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "99,900 BDT",
+    updated_at: "2026-08-10",
+price:  "99,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "99.7",
@@ -18648,7 +18846,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,75,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,75,000 BDT",
     engine: {
       type: "Liquid-cooled, 1-cylinder, 4-stroke, DOHC, EFI",
       displacement: "164.9",
@@ -18741,7 +18940,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,60,000 BDT",
     engine: {
       type: "Four-valve water-cooled engine",
       displacement: "149",
@@ -18834,7 +19034,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,56,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,56,000 BDT",
     engine: {
       type: "Liquid-cooled, 1-cylinder, 4-stroke, SOHC, EFI",
       displacement: "155.2",
@@ -18927,7 +19128,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,50,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "165",
@@ -19020,7 +19222,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,35,000 BDT",
     engine: {
       type: "Water-cooled single-cylinder four-stroke 4 valve",
       displacement: "149",
@@ -19113,7 +19316,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "3,21,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,21,000 BDT",
     engine: {
       type: "4 stroke, Single cylinder, Camshift overhead",
       displacement: "155.2",
@@ -19206,7 +19410,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,85,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,85,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "150",
@@ -19299,7 +19504,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,50,000 BDT",
     engine: {
       type: "4-Stroke, 1-Cylinder, Air-Cooled, Sohc, 3 Valve",
       displacement: "154.8",
@@ -19392,7 +19598,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,50,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,50,000 BDT",
     engine: {
       type: "Single Cylinder 4 stroke, Air cooled, SOHC, 3 valves",
       displacement: "124.45",
@@ -19485,7 +19692,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,20,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "125",
@@ -19578,7 +19786,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,20,000 BDT",
     engine: {
       type: "4-Stroke, 1-Cylinder, Air-Cooled, Sohc, 3 Valve",
       displacement: "125",
@@ -19671,7 +19880,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "84,900 BDT",
+    updated_at: "2026-08-10",
+price:  "84,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "98.53",
@@ -19764,7 +19974,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "76,900 BDT",
+    updated_at: "2026-08-10",
+price:  "76,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "99",
@@ -19857,7 +20068,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "70,900 BDT",
+    updated_at: "2026-08-10",
+price:  "70,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "79",
@@ -19950,7 +20162,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "60,900 BDT",
+    updated_at: "2026-08-10",
+price:  "60,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "84.41",
@@ -20044,7 +20257,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,15,000 BDT",
+    updated_at: "2026-08-10",
+price:  "3,15,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "165",
@@ -20137,7 +20351,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,65,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "165",
@@ -20230,7 +20445,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,55,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,55,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "165",
@@ -20323,7 +20539,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,95,000 BDT",
     engine: {
       type: "Single cylinder, 4-stroke, balancing shafts",
       displacement: "165",
@@ -20416,7 +20633,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,70,000 BDT",
     engine: {
       type: "Single cylinder, 4-stroke, balancing shafts",
       displacement: "165",
@@ -20509,7 +20727,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,65,000 BDT",
     engine: {
       type: "SI, 4 stroke, SOHC",
       displacement: "165",
@@ -20602,7 +20821,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,35,000 BDT",
     engine: {
       type: "Four stroke, Single Cylinder",
       displacement: "149",
@@ -20695,7 +20915,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,33,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,33,000 BDT",
     engine: {
       type: "Single Cylinder, Air Cooled, Four Strokes",
       displacement: "150",
@@ -20788,7 +21009,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,01,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,01,000 BDT",
     engine: {
       type: "Four stroke, single cylinder, air cooled",
       displacement: "106.67",
@@ -20881,7 +21103,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "99,500 BDT",
+    updated_at: "2026-08-10",
+price:  "99,500 BDT",
     engine: {
       type: "Four stroke, single cylinder, air cooled",
       displacement: "106.67",
@@ -20974,7 +21197,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "95,000 BDT",
+    updated_at: "2026-08-10",
+price:  "95,000 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, Air Cooled",
       displacement: "98",
@@ -21067,7 +21291,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "89,000 BDT",
+    updated_at: "2026-08-10",
+price:  "89,000 BDT",
     engine: {
       type: "Single Cylinder, 4-Stroke",
       displacement: "100",
@@ -21160,7 +21385,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "79,000 BDT",
+    updated_at: "2026-08-10",
+price:  "79,000 BDT",
     engine: {
       type: "Four-stroke, single-cylinder, air-cooled",
       displacement: "87",
@@ -21253,7 +21479,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "76,000 BDT",
+    updated_at: "2026-08-10",
+price:  "76,000 BDT",
     engine: {
       type: "Single Cylinder, Air-Cooled, Four Strokes",
       displacement: "80",
@@ -21346,7 +21573,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "3,69,900 BDT",
+    updated_at: "2026-08-10",
+price:  "3,69,900 BDT",
     engine: {
       type: "4-stroke, Single cylinder, Liquid-cooled, EFI",
       displacement: "165",
@@ -21439,7 +21667,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,99,900 BDT",
+    updated_at: "2026-08-10",
+price:  "2,99,900 BDT",
     engine: {
       type: "1-Cylinder, 4-Stroke Engine",
       displacement: "164.4",
@@ -21532,7 +21761,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,54,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,54,000 BDT",
     engine: {
       type: "Oil-Cooled, Balance Shaft",
       displacement: "163.7",
@@ -21625,7 +21855,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,79,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,79,500 BDT",
     engine: {
       type: "Single cylinder, 4 stroke, Oil-Cooled",
       displacement: "163",
@@ -21718,7 +21949,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,49,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,49,500 BDT",
     engine: {
       type: "1 Cylinder, 4 Stroke",
       displacement: "149.6",
@@ -21811,7 +22043,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,24,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,24,500 BDT",
     engine: {
       type: "Single Cylinder, Air cooled",
       displacement: "125",
@@ -21904,7 +22137,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,14,500 BDT",
+    updated_at: "2026-08-10",
+price:  "1,14,500 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "109.5",
@@ -21997,7 +22231,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,99,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,99,900 BDT",
     engine: {
       type: "Single Cylinder, 2-Valve, 4-stroke, air-cooled",
       displacement: "164",
@@ -22090,7 +22325,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,64,900 BDT",
+    updated_at: "2026-08-10",
+price:  "1,64,900 BDT",
     engine: {
       type: "Single Cylinder, 4-Stroke, air-cooled, fuel injection, SOHC",
       displacement: "164",
@@ -22183,7 +22419,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "2,70,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,70,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.6",
@@ -22276,7 +22513,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "2,35,000 BDT",
+    updated_at: "2026-08-10",
+price:  "2,35,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.6",
@@ -22369,7 +22607,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,65,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.6",
@@ -22462,7 +22701,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,60,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,60,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "150",
@@ -22555,7 +22795,8 @@ export const bikes: OBike[] = [
     made_in: "",
     assembly: "",
     launched: "",
-    price: "1,40,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,40,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.1",
@@ -22648,7 +22889,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,38,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,38,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "124.6",
@@ -22741,7 +22983,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,20,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,20,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "100",
@@ -22834,7 +23077,8 @@ export const bikes: OBike[] = [
     made_in: "China",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,45,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,45,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "124.6",
@@ -22927,7 +23171,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,75,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,75,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.2",
@@ -23020,7 +23265,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,65,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,65,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "150",
@@ -23113,7 +23359,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,40,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,40,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "149.2",
@@ -23206,7 +23453,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "1,30,000 BDT",
+    updated_at: "2026-08-10",
+price:  "1,30,000 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "124.04",
@@ -23299,7 +23547,8 @@ export const bikes: OBike[] = [
     made_in: "Bangladesh",
     assembly: "Bangladesh",
     launched: "",
-    price: "99,900 BDT",
+    updated_at: "2026-08-10",
+price:  "99,900 BDT",
     engine: {
       type: "4 – Stroke Single Cylinder",
       displacement: "124.8",
