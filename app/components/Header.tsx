@@ -236,7 +236,7 @@ export default function MotoHeader() {
 
   const MAIN_NAV: NavItem[] = [
     { label: "Blogs", href: "/blogs" },
-    { label: "Bikes", href: "/BikesPage" },
+    { label: "Bikes", href: "/bikes" },
     { label: "About Us", href: "/about" },
     // { label: "Market", href: "/market" },
     // { label: "Brands", href: "/", dropdown: brandDropdown },
