@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { OBike } from "@/types/bike";
+
 
 type SpecRecord = Record<string, string> | undefined | null;
 
@@ -17,6 +19,198 @@ type PageProps = {
 
 function getBike(slug: string) {
   return bikes.find((bike) => bike.slug === slug);
+}
+
+function generateBikeDescription(bike: OBike): string {
+  const parts: string[] = [];
+
+  // Opening
+  parts.push(
+    `${bike.name} is a ${bike.cc}cc ${bike.bike_type?.toLowerCase() || "motorcycle"}`
+  );
+
+  if (bike.brand) {
+    parts.push(`from ${bike.brand}`);
+  }
+
+  parts.push(`available in Bangladesh.`);
+
+  // Price
+  if (bike.price) {
+    parts.push(`The current price is ${bike.price}.`);
+  }
+
+  // Engine & performance
+  if (bike.engine) {
+    const engineDetails: string[] = [];
+
+    if (bike.engine.type) {
+      engineDetails.push(`uses a ${bike.engine.type.toLowerCase()} engine`);
+    }
+
+    if (bike.engine.maximum_power) {
+      engineDetails.push(
+        `produces ${bike.engine.maximum_power} of maximum power`
+      );
+    }
+
+    if (bike.engine.maximum_torque) {
+      engineDetails.push(
+        `and ${bike.engine.maximum_torque} of maximum torque`
+      );
+    }
+
+    if (engineDetails.length > 0) {
+      parts.push(
+        `Its engine ${engineDetails.join(", ")}.`
+      );
+    }
+  }
+
+  // Transmission
+  if (bike.transmission) {
+    const transmissionDetails: string[] = [];
+
+    if (bike.transmission.no_of_gears) {
+      transmissionDetails.push(
+        `${bike.transmission.no_of_gears}-speed transmission`
+      );
+    }
+
+    if (bike.transmission.transmission_type) {
+      transmissionDetails.push(
+        `${bike.transmission.transmission_type.toLowerCase()} transmission`
+      );
+    }
+
+    if (transmissionDetails.length > 0) {
+      parts.push(
+        `The bike features a ${transmissionDetails.join(" and ")}.`
+      );
+    }
+  }
+
+  // Mileage
+  const cityMileage = bike.mileage?.city;
+  const highwayMileage = bike.mileage?.highway;
+
+  if (cityMileage || highwayMileage) {
+    if (cityMileage && highwayMileage) {
+      parts.push(
+        `Its mileage is approximately ${cityMileage} in the city and ${highwayMileage} on the highway.`
+      );
+    } else if (cityMileage) {
+      parts.push(
+        `Its approximate city mileage is ${cityMileage}.`
+      );
+    } else if (highwayMileage) {
+      parts.push(
+        `Its approximate highway mileage is ${highwayMileage}.`
+      );
+    }
+  } else if (bike.mileage_top_speed?.mileage) {
+    parts.push(
+      `Its approximate mileage is ${bike.mileage_top_speed.mileage}.`
+    );
+  }
+
+  // Top speed
+  if (bike.mileage_top_speed?.top_speed) {
+    parts.push(
+      `The approximate top speed is ${bike.mileage_top_speed.top_speed}.`
+    );
+  }
+
+  // Brakes
+  if (bike.brakes) {
+    const brakeDetails: string[] = [];
+
+    if (bike.brakes.front_brake_type) {
+      brakeDetails.push(
+        `${bike.brakes.front_brake_type.toLowerCase()} front brake`
+      );
+    }
+
+    if (bike.brakes.rear_brake_type) {
+      brakeDetails.push(
+        `${bike.brakes.rear_brake_type.toLowerCase()} rear brake`
+      );
+    }
+
+    if (bike.brakes.braking_system) {
+      brakeDetails.push(
+        `${bike.brakes.braking_system}`
+      );
+    }
+
+    if (brakeDetails.length > 0) {
+      parts.push(
+        `Braking is handled by ${brakeDetails.join(", ")}.`
+      );
+    }
+  }
+
+  // Dimensions / fuel
+  const dimensionDetails: string[] = [];
+
+  if (bike.dimensions?.weight) {
+    dimensionDetails.push(`weighs ${bike.dimensions.weight}`);
+  }
+
+  if (bike.dimensions?.seat_height) {
+    dimensionDetails.push(
+      `has a seat height of ${bike.dimensions.seat_height}`
+    );
+  }
+
+  if (bike.dimensions?.fuel_tank_capacity) {
+    dimensionDetails.push(
+      `and has a ${bike.dimensions.fuel_tank_capacity} fuel tank`
+    );
+  }
+
+  if (dimensionDetails.length > 0) {
+    parts.push(
+      `The ${bike.name} ${dimensionDetails.join(", ")}.`
+    );
+  }
+
+  // Manufacturing / origin
+  const originDetails: string[] = [];
+
+  if (bike.brand_origin) {
+    originDetails.push(`brand origin is ${bike.brand_origin}`);
+  }
+
+  if (bike.made_in) {
+    originDetails.push(`made in ${bike.made_in}`);
+  }
+
+  if (bike.assembly) {
+    originDetails.push(`assembled in ${bike.assembly}`);
+  }
+
+  if (originDetails.length > 0) {
+    parts.push(
+      `Its ${originDetails.join(", ")}.`
+    );
+  }
+
+  return parts.join(" ");
+}
+
+function getImageUrl(image?: string): string {
+  if (!image) {
+    return `${BASE_URL}/placeholder-bike.png`;
+  }
+
+  const markdownMatch = image.match(/\]\((https?:\/\/[^)]+)\)/);
+
+  if (markdownMatch?.[1]) {
+    return markdownMatch[1];
+  }
+
+  return image.trim();
 }
 
 export async function generateMetadata({
@@ -36,6 +230,8 @@ export async function generateMetadata({
     };
   }
 
+const imageUrl = getImageUrl(bike.images?.primary);
+
   return {
     title: `${bike.name} Price in Bangladesh 2026 | Specs & Features`,
 
@@ -50,7 +246,22 @@ export async function generateMetadata({
       description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
       url: `${BASE_URL}/bikes/${bike.slug}`,
       type: "website",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${bike.name} motorcycle in Bangladesh`,
+        },
+      ],
     },
+
+    twitter: {
+        card: "summary_large_image",
+        title: `${bike.name} Price in Bangladesh 2026`,
+        description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
+        images: [imageUrl],
+      },
 
     robots: {
       index: true,
@@ -58,6 +269,8 @@ export async function generateMetadata({
     },
   };
 }
+
+
 
 function formatPrice(price?: string): string {
   if (!price || price.trim() === "") return "Price on request";
@@ -132,22 +345,58 @@ export default async function BikeDetailPage({
     notFound();
   }
 
-  const productSchema = {
+  const imageSrc = getImageUrl(bike.images?.primary);
+
+const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
+
   name: bike.name,
+
   description: bike.description,
+
+  image: [imageSrc],
+
+  url: `${BASE_URL}/bikes/${bike.slug}`,
+
   brand: {
     "@type": "Brand",
     name: bike.brand,
   },
+
   category: "Motorcycle",
+
   offers: {
     "@type": "Offer",
     priceCurrency: "BDT",
     price: Number(bike.price.replace(/[^\d]/g, "")),
     url: `${BASE_URL}/bikes/${bike.slug}`,
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: BASE_URL,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: bike.brand,
+      item: `${BASE_URL}/bikes`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: bike.name,
+      item: `${BASE_URL}/bikes/${bike.slug}`,
+    },
+  ],
 };
 
   const highlightSpecs = getHighlightSpecs(bike);
@@ -158,7 +407,6 @@ export default async function BikeDetailPage({
   );
   const hasShowroom =
     bike.showroom && !bike.showroom.includes("Feature Your Showroom");
-  const imageSrc = bike.images?.primary || "/placeholder-bike.png";
 
   const rawSpecSections = [
     { title: "Engine", data: bike.engine },
@@ -202,12 +450,14 @@ export default async function BikeDetailPage({
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(productSchema),
-      }}
-    />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([
+                productSchema,
+                breadcrumbSchema,
+              ]),
+            }}/>
         <div className="bg-white rounded-2xl border border-blue-100 shadow-[0_8px_30px_-12px_rgba(30,64,175,0.18)] overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Image Panel */}
@@ -215,7 +465,7 @@ export default async function BikeDetailPage({
               <div className="relative w-full h-full transition-transform duration-700 ease-out hover:[transform:rotateY(-6deg)_rotateX(2deg)]">
                 <Image
                   src={imageSrc}
-                  alt={bike.name}
+                  alt={`${bike.name} bike price in Bangladesh`}
                   width={520}
                   height={380}
                   className="object-contain w-full h-full max-h-96 mx-auto drop-shadow-[0_16px_20px_rgba(15,23,42,0.18)]"
@@ -341,17 +591,16 @@ export default async function BikeDetailPage({
                 </div>
               )}
 
-              {/* Description */}
-              {bike.description && (
-                <div>
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
-                    Overview
-                  </p>
-                  <p className="text-slate-600 leading-relaxed text-sm">
-                    {bike.description}
-                  </p>
-                </div>
-              )}
+              {/* Dynamic Overview */}
+              <div>
+                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
+                  Overview
+                </p>
+
+                <p className="text-slate-600 leading-relaxed text-sm">
+                  {generateBikeDescription(bike)}
+                </p>
+              </div>
 
               {/* CTA buttons (desktop) */}
               <div className="hidden lg:flex gap-3 mt-2">
@@ -371,6 +620,71 @@ export default async function BikeDetailPage({
             </div>
           </div>
         </div>
+
+        {/* SEO Content */}
+<div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-8 space-y-8">
+
+  <section>
+    <h2 className="text-2xl font-bold text-slate-900 mb-3">
+      {bike.name} Price in Bangladesh
+    </h2>
+
+    <p className="text-slate-600 leading-7">
+      The current price of the {bike.name} in Bangladesh is {bike.price}.
+      Check the latest price, availability and specifications before buying.
+    </p>
+  </section>
+
+  <section>
+    <h2 className="text-2xl font-bold text-slate-900 mb-3">
+      {bike.name} Engine & Performance
+    </h2>
+
+    <p className="text-slate-600 leading-7">
+      The {bike.name} is powered by a {bike.cc}cc engine.
+      It produces {bike.engine.maximum_power} and
+      {bike.engine.maximum_torque}.
+    </p>
+  </section>
+
+  <section>
+    <h2 className="text-2xl font-bold text-slate-900 mb-3">
+      {bike.name} Mileage
+    </h2>
+
+    <p className="text-slate-600 leading-7">
+      The {bike.name} offers an approximate mileage of{" "}
+      {bike.mileage?.city || bike.mileage_top_speed?.mileage || "N/A"}.
+      Actual mileage can vary depending on riding conditions,
+      traffic and maintenance.
+    </p>
+  </section>
+
+  <section>
+    <h2 className="text-2xl font-bold text-slate-900 mb-3">
+      {bike.name} Top Speed
+    </h2>
+
+    <p className="text-slate-600 leading-7">
+      The approximate top speed of the {bike.name} is{" "}
+      {bike.mileage_top_speed?.top_speed || "N/A"}.
+    </p>
+  </section>
+
+  <section>
+    <h2 className="text-2xl font-bold text-slate-900 mb-3">
+      {bike.name} Features
+    </h2>
+
+    <p className="text-slate-600 leading-7">
+      The {bike.name} comes with features including{" "}
+      {bike.electricals?.head_light} lighting,
+      {bike.brakes?.braking_system} and{" "}
+      {bike.transmission?.no_of_gears}-speed transmission.
+    </p>
+  </section>
+
+</div>
 
         {/* Specifications */}
         {specSections.length > 0 && (
