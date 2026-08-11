@@ -1,9 +1,9 @@
 import { bikes, getBikeBySlug } from "@/data/bike";
+import { OBike } from "@/types/bike";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import { OBike } from "@/types/bike";
 
 
 type SpecRecord = Record<string, string> | undefined | null;
@@ -199,6 +199,143 @@ function generateBikeDescription(bike: OBike): string {
   return parts.join(" ");
 }
 
+function generateBikeFaqs(bike: OBike) {
+  const faqs: {
+    question: string;
+    answer: string;
+  }[] = [];
+
+  // Price
+  if (bike.price) {
+    faqs.push({
+      question: `What is the ${bike.name} price in Bangladesh?`,
+      answer: `The current listed price of the ${bike.name} in Bangladesh is ${bike.price}. Prices may vary depending on availability, distributor pricing, and location.`,
+    });
+  }
+
+  // Engine / CC
+  if (bike.cc || bike.engine?.displacement) {
+    const displacement =
+      bike.engine?.displacement || bike.cc;
+
+    faqs.push({
+      question: `What is the engine capacity of the ${bike.name}?`,
+      answer: `The ${bike.name} has a ${displacement}cc engine.`,
+    });
+  }
+
+  // Power
+  if (bike.engine?.maximum_power) {
+    faqs.push({
+      question: `What is the maximum power of the ${bike.name}?`,
+      answer: `The ${bike.name} produces a maximum power of ${bike.engine.maximum_power}.`,
+    });
+  }
+
+  // Torque
+  if (bike.engine?.maximum_torque) {
+    faqs.push({
+      question: `What is the maximum torque of the ${bike.name}?`,
+      answer: `The ${bike.name} produces a maximum torque of ${bike.engine.maximum_torque}.`,
+    });
+  }
+
+  // Mileage
+  if (bike.mileage?.city || bike.mileage?.highway) {
+    let mileageAnswer = `The ${bike.name} has an approximate mileage of`;
+
+    if (bike.mileage.city) {
+      mileageAnswer += ` ${bike.mileage.city} in the city`;
+    }
+
+    if (bike.mileage.city && bike.mileage.highway) {
+      mileageAnswer += ` and`;
+    }
+
+    if (bike.mileage.highway) {
+      mileageAnswer += ` ${bike.mileage.highway} on the highway`;
+    }
+
+    mileageAnswer += `. Actual mileage can vary depending on riding conditions, traffic, maintenance, and riding style.`;
+
+    faqs.push({
+      question: `What is the mileage of the ${bike.name}?`,
+      answer: mileageAnswer,
+    });
+  } else if (bike.mileage_top_speed?.mileage) {
+    faqs.push({
+      question: `What is the mileage of the ${bike.name}?`,
+      answer: `The ${bike.name} has an approximate mileage of ${bike.mileage_top_speed.mileage}. Actual mileage may vary depending on riding conditions and riding style.`,
+    });
+  }
+
+  // Top speed
+  if (bike.mileage_top_speed?.top_speed) {
+    faqs.push({
+      question: `What is the top speed of the ${bike.name}?`,
+      answer: `The approximate top speed of the ${bike.name} is ${bike.mileage_top_speed.top_speed}.`,
+    });
+  }
+
+  // Gears
+  if (bike.transmission?.no_of_gears) {
+    faqs.push({
+      question: `How many gears does the ${bike.name} have?`,
+      answer: `The ${bike.name} has ${bike.transmission.no_of_gears} gears.`,
+    });
+  }
+
+  // Transmission
+  if (bike.transmission?.transmission_type) {
+    faqs.push({
+      question: `What type of transmission does the ${bike.name} use?`,
+      answer: `The ${bike.name} uses a ${bike.transmission.transmission_type.toLowerCase()} transmission.`,
+    });
+  }
+
+  // ABS / braking
+  if (bike.brakes?.braking_system) {
+    faqs.push({
+      question: `Does the ${bike.name} have ABS?`,
+      answer: `The ${bike.name} uses a ${bike.brakes.braking_system} braking system.`,
+    });
+  }
+
+  // Weight
+  if (bike.dimensions?.weight) {
+    faqs.push({
+      question: `What is the weight of the ${bike.name}?`,
+      answer: `The ${bike.name} weighs ${bike.dimensions.weight}.`,
+    });
+  }
+
+  // Seat height
+  if (bike.dimensions?.seat_height) {
+    faqs.push({
+      question: `What is the seat height of the ${bike.name}?`,
+      answer: `The ${bike.name} has a seat height of ${bike.dimensions.seat_height}.`,
+    });
+  }
+
+  // Fuel tank
+  if (bike.dimensions?.fuel_tank_capacity) {
+    faqs.push({
+      question: `What is the fuel tank capacity of the ${bike.name}?`,
+      answer: `The ${bike.name} has a fuel tank capacity of ${bike.dimensions.fuel_tank_capacity}.`,
+    });
+  }
+
+  // Starting method
+  if (bike.engine?.starting_method) {
+    faqs.push({
+      question: `Does the ${bike.name} have electric starting?`,
+      answer: `The ${bike.name} uses ${bike.engine.starting_method.toLowerCase()} starting.`,
+    });
+  }
+
+  return faqs;
+}
+
 function getImageUrl(image?: string): string {
   if (!image) {
     return `${BASE_URL}/placeholder-bike.png`;
@@ -220,6 +357,7 @@ export async function generateMetadata({
 
   const bike = getBike(slug);
 
+  
   if (!bike) {
     return {
       title: "Bike Not Found | Bike Price in Bangladesh",
@@ -229,8 +367,8 @@ export async function generateMetadata({
       },
     };
   }
-
-const imageUrl = getImageUrl(bike.images?.primary);
+  
+  const imageUrl = getImageUrl(bike.images?.primary);
 
   return {
     title: `${bike.name} Price in Bangladesh 2026 | Specs & Features`,
@@ -345,6 +483,9 @@ export default async function BikeDetailPage({
     notFound();
   }
 
+    const faqs = generateBikeFaqs(bike);
+
+
   const imageSrc = getImageUrl(bike.images?.primary);
 
 const productSchema = {
@@ -397,6 +538,19 @@ const breadcrumbSchema = {
       item: `${BASE_URL}/bikes/${bike.slug}`,
     },
   ],
+};
+
+ const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
 };
 
   const highlightSpecs = getHighlightSpecs(bike);
@@ -456,6 +610,7 @@ const breadcrumbSchema = {
               __html: JSON.stringify([
                 productSchema,
                 breadcrumbSchema,
+                faqSchema,
               ]),
             }}/>
         <div className="bg-white rounded-2xl border border-blue-100 shadow-[0_8px_30px_-12px_rgba(30,64,175,0.18)] overflow-hidden">
@@ -622,69 +777,69 @@ const breadcrumbSchema = {
         </div>
 
         {/* SEO Content */}
-<div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-8 space-y-8">
+          <div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-8 space-y-8">
 
-  <section>
-    <h2 className="text-2xl font-bold text-slate-900 mb-3">
-      {bike.name} Price in Bangladesh
-    </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                {bike.name} Price in Bangladesh
+              </h2>
 
-    <p className="text-slate-600 leading-7">
-      The current price of the {bike.name} in Bangladesh is {bike.price}.
-      Check the latest price, availability and specifications before buying.
-    </p>
-  </section>
+              <p className="text-slate-600 leading-7">
+                The current price of the {bike.name} in Bangladesh is {bike.price}.
+                Check the latest price, availability and specifications before buying.
+              </p>
+            </section>
 
-  <section>
-    <h2 className="text-2xl font-bold text-slate-900 mb-3">
-      {bike.name} Engine & Performance
-    </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                {bike.name} Engine & Performance
+              </h2>
 
-    <p className="text-slate-600 leading-7">
-      The {bike.name} is powered by a {bike.cc}cc engine.
-      It produces {bike.engine.maximum_power} and
-      {bike.engine.maximum_torque}.
-    </p>
-  </section>
+              <p className="text-slate-600 leading-7">
+                The {bike.name} is powered by a {bike.cc}cc engine.
+                It produces {bike.engine.maximum_power} and
+                {bike.engine.maximum_torque}.
+              </p>
+            </section>
 
-  <section>
-    <h2 className="text-2xl font-bold text-slate-900 mb-3">
-      {bike.name} Mileage
-    </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                {bike.name} Mileage
+              </h2>
 
-    <p className="text-slate-600 leading-7">
-      The {bike.name} offers an approximate mileage of{" "}
-      {bike.mileage?.city || bike.mileage_top_speed?.mileage || "N/A"}.
-      Actual mileage can vary depending on riding conditions,
-      traffic and maintenance.
-    </p>
-  </section>
+              <p className="text-slate-600 leading-7">
+                The {bike.name} offers an approximate mileage of{" "}
+                {bike.mileage?.city || bike.mileage_top_speed?.mileage || "N/A"}.
+                Actual mileage can vary depending on riding conditions,
+                traffic and maintenance.
+              </p>
+            </section>
 
-  <section>
-    <h2 className="text-2xl font-bold text-slate-900 mb-3">
-      {bike.name} Top Speed
-    </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                {bike.name} Top Speed
+              </h2>
 
-    <p className="text-slate-600 leading-7">
-      The approximate top speed of the {bike.name} is{" "}
-      {bike.mileage_top_speed?.top_speed || "N/A"}.
-    </p>
-  </section>
+              <p className="text-slate-600 leading-7">
+                The approximate top speed of the {bike.name} is{" "}
+                {bike.mileage_top_speed?.top_speed || "N/A"}.
+              </p>
+            </section>
 
-  <section>
-    <h2 className="text-2xl font-bold text-slate-900 mb-3">
-      {bike.name} Features
-    </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+                {bike.name} Features
+              </h2>
 
-    <p className="text-slate-600 leading-7">
-      The {bike.name} comes with features including{" "}
-      {bike.electricals?.head_light} lighting,
-      {bike.brakes?.braking_system} and{" "}
-      {bike.transmission?.no_of_gears}-speed transmission.
-    </p>
-  </section>
+              <p className="text-slate-600 leading-7">
+                The {bike.name} comes with features including{" "}
+                {bike.electricals?.head_light} lighting,
+                {bike.brakes?.braking_system} and{" "}
+                {bike.transmission?.no_of_gears}-speed transmission.
+              </p>
+            </section>
 
-</div>
+          </div>
 
         {/* Specifications */}
         {specSections.length > 0 && (
@@ -757,6 +912,51 @@ const breadcrumbSchema = {
             </div>
           </div>
         )}
+
+        {/* FAQ */}
+          {faqs.length > 0 && (
+            <section className="mt-8">
+              <div className="bg-white rounded-2xl border border-blue-100 shadow-sm p-6 md:p-8">
+                <div className="mb-6">
+                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
+                    Frequently Asked Questions
+                  </p>
+
+                  <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
+                    {bike.name} Frequently Asked Questions
+                  </h2>
+
+                  <p className="text-slate-600 text-sm mt-2">
+                    Find answers to common questions about the {bike.name} price,
+                    engine, mileage, performance and specifications.
+                  </p>
+                </div>
+
+                <div className="divide-y divide-slate-200">
+                  {faqs.map((faq, index) => (
+                    <details
+                      key={faq.question}
+                      className="group py-5 first:pt-0 last:pb-0"
+                    >
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
+                        <span>
+                          {faq.question}
+                        </span>
+
+                        <span className="flex-shrink-0 text-xl text-slate-400 transition-transform duration-200 group-open:rotate-45">
+                          +
+                        </span>
+                      </summary>
+
+                      <p className="mt-3 pr-8 text-sm leading-7 text-slate-600">
+                        {faq.answer}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
         {/* Similar Bikes */}
         {similarBikes.length > 0 && (
