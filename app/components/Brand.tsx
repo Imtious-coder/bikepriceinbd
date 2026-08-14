@@ -246,6 +246,19 @@ export default function BrowseByCategory() {
           </div>
         </div>
 
+        {/* <h4 className="text-sm leading-relaxed text-slate-500 sm:text-base md:w-[50%] text-center mx-auto mb-4">
+          Looking for the latest bike price in Bangladesh? Bike Price in Bangladesh
+          provides updated motorcycle prices, specifications, mileage, features and
+          reviews for popular bikes available in the Bangladeshi market. Browse
+          bikes from Honda, Yamaha, Bajaj, Suzuki, Hero, TVS, Royal Enfield, CFMOTO
+          and other leading motorcycle brands.
+          <br />
+          <br />
+          You can find bikes by brand, budget, engine capacity and motorcycle type.
+          Compare different models side by side to find the best bike for your
+          budget and requirements.
+        </h4> */}
+
         {/* Brand tab */}
         {activeTab === "brand" && (
   <>

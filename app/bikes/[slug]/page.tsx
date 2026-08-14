@@ -199,6 +199,15 @@ function generateBikeDescription(bike: OBike): string {
   return parts.join(" ");
 }
 
+const SPEC_SECTION_STYLES = [
+  { bg: "bg-blue-50/60", border: "border-blue-100", accent: "text-blue-600" },
+  { bg: "bg-slate-50", border: "border-slate-200", accent: "text-slate-600" },
+  { bg: "bg-sky-50/60", border: "border-sky-100", accent: "text-sky-600" },
+  { bg: "bg-indigo-50/60", border: "border-indigo-100", accent: "text-indigo-600" },
+  { bg: "bg-cyan-50/60", border: "border-cyan-100", accent: "text-cyan-600" },
+  { bg: "bg-blue-50", border: "border-blue-200", accent: "text-blue-700" },
+];
+
 function generateBikeFaqs(bike: OBike) {
   const faqs: {
     question: string;
@@ -842,43 +851,57 @@ const breadcrumbSchema = {
           </div>
 
         {/* Specifications */}
-        {specSections.length > 0 && (
-          <div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm overflow-hidden">
-            <div className="px-8 py-6 border-b border-blue-100">
-              <h2 className="text-xl font-bold text-slate-900">
-                Specifications
-              </h2>
-            </div>
-            {specSections.map((section) => (
-              <div key={section.title}>
-                <div className="px-8 pt-5 pb-2">
-                  <h3 className="text-xs font-semibold text-blue-600 uppercase tracking-wider">
-                    {section.title}
-                  </h3>
-                </div>
-                <div className="divide-y divide-blue-100">
-                  {Object.entries(section.data as Record<string, string>).map(
-                    ([key, value], i) => (
-                      <div
-                        key={key}
-                        className={`grid grid-cols-2 px-8 py-4 transition-colors ${
-                          i % 2 === 0 ? "bg-transparent" : "bg-blue-50/50"
-                        } hover:bg-blue-50`}
-                      >
-                        <span className="text-sm font-semibold text-slate-500">
-                          {formatLabel(key)}
-                        </span>
-                        <span className="text-sm text-slate-900 font-medium">
-                          {value}
-                        </span>
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-            ))}
+{specSections.length > 0 && (
+  <div className="mt-8 space-y-6">
+    {specSections.map((section, i) => {
+      const style = SPEC_SECTION_STYLES[i % SPEC_SECTION_STYLES.length];
+      const anchorId = section.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+
+      return (
+        <section
+          key={section.title}
+          id={anchorId}
+          aria-labelledby={`${anchorId}-heading`}
+          className={`scroll-mt-24 rounded-2xl border ${style.border} ${style.bg} shadow-sm overflow-hidden`}
+        >
+          <div className="px-8 pt-6 pb-4">
+            <p className={`text-xs font-semibold uppercase tracking-wider ${style.accent} mb-1`}>
+              Specifications
+            </p>
+            <h2
+              id={`${anchorId}-heading`}
+              className="text-xl font-bold text-slate-900"
+            >
+              {bike.name} {section.title} Specifications
+            </h2>
           </div>
-        )}
+          <div className="divide-y divide-black/5">
+            {Object.entries(section.data as Record<string, string>).map(
+              ([key, value], j) => (
+                <div
+                  key={key}
+                  className={`grid grid-cols-2 px-8 py-4 transition-colors ${
+                    j % 2 === 0 ? "bg-transparent" : "bg-white/50"
+                  } hover:bg-white/70`}
+                >
+                  <span className="text-sm font-semibold text-slate-500">
+                    {formatLabel(key)}
+                  </span>
+                  <span className="text-sm text-slate-900 font-medium">
+                    {value}
+                  </span>
+                </div>
+              ),
+            )}
+          </div>
+        </section>
+      );
+    })}
+  </div>
+)}
 
         {/* Showroom */}
         {hasShowroom && (

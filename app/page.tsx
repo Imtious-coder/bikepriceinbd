@@ -12,6 +12,8 @@ import PromoBanner from "./components/Hero";
 import Popularbikes from "./components/Popularbikes";
 import RidersReviews from "./components/RidersReviews";
 import Trustedshowrooms from "./components/Trustedshowrooms";
+import LatestBikePrices from "./components/LatestBikePrices";
+import BikePriceTable from "./components/BikePriceTable";
 
 function formatPrice(price?: string): string {
   if (!price || price.trim() === "") return "Price on request";
@@ -152,7 +154,31 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#F6F9FC]">
       <MotoHeader />
       <PromoBanner />
+
+      {/* <section className="w-full bg-blue-50/60 py-10 sm:py-14">
+  <div className="mx-auto max-w-4xl px-4">
+    <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8">
+      <h4 className="text-sm leading-relaxed text-slate-500 sm:text-base">
+        Looking for the latest bike price in Bangladesh? Bike Price in
+        Bangladesh provides updated motorcycle prices, specifications,
+        mileage, features and reviews for popular bikes available in the
+        Bangladeshi market. Browse bikes from{" "}
+        <span className="font-semibold text-slate-700">
+          Honda, Yamaha, Bajaj, Suzuki, Hero, TVS, Royal Enfield, CFMOTO
+        </span>{" "}
+        and other leading motorcycle brands.
+      </h4>
+      <h4 className="mt-4 text-sm leading-relaxed text-slate-500 sm:text-base">
+        You can find bikes by brand, budget, engine capacity and motorcycle
+        type. Compare different models side by side to find the best bike
+        for your budget and requirements.
+      </h4>
+    </div>
+  </div>
+</section> */}
       <BrowseByCategory />
+      <LatestBikePrices />
+      <BikePriceTable />
 
       {/* Filter bar (brand-based) + search */}
       <div className="bg-white border-b border-blue-100">
@@ -259,27 +285,6 @@ export default function HomePage() {
 
       {/* Reviews */}
       <RidersReviews />
-
-      {/* Footer */}
-      <footer className="border-t border-blue-100 bg-white mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center">
-              <svg
-                className="w-3 h-3 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
-              </svg>
-            </div>
-            <span className="font-bold text-slate-900 text-sm">BD Bikes</span>
-          </div>
-          <p className="text-slate-500 text-sm">
-            © 2026 BD Bikes. All prices in BDT.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

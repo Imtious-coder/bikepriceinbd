@@ -30,13 +30,13 @@ const OTHER_DROPDOWN: DropdownItem[] = [
 
 const SUB_NAV: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Bike Price", href: "/" },
-  { label: "Compare", href: "/compare" },
+  // { label: "Bike Price", href: "/" },
+  // { label: "Compare", href: "/compare" },
   { label: "Top 5", href: "/", dropdown: TOP5_DROPDOWN },
   { label: "Best", href: "/", dropdown: BEST_DROPDOWN },
-  { label: "Upcoming", href: "/" },
-  { label: "Reviews", href: "/blogs" },
-  { label: "Tips", href: "/blogs" },
+  // { label: "Upcoming", href: "/" },
+  // { label: "Reviews", href: "/blogs" },
+  // { label: "Tips", href: "/blogs" },
   { label: "Other", href: "/", dropdown: OTHER_DROPDOWN },
 ];
 
@@ -235,8 +235,13 @@ export default function MotoHeader() {
   }, []);
 
   const MAIN_NAV: NavItem[] = [
+    { label: "Bike Price", href: "/bikes" },
+    { label: "Brands", href: "/brands" },
+    { label: "Compare", href: "/compare" },
+    { label: "Upcoming Bikes", href: "/upcoming-bikes" },
+    { label: "Reviews", href: "/reviews" },
+    { label: "Tips", href: "/tips" },
     { label: "Blogs", href: "/blogs" },
-    { label: "Bikes", href: "/bikes" },
     { label: "About Us", href: "/about" },
     // { label: "Market", href: "/market" },
     // { label: "Brands", href: "/", dropdown: brandDropdown },

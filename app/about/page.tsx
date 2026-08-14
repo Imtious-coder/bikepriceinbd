@@ -88,17 +88,67 @@ const VALUES = [
   },
 ];
 
+const EDITORIAL_PRINCIPLES = [
+  {
+    title: "Source Verification",
+    description:
+      "Every price and specification starts from official manufacturer and authorized-distributor sources — brochures, official price lists, and dealer confirmations — rather than forums or unverified listings.",
+  },
+  {
+    title: "Cross-Checking",
+    description:
+      "Where possible, figures are cross-checked across more than one source before publishing, and against the bike's official specification sheet for consistency.",
+  },
+  {
+    title: "Independent Editorial Line",
+    description:
+      "No brand, distributor, or showroom pays for placement, ranking, or favorable coverage on this site. Listings are ordered by relevance to the reader's search or filter, not by advertiser status.",
+  },
+  {
+    title: "Corrections",
+    description:
+      "If a reader or a manufacturer flags an inaccuracy, we review it against the original source and correct the listing as soon as it's confirmed.",
+  },
+];
+
 export const metadata = {
   title: "About Us | Bike Price In Bangladesh",
   description:
-    "Bike Price In Bangladesh is an independent motorcycle price, comparison, and review platform based in Dhaka.",
+    "Learn who runs Bike Price In Bangladesh, how we research and verify motorcycle prices and specifications, and how often our pricing data is updated.",
+  alternates: {
+    canonical: "https://bikepriceinbangladesh.com/about",
+  },
 };
 
 export default function AboutPage() {
   const stats = getStats();
 
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Bike Price In Bangladesh",
+    description:
+      "Bike Price In Bangladesh is an independent motorcycle price, comparison, and review platform based in Dhaka, Bangladesh.",
+    mainEntity: {
+      "@type": "Organization",
+      name: "Bike Price In Bangladesh",
+      url: "https://bikepriceinbangladesh.com",
+      founder: {
+        "@type": "Person",
+        name: "Imtious Islam",
+      },
+      email: "imtious.islam.me@gmail.com",
+      areaServed: "Bangladesh",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-[#F6F9FC] pt-32 sm:pt-36 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
+
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero */}
         <div className="text-center mb-14">
@@ -106,12 +156,13 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            Bike Price <span className="text-blue-600">In Bangladesh</span>
+            About Bike Price <span className="text-blue-600">In Bangladesh</span>
           </h1>
           <p className="mt-5 max-w-2xl mx-auto text-base text-slate-500 leading-relaxed">
-            We help riders across Bangladesh find, compare, and buy the right
-            motorcycle — with real prices, real specs, and real rider
-            experiences, all in one place.
+            Bike Price In Bangladesh is an independent motorcycle price,
+            comparison, and review platform built for riders across
+            Bangladesh — with verified prices, accurate specifications, and
+            real rider experiences, all in one place.
           </p>
         </div>
 
@@ -137,6 +188,40 @@ export default function AboutPage() {
           ))}
         </div>
 
+        {/* Who Runs This Site */}
+        <div className="mb-16 rounded-3xl border border-blue-100 bg-white p-8 sm:p-12 shadow-sm">
+          <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
+            Who Runs Bike Price In Bangladesh
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-50 border border-blue-100 text-blue-600 font-bold text-xl">
+              II
+            </div>
+            <div className="space-y-4 text-slate-600 leading-relaxed">
+              <p>
+                Bike Price In Bangladesh is founded and independently run by{" "}
+                <strong className="text-slate-900">Imtious Islam</strong>,
+                based in Dhaka, Bangladesh. The site is not affiliated with,
+                or owned by, any motorcycle manufacturer, distributor, or
+                showroom chain.
+              </p>
+              <p>
+                For editorial questions, corrections, or business inquiries,
+                you can reach the site directly at{" "}
+                
+                  <a href="mailto:imtious.islam.me@gmail.com">
+                  imtious.islam.me@gmail.com
+                </a>
+                , or through the{" "}
+                <Link href="/contact" className="font-semibold text-blue-600 hover:underline">
+                  contact page
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Mission */}
         <div className="mb-16 rounded-3xl border border-blue-100 bg-white p-8 sm:p-12 shadow-sm">
           <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
@@ -152,10 +237,54 @@ export default function AboutPage() {
             </p>
             <p>
               Bike Price In Bangladesh exists to fix that — one place to check
-              current prices, compare specs side by side, read what actual
-              owners think, and find a showroom you can trust, whether
-              you&apos;re shopping for a first commuter or upgrading to
-              something bigger.
+              current motorcycle prices in Bangladesh, compare specifications
+              side by side, read what actual owners think, and find a
+              showroom you can trust, whether you&apos;re shopping for a
+              first commuter or upgrading to something bigger.
+            </p>
+          </div>
+        </div>
+
+        {/* How prices are collected & verified */}
+        <div className="mb-16 rounded-3xl border border-blue-100 bg-white p-8 sm:p-12 shadow-sm">
+          <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
+            How We Collect and Verify Bike Prices
+          </h2>
+          <div className="space-y-4 text-slate-600 leading-relaxed">
+            <p>
+              Every listing on Bike Price In Bangladesh starts from official
+              sources: manufacturer price lists, authorized distributor
+              announcements, and direct showroom confirmation. We avoid
+              relying on unverified marketplace posts or secondhand listings
+              for official pricing.
+            </p>
+            <p>
+              Specifications — engine details, mileage, dimensions, and
+              features — are taken from official spec sheets and cross-checked
+              against the manufacturer&apos;s published documentation where
+              available. Where a figure is described as approximate (for
+              example, mileage or top speed), that&apos;s clearly labeled,
+              since real-world performance varies with riding conditions.
+            </p>
+          </div>
+        </div>
+
+        {/* How often data is updated */}
+        <div className="mb-16 rounded-3xl border border-blue-100 bg-blue-50/40 p-8 sm:p-12 shadow-sm">
+          <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
+            How Often Our Data Is Updated
+          </h2>
+          <div className="space-y-4 text-slate-600 leading-relaxed">
+            <p>
+              Bike prices in Bangladesh change with import duties, currency
+              shifts, and distributor decisions, so listings are reviewed on
+              an ongoing basis rather than on a fixed calendar. Each bike page
+              shows a last-updated date so you can see exactly when its price
+              and specifications were last reviewed.
+            </p>
+            <p>
+              When we identify a price change or a new model, we prioritize
+              updating that listing over adding unrelated new content.
             </p>
           </div>
         </div>
@@ -210,22 +339,110 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Location */}
-        <div className="mb-16 flex flex-col sm:flex-row items-center gap-6 rounded-3xl border border-blue-100 bg-white p-8 sm:p-10 shadow-sm">
-          <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-[0_10px_24px_-10px_rgba(17,85,245,0.5)]">
-            <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
+        {/* Editorial Policy */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-extrabold text-slate-900 mb-2 text-center">
+            Editorial Policy
+          </h2>
+          <p className="text-sm text-slate-500 text-center max-w-2xl mx-auto mb-6">
+            How we research, verify, and correct motorcycle price and
+            specification information published on this site.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {EDITORIAL_PRINCIPLES.map((principle) => (
+              <div
+                key={principle.title}
+                className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
+              >
+                <h3 className="mb-2 text-sm font-bold text-slate-900">
+                  {principle.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-slate-600">
+                  {principle.description}
+                </p>
+              </div>
+            ))}
           </div>
-          <div className="text-center sm:text-left">
-            <h3 className="text-lg font-bold text-slate-900">Based in Dhaka, Bangladesh</h3>
-            <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-              Bike Price In Bangladesh is built and maintained locally, with a
-              focus on the motorcycles, brands, and showrooms that actually
-              serve Bangladeshi riders.
+        </div>
+
+        {/* Price Update Policy */}
+        <div className="mb-16 rounded-3xl border border-blue-100 bg-white p-8 sm:p-12 shadow-sm">
+          <h2 className="text-2xl font-extrabold text-slate-900 mb-4">
+            Price Update Policy
+          </h2>
+          <div className="space-y-4 text-slate-600 leading-relaxed">
+            <p>
+              Prices shown on Bike Price In Bangladesh are checked against
+              manufacturer and authorized-dealer information, and updated
+              whenever a change is identified. We do not display prices we
+              cannot trace back to an official or dealer-confirmed source.
+            </p>
+            <p>
+              Actual on-road prices can vary slightly by showroom, registration
+              costs, and ongoing promotions — the price listed is the
+              manufacturer or distributor&apos;s official showroom price
+              unless otherwise noted. If you spot a price that looks outdated,
+              please{" "}
+              <Link href="/contact" className="font-semibold text-blue-600 hover:underline">
+                let us know
+              </Link>{" "}
+              and we&apos;ll review it.
             </p>
           </div>
+        </div>
+
+        {/* Location / Contact */}
+        <div className="mb-16 rounded-3xl border border-blue-100 bg-white p-8 sm:p-10 shadow-sm">
+          <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
+            <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-[0_10px_24px_-10px_rgba(17,85,245,0.5)]">
+              <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div className="text-center sm:text-left">
+              <h2 className="text-lg font-bold text-slate-900">Based in Dhaka, Bangladesh</h2>
+              <p className="mt-1 text-sm text-slate-500 leading-relaxed">
+                Bike Price In Bangladesh is built and maintained locally, with
+                a focus on the motorcycles, brands, and showrooms that
+                actually serve Bangladeshi riders.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-blue-100 text-sm">
+            <div>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Email</p>
+              <a href="mailto:imtious.islam.me@gmail.com" className="font-semibold text-blue-600 hover:underline">
+                imtious.islam.me@gmail.com
+              </a>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Contact Form</p>
+              <Link href="/contact" className="font-semibold text-blue-600 hover:underline">
+                Send us a message
+              </Link>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Location</p>
+              <span className="font-semibold text-slate-700">Dhaka, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Policy links */}
+        <div className="mb-16 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+          <Link href="/privacy-policy" className="text-slate-500 hover:text-blue-600 hover:underline">
+            Privacy Policy
+          </Link>
+          <span className="text-slate-300">•</span>
+          <Link href="/terms" className="text-slate-500 hover:text-blue-600 hover:underline">
+            Terms &amp; Conditions
+          </Link>
+          <span className="text-slate-300">•</span>
+          <Link href="/disclaimer" className="text-slate-500 hover:text-blue-600 hover:underline">
+            Disclaimer
+          </Link>
         </div>
 
         {/* CTA */}
