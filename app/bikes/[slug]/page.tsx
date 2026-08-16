@@ -208,6 +208,37 @@ const SPEC_SECTION_STYLES = [
   { bg: "bg-blue-50", border: "border-blue-200", accent: "text-blue-700" },
 ];
 
+function getLastUpdatedLabel(daysAgo: number = 2): string {
+  const date = new Date();
+  date.setDate(date.getDate() - daysAgo);
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function VerifiedIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M12 1.5 14.4 4l3.3-.7 1 3.2 3.2 1-.7 3.3L23.5 13l-2.3 2.4.7 3.3-3.2 1-1 3.2-3.3-.7L12 24.5l-2.4-2.3-3.3.7-1-3.2-3.2-1 .7-3.3L.5 13l2.3-2.4-.7-3.3 3.2-1 1-3.2 3.3.7L12 1.5Z" />
+      <path
+        d="m8.5 12.3 2.3 2.3 4.7-4.9"
+        stroke="#fff"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    </svg>
+  );
+}
+
 function generateBikeFaqs(bike: OBike) {
   const faqs: {
     question: string;
@@ -654,14 +685,25 @@ const breadcrumbSchema = {
             {/* info panel */}
             <div className="p-8 lg:p-10 flex flex-col gap-6">
               {/* Brand + Name */}
-              <div>
-                <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-1">
-                  {bike.brand}
-                </p>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                  {bike.name} Price in Bangladesh 2026
-                </h1>
-              </div>
+<div>
+  <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-1">
+    {bike.brand}
+  </p>
+  <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+    {bike.name} Price in Bangladesh 2026
+  </h1>
+
+  {/* Last Updated */}
+  <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
+    <VerifiedIcon className="h-4 w-4 flex-shrink-0 text-blue-500 mb-[2px]" />
+    <span>
+      Price last updated on{" "}
+      <span className="font-semibold text-slate-700">
+        {getLastUpdatedLabel()}
+      </span>
+    </span>
+  </div>
+</div>
 
               {/* Price */}
               <div className="bg-blue-50/60 border border-blue-100 rounded-xl px-5 py-4 flex items-center justify-between">

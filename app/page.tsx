@@ -14,6 +14,7 @@ import RidersReviews from "./components/RidersReviews";
 import Trustedshowrooms from "./components/Trustedshowrooms";
 import LatestBikePrices from "./components/LatestBikePrices";
 import BikePriceTable from "./components/BikePriceTable";
+import Faq from "./components/Faq";
 
 function formatPrice(price?: string): string {
   if (!price || price.trim() === "") return "Price on request";
@@ -285,6 +286,8 @@ export default function HomePage() {
 
       {/* Reviews */}
       <RidersReviews />
+
+      <Faq />
     </div>
   );
 }
