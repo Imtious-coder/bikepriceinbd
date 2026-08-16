@@ -51,14 +51,25 @@ function groupByBrand(list: OBike[]) {
     map.get(slug)!.bikes.push(bike);
   }
 
-  return Array.from(map.values()).sort((a, b) => b.bikes.length - a.bikes.length);
+  return Array.from(map.values()).sort(
+    (a, b) => b.bikes.length - a.bikes.length,
+  );
 }
 
 // ─── Icons (inline, no deps) ────────────────────────────────────────────
 
 function ArrowRightIcon({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
       <path d="M5 12h14" />
       <path d="m13 6 6 6-6 6" />
     </svg>
@@ -67,7 +78,16 @@ function ArrowRightIcon({ className = "" }: { className?: string }) {
 
 function BikePlaceholderIcon({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
       <circle cx="5.5" cy="17.5" r="3.5" />
       <circle cx="18.5" cy="17.5" r="3.5" />
       <path d="M5.5 17.5 9 10h5l3.5 7.5" />
@@ -78,7 +98,16 @@ function BikePlaceholderIcon({ className = "" }: { className?: string }) {
 
 function TagIcon({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
       <path d="M12.59 2.59 20 10a2 2 0 0 1 0 2.83l-6.17 6.17a2 2 0 0 1-2.83 0L3 11V4a2 2 0 0 1 2-2h7.59Z" />
       <circle cx="7.5" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
     </svg>
@@ -112,18 +141,23 @@ export default function BrandsPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      { "@type": "ListItem", position: 2, name: "Brands", item: `${BASE_URL}/brands` },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Brands",
+        item: `${BASE_URL}/brands`,
+      },
     ],
   };
 
-  const itemListSchema = {
+const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Motorcycle Brands in Bangladesh",
     itemListElement: grouped.map((group, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `${BASE_URL}/brand/${group.slug}`,
+      url: `${BASE_URL}/brands/${group.slug}`,
       name: `${group.name} Bike Price in Bangladesh`,
     })),
   };
@@ -141,7 +175,9 @@ export default function BrandsPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-          <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+          <Link href="/" className="hover:text-blue-600 transition-colors">
+            Home
+          </Link>
           <span>/</span>
           <span className="text-slate-700 font-medium">Brands</span>
         </nav>
@@ -153,20 +189,23 @@ export default function BrandsPage() {
             {grouped.length} brands · {bikes.length} models tracked
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            All Motorcycle Brands in <span className="text-blue-600">Bangladesh</span>
+            All Motorcycle Brands in{" "}
+            <span className="text-blue-600">Bangladesh</span>
           </h1>
           <p className="mt-4 max-w-2xl text-slate-500 leading-relaxed">
             Browse every motorcycle brand sold in Bangladesh, from Honda and
             Yamaha to Royal Enfield and CFMOTO. Each brand below links to a
-            dedicated page with the full price list, specifications, and
-            reviews for that brand's lineup.
+            dedicated page with the full price list, specifications, and reviews
+            for that brand's lineup.
           </p>
         </div>
 
         {/* Brand sections */}
         <div className="space-y-14">
           {grouped.map((group) => {
-            const pricedBikes = group.bikes.filter((b) => priceToNumber(b.price) > 0);
+            const pricedBikes = group.bikes.filter(
+              (b) => priceToNumber(b.price) > 0,
+            );
             const minPrice = pricedBikes.length
               ? Math.min(...pricedBikes.map((b) => priceToNumber(b.price)))
               : 0;
@@ -185,19 +224,15 @@ export default function BrandsPage() {
                 {/* Section header — links to the brand's dedicated page */}
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
                   <div>
-                    <h2
-                      id={`brand-${group.slug}-heading`}
-                      className="text-2xl font-extrabold text-slate-900"
-                    >
-                      <Link
-                        href={`/brand/${group.slug}`}
-                        className="hover:text-blue-600 transition-colors"
-                      >
-                        {group.name} Bike Price in Bangladesh
-                      </Link>
-                    </h2>
+                     <Link
+                    href={`/brands/${group.slug}`}
+                    className="group inline-flex items-center gap-1.5 flex-shrink-0 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                  >
+                        {group.name} Bike Price in  <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </Link>
                     <p className="mt-1 text-sm text-slate-500">
-                      {group.bikes.length} model{group.bikes.length !== 1 ? "s" : ""}
+                      {group.bikes.length} model
+                      {group.bikes.length !== 1 ? "s" : ""}
                       {pricedBikes.length > 0
                         ? ` · ${formatBDT(minPrice)} – ${formatBDT(maxPrice)}`
                         : ""}
@@ -205,7 +240,7 @@ export default function BrandsPage() {
                   </div>
 
                   <Link
-                    href={`/brand/${group.slug}`}
+                    href={`/brands/${group.slug}`}
                     className="group inline-flex items-center gap-1.5 flex-shrink-0 text-sm font-semibold text-blue-600 hover:text-blue-700"
                   >
                     View all {group.name} bikes
@@ -246,12 +281,14 @@ export default function BrandsPage() {
                   ))}
 
                   {/* If there are more bikes than fit the preview, show a "+N more" tile */}
-                  {remaining > 0 && (
+                 {remaining > 0 && (
                     <Link
-                      href={`/brand/${group.slug}`}
+                      href={`/brands/${group.slug}`}
                       className="flex flex-col items-center justify-center gap-1 rounded-xl border border-dashed border-blue-200 bg-blue-50/40 p-3 text-center transition-colors hover:bg-blue-50 hover:border-blue-300"
                     >
-                      <span className="text-lg font-extrabold text-blue-600">+{remaining}</span>
+                      <span className="text-lg font-extrabold text-blue-600">
+                        +{remaining}
+                      </span>
                       <span className="text-xs font-medium text-blue-600">
                         more {group.name} bikes
                       </span>

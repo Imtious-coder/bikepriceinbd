@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 const BASE_URL = "https://bikepriceinbangladesh.com";
 
 type PageProps = {
-  params: Promise<{ brand: string }>;
+  params: Promise<{ brands: string }>;
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────
@@ -28,12 +28,6 @@ function getBikesForBrandSlug(slug: string): OBike[] {
 function priceToNumber(price?: string): number {
   if (!price) return 0;
   const digits = price.replace(/[^\d]/g, "");
-  return digits ? parseInt(digits, 10) : 0;
-}
-
-function ccToNumber(cc?: string): number {
-  if (!cc) return 0;
-  const digits = cc.replace(/[^\d]/g, "");
   return digits ? parseInt(digits, 10) : 0;
 }
 
@@ -113,12 +107,12 @@ function StarIcon({ className = "" }: { className?: string }) {
 
 export async function generateStaticParams() {
   const slugs = new Set(bikes.map((b) => slugifyBrand(b.brand)));
-  return Array.from(slugs).map((brand) => ({ brand }));
+  return Array.from(slugs).map((brands) => ({ brands }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { brand } = await params;
-  const brandBikes = getBikesForBrandSlug(brand);
+  const { brands } = await params;
+  const brandBikes = getBikesForBrandSlug(brands);
 
   if (brandBikes.length === 0) {
     return {
@@ -134,11 +128,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    alternates: { canonical: `${BASE_URL}/brand/${brand}` },
+    alternates: { canonical: `${BASE_URL}/brands/${brands}` },
     openGraph: {
       title,
       description,
-      url: `${BASE_URL}/brand/${brand}`,
+      url: `${BASE_URL}/brands/${brands}`,
       type: "website",
       images: [
         {
@@ -206,8 +200,8 @@ function generateBrandFaqs(brandName: string, brandBikes: OBike[]) {
 // ─── Page ────────────────────────────────────────────────────────────────
 
 export default async function BrandPage({ params }: PageProps) {
-  const { brand } = await params;
-  const brandBikes = getBikesForBrandSlug(brand);
+  const { brands } = await params;
+  const brandBikes = getBikesForBrandSlug(brands);
 
   if (brandBikes.length === 0) {
     notFound();
@@ -248,8 +242,8 @@ export default async function BrandPage({ params }: PageProps) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
-      { "@type": "ListItem", position: 2, name: "Bikes", item: `${BASE_URL}/bikes` },
-      { "@type": "ListItem", position: 3, name: brandName, item: `${BASE_URL}/brand/${brand}` },
+      { "@type": "ListItem", position: 2, name: "Brands", item: `${BASE_URL}/brands` },
+      { "@type": "ListItem", position: 3, name: brandName, item: `${BASE_URL}/brands/${brands}` },
     ],
   };
 
@@ -290,7 +284,7 @@ export default async function BrandPage({ params }: PageProps) {
         <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
           <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/bikes" className="hover:text-blue-600 transition-colors">Bikes</Link>
+          <Link href="/brands" className="hover:text-blue-600 transition-colors">Brands</Link>
           <span>/</span>
           <span className="text-slate-700 font-medium">{brandName}</span>
         </nav>
