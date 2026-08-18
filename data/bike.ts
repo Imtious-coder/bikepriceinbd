@@ -6769,7 +6769,7 @@ export const bikes: OBike[] = [
     "description": "Hero Xtreme 160R 4V Price in Bangladesh is 250000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 16.67 Bhp @ 8500 RPM, and its maximum torque is 14.6 NM @ 6500 RPM. Hero Xtreme 160R 4V mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 146 Kg and top speed is approximately 130 Kmph (Approx). Check Hero Xtreme 160R 4V comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-xtreme-160r6819b235811ab.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Xtreme_160R_4V_ACRE_Brown_Specifications-03.png?v=1786904073"
     },
     "mileage": {},
     "showroom": ""
@@ -6863,7 +6863,7 @@ export const bikes: OBike[] = [
     "description": "Hero Thriller 160R 4V Price in Bangladesh is 240000 BDT. This standard is powered by 160cc, which generates a maximum power of 16.67 Bhp @ 8500 RPM, and its maximum torque is 14.6 NM @ 6500 RPM. Hero Thriller 160R 4V mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 125 Kmph (Approx). Check Hero Thriller 160R 4V comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-xtreme-160r-4v655b17872ca96.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/thriller.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -6957,7 +6957,7 @@ export const bikes: OBike[] = [
     "description": "Hero Hunk 150R Xtec Price in Bangladesh is 215000 BDT. This standard is powered by 150cc, which generates a maximum power of 14.2 Bhp @ 8500 RPM, and its maximum torque is 12.6 NM @ 6500 RPM. Hero Hunk 150R Xtec mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 146 kg and top speed is approximately 120 Kmph (Approx). Check Hero Hunk 150R Xtec comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-hunk-150r-xtec67e1039ca8aaf.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunk.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7051,7 +7051,7 @@ export const bikes: OBike[] = [
     "description": "Hero Xoom 125R Price in Bangladesh is 210000 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.8 Bhp @ 7250 RPM, and its maximum torque is 10.4 NM @ 6000 RPM. Hero Xoom 125R mileage is approximately 55 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 121 kg and top speed is approximately 85 Kmph (Approx). Check Hero Xoom 125R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-xoom-125r67440a5b81447.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/zoom.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7145,7 +7145,7 @@ export const bikes: OBike[] = [
     "description": "Hero Thriller 160R Refresh Price in Bangladesh is 210000 BDT. This standard is powered by 160cc, which generates a maximum power of 15 Bhp @ 8500 RPM, and its maximum torque is 14 NM @ 6500 RPM. Hero Thriller 160R Refresh mileage is approximately 40 Kmpl (Approx). It has a Double Disc ABS braking system with tubeless tyres. Weight is 139.5 kg (Double Disc) and top speed is approximately 120 Kmph (Approx). Check Hero Thriller 160R Refresh comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-thriller-160r-refresh62aacb4569fbf.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/thriller_refresh.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7239,7 +7239,7 @@ export const bikes: OBike[] = [
     "description": "New Hero Hunk 150R Dual Disc ABS Price in Bangladesh is 207000 BDT. This standard is powered by 150cc, which generates a maximum power of 14.1 Bhp @ 8500 RPM, and its maximum torque is 12.6 NM @ 6500 RPM. New Hero Hunk 150R Dual Disc ABS mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 149 Kg and top speed is approximately 110 Kmph (Approx). Check New Hero Hunk 150R Dual Disc ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-hero-hunk-150r620b37d52d300.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunkmain.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7333,7 +7333,7 @@ export const bikes: OBike[] = [
     "description": "Hero Thriller 160R Refresh Single Disc ABS Price in Bangladesh is 200000 BDT. This standard is powered by 160cc, which generates a maximum power of 15 Bhp @ 8500 RPM, and its maximum torque is 14 NM @ 6500 RPM. Hero Thriller 160R Refresh Single Disc ABS mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 137 kg and top speed is approximately 120 Kmph (Approx). Check Hero Thriller 160R Refresh Single Disc ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-thriller-160r-refresh-single-disc-abs6682983d31380.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/thriller_refreshblue.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7427,7 +7427,7 @@ export const bikes: OBike[] = [
     "description": "New Hero Hunk 150R Dual Disc Price in Bangladesh is 196000 BDT. This standard is powered by 150cc, which generates a maximum power of 14.1 Bhp @ 8500 RPM, and its maximum torque is 12.6 NM @ 6500 RPM. New Hero Hunk 150R Dual Disc mileage is approximately 40 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 149 Kg and top speed is approximately 110 Kmph (Approx). Check New Hero Hunk 150R Dual Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-hero-hunk-150r-dual-disc66827a3bd3828.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunkmain.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7521,7 +7521,7 @@ export const bikes: OBike[] = [
     "description": "Hero Hunk Glossy Price in Bangladesh is 190000 BDT. This standard is powered by 150cc, which generates a maximum power of 14.2 Bhp @ 8500 RPM, and its maximum torque is 12.8 NM @ 6500 RPM. Hero Hunk Glossy mileage is approximately 35 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 145 Kg and top speed is approximately 120 Kmph (Approx). Check Hero Hunk Glossy comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-hunk-glossy687f25820102a.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunkmono.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7615,7 +7615,7 @@ export const bikes: OBike[] = [
     "description": "Hero Xoom 110 Xtec Price in Bangladesh is 190000 BDT. This scooter is powered by 110cc, which generates a maximum power of 8.04 Bhp @ 7250 RPM, and its maximum torque is 8.7 NM @ 5750 RPM. Hero Xoom 110 Xtec mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 109 Kg and top speed is approximately 100 Kmph (Approx). Check Hero Xoom 110 Xtec comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-xoom-110-xtec668b74ae3b700.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/zoom110.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7709,7 +7709,7 @@ export const bikes: OBike[] = [
     "description": "Hero Hunk Matt Edition Price in Bangladesh is 177500 BDT. This standard is powered by 150cc, which generates a maximum power of 14.2 Bhp @ 8500 RPM, and its maximum torque is 12.8 NM @ 6500 RPM. Hero Hunk Matt Edition mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 145 Kg and top speed is approximately 120 Kmph (Approx). Check Hero Hunk Matt Edition comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-hunk-matt-edition603c922d07f7e.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunkmatt.png?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7803,7 +7803,7 @@ export const bikes: OBike[] = [
     "description": "Hero Maestro EDGE 110 XTEC Price in Bangladesh is 177000 BDT. This scooter is powered by 110cc, which generates a maximum power of 8 Bhp @ 7500 RPM, and its maximum torque is 8.7 NM @ 5500 RPM. Hero Maestro EDGE 110 XTEC mileage is approximately 45 Kmpl (Approx). It has a IBS Braking braking system with tubeless tyres. Weight is 110 Kg and top speed is approximately 100 Kmph (Approx). Check Hero Maestro EDGE 110 XTEC comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-maestro-edge-110-xtec652638ed66706.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/maestro.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7897,7 +7897,7 @@ export const bikes: OBike[] = [
     "description": "Hero Xtreme 125R Price in Bangladesh is 175000 BDT. This naked sports is powered by 125cc, which generates a maximum power of 11.4 Bhp @ 8250 RPM, and its maximum torque is 10.5 NM @ 6500 RPM. Hero Xtreme 125R mileage is approximately 66 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 136 Kg and top speed is approximately 100 Kmph (Approx). Check Hero Xtreme 125R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-xtreme-125r6719e912e0a37.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/xtreame.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -7991,7 +7991,7 @@ export const bikes: OBike[] = [
     "description": "Hero Glamour X 125 Price in Bangladesh is 168000 BDT. This commuter is powered by 125cc, which generates a maximum power of 11.4 Bhp @ 8250 RPM, and its maximum torque is 10.5 NM @ 6500 RPM. Hero Glamour X 125 mileage is approximately 60 Kmpl (Approx). It has a IBS Braking braking system with tubeless tyres. Weight is 125.5 kg and top speed is approximately 100 Kmph (Approx). Check Hero Glamour X 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-glamour-x-12568aa9a6f56f3d.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/glamoeX.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8085,7 +8085,7 @@ export const bikes: OBike[] = [
     "description": "Hero Pleasure Refresh Price in Bangladesh is 165000 BDT. This scooter is powered by 100cc, which generates a maximum power of 6.9 Bhp @ 7000 RPM, and its maximum torque is 8.1 NM @ 5000 RPM. Hero Pleasure Refresh mileage is approximately 40 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 101 Kg and top speed is approximately 75 Kmph (Approx). Check Hero Pleasure Refresh comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-pleasure-scooter603c96a14891c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/pleasure_refresh.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8179,7 +8179,7 @@ export const bikes: OBike[] = [
     "description": "Hero Ignitor XTEC 125 Price in Bangladesh is 160000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.4 Bhp @ 7750 RPM, and its maximum torque is 10.4 NM @ 5500 RPM. Hero Ignitor XTEC 125 mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 115 Kg and top speed is approximately 110 Kmph (Approx). Check Hero Ignitor XTEC 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-ignitor-xtec-125656863f552c57.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/ignitor_xtec.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8273,7 +8273,7 @@ export const bikes: OBike[] = [
     "description": "Hero Passion Xpro Xtec Price in Bangladesh is 159000 BDT. This commuter is powered by 110cc, which generates a maximum power of 9.3 Bhp @ 7500 RPM, and its maximum torque is 9 NM @ 5500 RPM. Hero Passion Xpro Xtec mileage is approximately 45 Kmpl (Approx). It has a IBS Braking braking system with tubeless tyres. Weight is 119 Kg and top speed is approximately 90 Kmph (Approx). Check Hero Passion Xpro Xtec comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-passion-xpro-xtec629c93d190883.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/passion_pro_xtec.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8367,7 +8367,7 @@ export const bikes: OBike[] = [
     "description": "Hero Hunk Glossy Single Disc Price in Bangladesh is 158500 BDT. This standard is powered by 150cc, which generates a maximum power of 14.2 Bhp @ 8500 RPM, and its maximum torque is 12.8 NM @ 6500 RPM. Hero Hunk Glossy Single Disc mileage is approximately 35 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 145 Kg and top speed is approximately 120 Kmph (Approx). Check Hero Hunk Glossy Single Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-hunk-glossy-single-disc6683963dcc809.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunk.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8461,7 +8461,7 @@ export const bikes: OBike[] = [
     "description": "Hero Ignitor 125 Techno Price in Bangladesh is 152000 BDT. This commuter is powered by 125cc, which generates a maximum power of 11 Bhp @ 7500 RPM, and its maximum torque is 11 NM @ 6500 RPM. Hero Ignitor 125 Techno mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 127 Kg and top speed is approximately 100 Kmph (Approx). Check Hero Ignitor 125 Techno comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-ignitor-125-2020-ibs603ca10b5bee3.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/ignitor_125_techno.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8555,7 +8555,7 @@ export const bikes: OBike[] = [
     "description": "Hero Glamour Bs4 i3S Price in Bangladesh is 150000 BDT. This commuter is powered by 125cc, which generates a maximum power of 9 Bhp @ 7000 RPM, and its maximum torque is 10.35 NM @ 4000 RPM. Hero Glamour Bs4 i3S mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 125 Kg and top speed is approximately 95 Kmph (Approx). Check Hero Glamour Bs4 i3S comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-glamour603ca6ce092d5.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/glamor_bs4.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8649,7 +8649,7 @@ export const bikes: OBike[] = [
     "description": "Hero Passion Xpro i3S Price in Bangladesh is 145000 BDT. This commuter is powered by 110cc, which generates a maximum power of 9.3 Bhp @ 7500 RPM, and its maximum torque is 9 NM @ 5500 RPM. Hero Passion Xpro i3S mileage is approximately 45 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 119 Kg and top speed is approximately 90 Kmph (Approx). Check Hero Passion Xpro i3S comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-passion-xpro-i3s668517e07263c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/passion_xpro_disc.jpg?v=1786904071"
     },
     "mileage": {},
     "showroom": ""
@@ -8743,7 +8743,7 @@ export const bikes: OBike[] = [
     "description": "Hero Splendor Plus Xtec Price in Bangladesh is 133000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.25 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero Splendor Plus Xtec mileage is approximately 70 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 112 Kg and top speed is approximately 75 Kmph (Approx). Check Hero Splendor Plus Xtec comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-splendor-plus-xtec6684f5e4a602b.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Hero_Splendor_Plus_xtec.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8837,7 +8837,7 @@ export const bikes: OBike[] = [
     "description": "Hero Splendor Plus Sports Price in Bangladesh is 129000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.25 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero Splendor Plus Sports mileage is approximately 40 Kmpl (Approx). It has a Drum Brake braking system with tubeless tyres. Weight is 112.3 kg and top speed is approximately 85 Kmph (Approx). Check Hero Splendor Plus Sports comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/splendor-plus-sports6778e3ef9aea1.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Hero_Splendor_Plus_sports.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -8931,7 +8931,7 @@ export const bikes: OBike[] = [
     "description": "Hero Splendor Plus I3s IBS BS4 Price in Bangladesh is 126000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.2 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero Splendor Plus I3s IBS BS4 mileage is approximately 45 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 112 Kg and top speed is approximately 75 Kmph (Approx). Check Hero Splendor Plus I3s IBS BS4 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-splendor-plus-i3s-ibs6683d5528553b.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hunk.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -9025,7 +9025,7 @@ export const bikes: OBike[] = [
     "description": "Hero Passion Xpro Drum Refresh Price in Bangladesh is 125000 BDT. This commuter is powered by 110cc, which generates a maximum power of 9.3 Bhp @ 7500 RPM, and its maximum torque is 9 NM @ 5500 RPM. Hero Passion Xpro Drum Refresh mileage is approximately 90 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 119 Kg and top speed is approximately 90 Kmph (Approx). Check Hero Passion Xpro Drum Refresh comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-passion-xpro-drum6683b8804e042.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/passion_x_pro_drum.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -9119,7 +9119,7 @@ export const bikes: OBike[] = [
     "description": "Hero Splendor Plus (Special Edition) Price in Bangladesh is 125000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.25 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero Splendor Plus (Special Edition) mileage is approximately 70 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 12.3 Kg and top speed is approximately 100 Kmph (Approx). Check Hero Splendor Plus (Special Edition) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-splendor-plus-special-edition668506a55ec54.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Hero_Splendor_Plus_special.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -9213,7 +9213,7 @@ export const bikes: OBike[] = [
     "description": "Hero Splendor Plus Price in Bangladesh is 117000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.2 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero Splendor Plus mileage is approximately 70 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 112 Kg and top speed is approximately 75 Kmph (Approx). Check Hero Splendor Plus comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-splendor-plus603caed8277a9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Hero_Splendor_Plus.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""
@@ -9307,7 +9307,7 @@ export const bikes: OBike[] = [
     "description": "Hero HF Deluxe Tubeless Refresh Price in Bangladesh is 116000 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.2 Bhp @ 8000 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Hero HF Deluxe Tubeless Refresh mileage is approximately 50 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 109 Kg and top speed is approximately 70 Kmph (Approx). Check Hero HF Deluxe Tubeless Refresh comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hero-hf-deluxe603cb0869df4f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Hero_HF_Deluxe_Tubeless.jpg?v=1786904072"
     },
     "mileage": {},
     "showroom": ""

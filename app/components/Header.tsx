@@ -237,14 +237,13 @@ export default function MotoHeader() {
   const MAIN_NAV: NavItem[] = [
     { label: "Bike Price", href: "/bikes" },
     { label: "Brands", href: "/brands" },
-    // { label: "Compare", href: "/compare" },
+    { label: "Compare", href: "/compare" },
     // { label: "Upcoming Bikes", href: "/upcoming-bikes" },
     // { label: "Reviews", href: "/reviews" },
     // { label: "Tips", href: "/tips" },
     { label: "Blogs", href: "/blogs" },
     { label: "About Us", href: "/about" },
     // { label: "Market", href: "/market" },
-    // { label: "Brands", href: "/", dropdown: brandDropdown },
   ];
 
   function closeEverything() {

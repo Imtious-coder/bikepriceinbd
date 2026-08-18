@@ -25,6 +25,14 @@ const ENGINE_CC = [
 const BIKES_INDEXED = "750+";
 const MAX_SUGGESTIONS = 6;
 
+function slugifyBrand(brand: string) {
+  return brand
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 export default function Hero() {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -84,9 +92,7 @@ export default function Hero() {
     }
 
     const trimmed = query.trim();
-    router.push(
-      trimmed ? `/BikesPage?q=${encodeURIComponent(trimmed)}` : "/BikesPage"
-    );
+    router.push(trimmed ? `/bikes?q=${encodeURIComponent(trimmed)}` : "/bikes");
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
@@ -118,50 +124,69 @@ export default function Hero() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            url: "https://example.com",
+            url: "https://bikepriceinbangladesh.com",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://example.com/BikesPage?q={search_term}",
+              target: "https://bikepriceinbangladesh.com/bikes?q={search_term}",
               "query-input": "required name=search_term",
             },
           }),
         }}
       />
 
-      {/* quiet background: faint watermark of the bike count + soft blue wash */}
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
+      {/* animated background: soft floating glow + watermark bike count */}
+      <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
         <span
           className="absolute -right-6 -top-10 select-none font-black text-blue-100 md:-right-4 md:-top-16"
           style={{ fontSize: "clamp(140px, 22vw, 260px)", lineHeight: 1 }}
         >
           {BIKES_INDEXED}
         </span>
+
+        {/* slow-drifting gradient blobs */}
+        <div
+          className="absolute -left-24 top-10 h-64 w-64 rounded-full bg-blue-200/40 blur-3xl motion-safe:animate-[float-slow_9s_ease-in-out_infinite]"
+        />
+        <div
+          className="absolute right-1/4 bottom-0 h-56 w-56 rounded-full bg-sky-200/40 blur-3xl motion-safe:animate-[float-slow_11s_ease-in-out_infinite]"
+          style={{ animationDelay: "-3s" }}
+        />
+
+        <style>{`
+          @keyframes float-slow {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(12px, -16px) scale(1.05); }
+          }
+        `}</style>
       </div>
 
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 py-16 text-center sm:py-20 md:py-24">
         {/* eyebrow */}
-        <span className="mb-4 inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700">
+        <span className="mb-4 inline-flex items-center rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700 motion-safe:animate-[fade-in-up_0.5s_ease-out]">
           {BIKES_INDEXED} bikes tracked across Bangladesh
         </span>
 
         {/* H1 */}
-        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+        <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl motion-safe:animate-[fade-in-up_0.5s_ease-out_0.05s_both]">
           Latest Bike Price in <span className="text-blue-600">Bangladesh 2026</span>
         </h1>
 
         {/* Description */}
-        <p className="mt-4 max-w-xl text-balance text-base text-slate-500 sm:text-lg">
+        <p className="mt-4 max-w-xl text-balance text-base text-slate-500 sm:text-lg motion-safe:animate-[fade-in-up_0.5s_ease-out_0.1s_both]">
           Find the latest bike prices, specifications, mileage, features and reviews of motorcycles available in Bangladesh. Compare Honda, Yamaha, Bajaj, Suzuki, Hero, TVS, Royal Enfield, CFMOTO and other popular bike brands.
         </p>
 
         {/* Search Bike */}
-        <div ref={containerRef} className="relative mt-8 w-full max-w-xl">
+        <div
+          ref={containerRef}
+          className="relative mt-8 w-full max-w-xl motion-safe:animate-[fade-in-up_0.5s_ease-out_0.15s_both]"
+        >
           <form
-            action="/BikesPage"
+            action="/bikes"
             method="get"
             role="search"
             onSubmit={handleSubmit}
-            className="flex w-full items-center gap-2 rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100"
+            className="flex w-full items-center gap-2 rounded-xl border border-slate-200 bg-white p-1.5 shadow-sm transition-shadow duration-300 focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100 focus-within:shadow-md"
           >
             <label htmlFor="bike-search" className="sr-only">
               Search bikes by name or brand
@@ -202,7 +227,7 @@ export default function Hero() {
             />
             <button
               type="submit"
-              className="flex-shrink-0 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
+              className="flex-shrink-0 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2"
             >
               Search
             </button>
@@ -213,7 +238,7 @@ export default function Hero() {
             <ul
               id="bike-search-listbox"
               role="listbox"
-              className="absolute left-0 right-0 top-full z-20 mt-2 max-h-80 overflow-y-auto rounded-xl border border-slate-200 bg-white py-2 text-left shadow-lg"
+              className="absolute left-0 right-0 top-full z-20 mt-2 max-h-80 overflow-y-auto rounded-xl border border-slate-200 bg-white py-2 text-left shadow-lg motion-safe:animate-[fade-in-up_0.15s_ease-out]"
             >
               {results.length > 0 ? (
                 results.map((bike, i) => (
@@ -261,7 +286,7 @@ export default function Hero() {
         {/* Browse by Brand / Budget / CC */}
         <nav
           aria-label="Browse motorcycles by category"
-          className="mt-10 grid w-full max-w-2xl gap-6 text-left sm:grid-cols-3"
+          className="mt-10 grid w-full max-w-2xl gap-6 text-left sm:grid-cols-3 motion-safe:animate-[fade-in-up_0.5s_ease-out_0.2s_both]"
         >
           <div>
             <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
@@ -271,10 +296,8 @@ export default function Hero() {
               {BRANDS.map((brand) => (
                 <li key={brand}>
                   <Link
-                    href={`/BikesPage?brand=${encodeURIComponent(
-                      brand.toLowerCase()
-                    )}`}
-                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                    href={`/brands/${slugifyBrand(brand)}`}
+                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 hover:shadow-sm"
                   >
                     {brand}
                   </Link>
@@ -291,8 +314,8 @@ export default function Hero() {
               {BUDGETS.map((b) => (
                 <li key={b.query}>
                   <Link
-                    href={`/BikesPage?${b.query}`}
-                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                    href={`/bikes?${b.query}`}
+                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 hover:shadow-sm"
                   >
                     {b.label}
                   </Link>
@@ -309,8 +332,8 @@ export default function Hero() {
               {ENGINE_CC.map((c) => (
                 <li key={c.query}>
                   <Link
-                    href={`/BikesPage?${c.query}`}
-                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-colors hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
+                    href={`/bikes?${c.query}`}
+                    className="inline-block rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 hover:shadow-sm"
                   >
                     {c.label}
                   </Link>
@@ -320,6 +343,13 @@ export default function Hero() {
           </div>
         </nav>
       </div>
+
+      <style>{`
+        @keyframes fade-in-up {
+          from { opacity: 0; transform: translateY(8px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   );
 }
