@@ -199,6 +199,27 @@ function generateBikeDescription(bike: OBike): string {
   return parts.join(" ");
 }
 
+import { permanentRedirect } from "next/navigation";
+
+// ─── Normalization helper ───────────────────────────────────────────────
+
+function normalizeSlug(slug: string): string {
+  return slug.replace(/_/g, "-").toLowerCase();
+}
+
+function findBikeWithFallback(rawSlug: string) {
+  // 1. Try exact match first (fast path for already-correct URLs)
+  const exact = bikes.find((b) => b.slug === rawSlug);
+  if (exact) return { bike: exact, needsRedirect: false };
+
+  // 2. Try normalized match (catches old Underscore_Style / MixedCase slugs)
+  const normalized = normalizeSlug(rawSlug);
+  const fallback = bikes.find((b) => b.slug === normalized);
+  if (fallback) return { bike: fallback, needsRedirect: normalized !== rawSlug };
+
+  return { bike: null, needsRedirect: false };
+}
+
 const SPEC_SECTION_STYLES = [
   { bg: "bg-blue-50/60", border: "border-blue-100", accent: "text-blue-600" },
   { bg: "bg-slate-50", border: "border-slate-200", accent: "text-slate-600" },
@@ -394,31 +415,23 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const { bike } = findBikeWithFallback(slug);
 
-  const bike = getBike(slug);
-
-  
   if (!bike) {
     return {
-      title: "Bike Not Found | Bike Price in Bangladesh",
-      robots: {
-        index: false,
-        follow: false,
-      },
+      title: "Bike Not Found | Bike Price In Bangladesh",
+      robots: { index: false, follow: false },
     };
   }
-  
+
   const imageUrl = getImageUrl(bike.images?.primary);
 
   return {
     title: `${bike.name} Price in Bangladesh 2026 | Specs & Features`,
-
     description: `${bike.name} price in Bangladesh 2026 is ${bike.price}. Check engine specifications, mileage, top speed, features, dimensions, colors and latest information.`,
-
     alternates: {
-      canonical: `${BASE_URL}/bikes/${bike.slug}`,
+      canonical: `${BASE_URL}/bikes/${bike.slug}`, // always the CORRECT canonical slug
     },
-
     openGraph: {
       title: `${bike.name} Price in Bangladesh 2026`,
       description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
@@ -433,18 +446,13 @@ export async function generateMetadata({
         },
       ],
     },
-
     twitter: {
-        card: "summary_large_image",
-        title: `${bike.name} Price in Bangladesh 2026`,
-        description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
-        images: [imageUrl],
-      },
-
-    robots: {
-      index: true,
-      follow: true,
+      card: "summary_large_image",
+      title: `${bike.name} Price in Bangladesh 2026`,
+      description: `${bike.name} price, specifications, mileage, top speed and features in Bangladesh.`,
+      images: [imageUrl],
     },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -518,9 +526,14 @@ export default async function BikeDetailPage({
 }) {
   const { slug } = await params;
   const bike = getBikeBySlug(slug);
+  const { bike, needsRedirect } = findBikeWithFallback(slug);
 
   if (!bike) {
     notFound();
+
+    if (needsRedirect) {
+    permanentRedirect(`/bikes/${bike.slug}`);
+  }
   }
 
     const faqs = generateBikeFaqs(bike);
