@@ -525,20 +525,17 @@ export default async function BikeDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const bike = getBikeBySlug(slug);
   const { bike, needsRedirect } = findBikeWithFallback(slug);
 
   if (!bike) {
     notFound();
+  }
 
-    if (needsRedirect) {
+  if (needsRedirect) {
     permanentRedirect(`/bikes/${bike.slug}`);
   }
-  }
 
-    const faqs = generateBikeFaqs(bike);
-
-
+  const faqs = generateBikeFaqs(bike);
   const imageSrc = getImageUrl(bike.images?.primary);
 
 const productSchema = {
