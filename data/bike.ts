@@ -4117,7 +4117,7 @@ export const bikes: OBike[] = [
       "Nebula White"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_300SR.jpg?v=1787082920"
     },
     "mileage": {},
     "showroom": ""
@@ -4216,7 +4216,7 @@ export const bikes: OBike[] = [
       "Nebula White 2"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_250SR.jpg?v=1787082919"
     },
     "mileage": {},
     "showroom": ""
@@ -4313,7 +4313,7 @@ export const bikes: OBike[] = [
       "Nebula Black"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_300NK.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4410,7 +4410,7 @@ export const bikes: OBike[] = [
       "Nebula Black"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_250NK.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4508,7 +4508,7 @@ export const bikes: OBike[] = [
       "Teal Green"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_250CL-C.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4602,7 +4602,7 @@ export const bikes: OBike[] = [
     "description": "CFMOTO CF LITE 250 DUAL  Price in Bangladesh is 338500 BDT. This bike is Upcoming In Bangladesh. This Bike is powered by 250cc, which generates a maximum power of 24.14 Bhp @ 8000 rpm, and its maximum torque is 22.5 NM @ 7000 rpm. This Bike mileage in city 25 KM (approx.) and on highway 30 KM (approx.) It has a Dual Channel ABS Braking system with Tubeless tyres. Weight is 154 KG and Top Speed 120 KMPH (approx.). More in this page check CFMOTO CF LITE 250 DUAL comparison, check out the CFMOTO CF LITE 250 DUAL pros cons, view the CFMOTO CF LITE 250 DUAL image player, and see the CFMOTO CF LITE 250 DUAL price history to learn more before buy this  motorcycle. (Enjoy free 2-year registration with the CFMOTO CF-LITE 250 DUAL and save around BDT 16,000.)",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_CF_LITE_250.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4696,7 +4696,7 @@ export const bikes: OBike[] = [
     "description": "CFMOTO CF LITE 230 DUAL Price in Bangladesh is 2,87,500 BDT (Expected). This Bike is powered by a 229cc Engine, which generates a Maximum power of 14.08 Bhp @7000 RPM and its maximum torque is 16.5 NM @ 5500RPM. CFMOTO CF LITE 230 DUAL Bike mileage in the city is 30 KM (approx.) and on highway 35 KM (approx.) It has a Disc Braking system. Seat Height is 838 mm, and Weight is 132 KG. Top Speed 110 KMPH (approx.). More in this page check CFMOTO CF LITE 230 DUAL comparison, check out the CFMOTO CF LITE 230 DUAL pros cons, view the CFMOTO CF LITE 230 DUAL image player, and see the CFMOTO CF LITE 230 DUAL price history to learn more before buy this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_CF_LITE_230.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4795,7 +4795,7 @@ export const bikes: OBike[] = [
       "Space Silver"
     ],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_150SC.webp?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4889,7 +4889,7 @@ export const bikes: OBike[] = [
     "description": "CFMOTO 150 Aura Price in Bangladesh is 378500 BDT. This  scooter is Upcoming In Bangladesh. This Bike is powered by 150cc, which generates a maximum power of 15.8 Bhp @ 8000 rpm, and its maximum torque is 14.3 NM @ 6500 rpm. This Bike mileage in city 40 KM (approx.) and on highway 45 KM (approx.) It has a Dual Channel ABS Braking system with Tubeless tyres. Weight is 132 KG and Top Speed 110 KMPH (approx.). More in this page check CFMOTO 150 Aura comparison, check out the CFMOTO 150 Aura pros cons, view the CFMOTO 150 Aura image player, and see the CFMOTO 150 Aura price history to learn more before buy this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/CFMOTO_150_Aura.jpg?v=1787082918"
     },
     "mileage": {},
     "showroom": ""
@@ -4983,7 +4983,7 @@ export const bikes: OBike[] = [
     "description": "New TVS Apache RTR 160 4V (Single Channel ABS) Price in Bangladesh is 247900 BDT. This standard is powered by 160cc, which generates a maximum power of 16.6 Bhp @ 8000 RPM, and its maximum torque is 14.8 NM @ 6500 RPM. New TVS Apache RTR 160 4V (Single Channel ABS) mileage is approximately 35 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 130 Kmph (Approx). Check New TVS Apache RTR 160 4V (Single Channel ABS) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-tvs-apache-rtr-160-4v-single-channel-abs66863b4882e84.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_TVS_Apache_RTR_160_4V_Single_Channel_ABS.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5077,7 +5077,7 @@ export const bikes: OBike[] = [
     "description": "New TVS Apache RTR 160 4V Price in Bangladesh is 219900 BDT. This standard is powered by 160cc, which generates a maximum power of 16.6 Bhp @ 8000 RPM, and its maximum torque is 14.8 NM @ 6500 RPM. New TVS Apache RTR 160 4V mileage is approximately 35 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 143 kg (SD)/ 14 and top speed is approximately 130 Kmph (Approx). Check New TVS Apache RTR 160 4V comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-tvs-apache-rtr-160-4v60373aa192763.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_TVS_Apache_RTR_160_4V.jpg?v=1787119109"
     },
     "mileage": {},
     "showroom": ""
@@ -5171,7 +5171,7 @@ export const bikes: OBike[] = [
     "description": "New TVS Apache RTR 160 4V (Single Channel ABS) Price in Bangladesh is 247900 BDT. This standard is powered by 160cc, which generates a maximum power of 16.6 Bhp @ 8000 RPM, and its maximum torque is 14.8 NM @ 6500 RPM. New TVS Apache RTR 160 4V (Single Channel ABS) mileage is approximately 35 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 130 Kmph (Approx). Check New TVS Apache RTR 160 4V (Single Channel ABS) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-tvs-apache-rtr-160-4v-single-channel-abs66863b4882e84.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_TVS_Apache_RTR_160_4V_Single_Channel_ABS_2.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5265,7 +5265,7 @@ export const bikes: OBike[] = [
     "description": "TVS Apache RTR 160 2v Refresh X-connect Price in Bangladesh is 199900 BDT. This standard is powered by 160cc, which generates a maximum power of 15.01 Bhp @ 8000 RPM, and its maximum torque is 13.01 NM @ 7000 RPM. TVS Apache RTR 160 2v Refresh X-connect mileage is approximately 40 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 140 kg and top speed is approximately 120 Kmph (Approx). Check TVS Apache RTR 160 2v Refresh X-connect comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/rtr-160-2v-refresh664d94e337f42.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Apache_RTR_160_2v_Refresh_X-connect.jpg?v=1787119108"
     },
     "mileage": {},
     "showroom": ""
@@ -5359,7 +5359,7 @@ export const bikes: OBike[] = [
     "description": "TVS Apache RTR 160 2V ABS Price in Bangladesh is 194999 BDT. This standard is powered by 160cc, which generates a maximum power of 15.2 Bhp @ 8500 RPM, and its maximum torque is 13.1 NM @ 6500 RPM. TVS Apache RTR 160 2V ABS mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 137 kg and top speed is approximately 125 Kmph (Approx). Check TVS Apache RTR 160 2V ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-apache-rtr-160-abs6322dd3cb762e.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Apache_RTR_160_2V_ABS.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5453,7 +5453,7 @@ export const bikes: OBike[] = [
     "description": "TVS Apache RTR 160 2V Price in Bangladesh is 189999 BDT. This standard is powered by 160cc, which generates a maximum power of 15.2 Bhp @ 8500 RPM, and its maximum torque is 13.1 NM @ 6500 RPM. TVS Apache RTR 160 2V mileage is approximately 40 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 137 kg and top speed is approximately 120 Kmph (Approx). Check TVS Apache RTR 160 2V comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-apache-rtr-160-race-editio60373adcd1a29.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Apache_RTR_160_2V_0a804a8c-594e-4020-8ede-fb3c3df1bc4c.jpg?v=1787119277"
     },
     "mileage": {},
     "showroom": ""
@@ -5547,7 +5547,7 @@ export const bikes: OBike[] = [
     "description": "TVS Raider 125 Price in Bangladesh is 169900 BDT. This commuter is powered by 125cc, which generates a maximum power of 12.72 Bhp @ 8000 RPM, and its maximum torque is 11.5 NM @ 6500 RPM. TVS Raider 125 mileage is approximately 50 Kmpl (Approx). It has a Syncronised Braking Technology braking system with tubeless tyres. Weight is 120 Kg and top speed is approximately 110 Kmph (Approx). Check TVS Raider 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-raider-12561a5a6b16aba9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Raider_125.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5641,7 +5641,7 @@ export const bikes: OBike[] = [
     "description": "TVS Stryker 125 Price in Bangladesh is 144999 BDT. This commuter is powered by 125cc, which generates a maximum power of 11 Bhp @ 8000 RPM, and its maximum torque is 10.8 NM @ 6000 RPM. TVS Stryker 125 mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 117 Kg and top speed is approximately 100 Kmph (Approx). Check TVS Stryker 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-stryker-1256037328c7e4a7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Stryker_125.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5735,7 +5735,7 @@ export const bikes: OBike[] = [
     "description": "TVS Max 125 Price in Bangladesh is 144900 BDT. This commuter is powered by 125cc, which generates a maximum power of 11 Bhp @ 8000 RPM, and its maximum torque is 10.8 NM @ 5500 RPM. TVS Max 125 mileage is approximately 55 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 117 Kg and top speed is approximately 100 Kmph (Approx). Check TVS Max 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-max-125657688d182a64.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Max_125.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5829,7 +5829,7 @@ export const bikes: OBike[] = [
     "description": "TVS Max Semi Trail 125 Price in Bangladesh is 127990 BDT. This dual purpose is powered by 125cc, which generates a maximum power of 10.8 Bhp @ 8000 RPM, and its maximum torque is 10.8 NM @ 5500 RPM. TVS Max Semi Trail 125 mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with Info-Not-Available tyres. Weight is 120 Kg and top speed is approximately 100 Kmph (Approx). Check TVS Max Semi Trail 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-max-semi-trail-12560373842b3dc0.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Max_Semi_Trail_125.png?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -5923,7 +5923,7 @@ export const bikes: OBike[] = [
     "description": "TVS Metro Plus Price in Bangladesh is 124999 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.29 Bhp @ 7500 RPM, and its maximum torque is 8.7 NM @ 5000 RPM. TVS Metro Plus mileage is approximately 55 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 138 KG and top speed is approximately 100 Kmph (Approx). Check TVS Metro Plus comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-metro-plus603733cddc34a.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Metro_Plus.webp?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -6017,7 +6017,7 @@ export const bikes: OBike[] = [
     "description": "TVS Radeon Price in Bangladesh is 120999 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.3 Bhp @ 7000 RPM, and its maximum torque is 8.7 NM @ 5000 RPM. TVS Radeon mileage is approximately 55 Kmpl (Approx). It has a Drum Brakes braking system with Info-Not-Available tyres. Weight is 112 Kg and top speed is approximately 100 Kmph (Approx). Check TVS Radeon comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-radeon60373390c111f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Radeon.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -6111,7 +6111,7 @@ export const bikes: OBike[] = [
     "description": "TVS Metro Price in Bangladesh is 114900 BDT. This commuter is powered by 100cc, which generates a maximum power of 7.7 Bhp @ 7500 RPM, and its maximum torque is 7.8 NM @ 5500 RPM. TVS Metro mileage is approximately 50 Kmpl (Approx). It has a Drum Brake braking system with tubeless tyres. Weight is 103 Kg and top speed is approximately 85 Kmph (Approx). Check TVS Metro comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-metro603733fa47bc6.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Metro.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -6205,7 +6205,7 @@ export const bikes: OBike[] = [
     "description": "TVS XL 100 Comfort Price in Bangladesh is 103900 BDT. This moped is powered by 100cc, which generates a maximum power of 4.34 Bhp @ 6000 RPM, and its maximum torque is 6.5 NM @ 3500 RPM. TVS XL 100 Comfort mileage is approximately 60 Kmpl (Approx). It has a Drum Brakes braking system with tubetyre tyres. Weight is 80 Kg and top speed is approximately 80 Kmph (Approx). Check TVS XL 100 Comfort comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-xl-100-comfort608e36e47b088.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_XL_100_Comfort.webp?v=1787119109"
     },
     "mileage": {},
     "showroom": ""
@@ -6299,7 +6299,7 @@ export const bikes: OBike[] = [
     "description": "TVS XL 100 i-Touch Price in Bangladesh is 95999 BDT. This moped is powered by 100cc, which generates a maximum power of 4.3 Bhp @ 6000 RPM, and its maximum torque is 6.5 NM @ 3500 RPM. TVS XL 100 i-Touch mileage is approximately 55 Kmpl (Approx). It has a Drum Brakes braking system with tubetyre tyres. Weight is 86 Kg and top speed is approximately 85 Kmph (Approx). Check TVS XL 100 i-Touch comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-xl-100-i-touch603731a64b978.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_XL_100_i-Touch.webp?v=1787119109"
     },
     "mileage": {},
     "showroom": ""
@@ -6393,7 +6393,7 @@ export const bikes: OBike[] = [
     "description": "TVS Ntorq 125 Price in Bangladesh is 204900 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.25 Bhp @ 7000 RPM, and its maximum torque is 10.5 NM @ 5500 RPM. TVS Ntorq 125 mileage is approximately 40 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 116 Kg and top speed is approximately 100 Kmph (Approx). Check TVS Ntorq 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-ntorq-125653ddd22098a0.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Ntorq_125.jpg?v=1787119508"
     },
     "mileage": {},
     "showroom": ""
@@ -6487,7 +6487,7 @@ export const bikes: OBike[] = [
     "description": "TVS Wego Price in Bangladesh is 164999 BDT. This scooter is powered by 110cc, which generates a maximum power of 7.89 Bhp @ 7500 RPM, and its maximum torque is 8.4 NM @ 5500 RPM. TVS Wego mileage is approximately 55 Kmpl (Approx). It has a Drum Brakes braking system with tubeless tyres. Weight is 108 Kg and top speed is approximately 90 Kmph (Approx). Check TVS Wego comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-wego60373240e0154.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Wego.jpg?v=1787119110"
     },
     "mileage": {},
     "showroom": ""
@@ -6581,7 +6581,7 @@ export const bikes: OBike[] = [
     "description": "TVS Rockz 125 Price in Bangladesh is 153900 BDT. This moped is powered by 125cc, which generates a maximum power of 9.8 Bhp @ 7500 RPM, and its maximum torque is 9.8 NM @ 5500 RPM. TVS Rockz 125 mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 107 Kg and top speed is approximately 90 Kmph (Approx). Check TVS Rockz 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/tvs-rockz-12560f716f66d313.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/TVS_Rockz_125.png?v=1787119112"
     },
     "mileage": {},
     "showroom": ""
@@ -9401,7 +9401,7 @@ export const bikes: OBike[] = [
     "description": "Honda CB150R Exmotion Price in Bangladesh is 755000 BDT. This naked sports is powered by 150cc, which generates a maximum power of 19.7 Bhp @ 9000 RPM, and its maximum torque is 14.5 NM @ 7000 RPM. Honda CB150R Exmotion mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 123 kg and top speed is approximately 135 Kmph (Approx). Check Honda CB150R Exmotion comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-cb150r-exmotion602cd7961dc5e.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_CB150R_Exmotion.jpg?v=1787076102"
     },
     "mileage": {},
     "showroom": ""
@@ -9495,7 +9495,7 @@ export const bikes: OBike[] = [
     "description": "New Honda CBR 150R Price in Bangladesh is 650000 BDT. This sports is powered by 150cc, which generates a maximum power of 16.9 Bhp @ 9000 RPM, and its maximum torque is 14.4 NM @ 7000 RPM. New Honda CBR 150R mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 139 kg and top speed is approximately 140 Kmph (Approx). Check New Honda CBR 150R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-honda-cbr-150r69243f2bf23d1.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Honda_CBR_150R.jpg?v=1787076101p"
     },
     "mileage": {},
     "showroom": ""
@@ -9589,7 +9589,7 @@ export const bikes: OBike[] = [
     "description": "Honda CB150X Price in Bangladesh is 520000 BDT. This adventure is powered by 150cc, which generates a maximum power of 15.2 Bhp @ 9000 RPM, and its maximum torque is 13.8 NM @ 7000 RPM. Honda CB150X mileage is approximately 40 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 139 Kg and top speed is approximately 130 Kmph (Approx). Check Honda CB150X comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-cb150x61a5a6d25e28c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_CB150X.jpg?v=1787076103"
     },
     "mileage": {},
     "showroom": ""
@@ -9683,7 +9683,7 @@ export const bikes: OBike[] = [
     "description": "Honda PCX 150 Price in Bangladesh is 510000 BDT. This maxi scooter is powered by 150cc, which generates a maximum power of 13.4 Bhp @ 0 RPM, and its maximum torque is 14 NM @ 0 RPM. Honda PCX 150 mileage is approximately 35 Kmpl (Approx). It has a ABS Braking braking system with tubeless tyres. Weight is 130 kg and top speed is approximately 70 Kmph (Approx). Check Honda PCX 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-pcx-15065229516399b9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_PCX_150.webp?v=1787076102"
     },
     "mileage": {},
     "showroom": ""
@@ -9777,7 +9777,7 @@ export const bikes: OBike[] = [
     "description": "Honda CRF 150L Price in Bangladesh is 495000 BDT. This off road is powered by 150cc, which generates a maximum power of 12.5 Bhp @ 8000 RPM, and its maximum torque is 12.43 NM @ 6500 RPM. Honda CRF 150L mileage is approximately 35 Kmpl (Approx). It has a Double Disc braking system with Info-Not-Available tyres. Weight is 122 kg and top speed is approximately 110 Kmph (Approx). Check Honda CRF 150L comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-crf-150l602cfe615d866.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_CRF_150L.webp?v=1787076313"
     },
     "mileage": {},
     "showroom": ""
@@ -9871,7 +9871,7 @@ export const bikes: OBike[] = [
     "description": "Honda ADV 150 Price in Bangladesh is 475000 BDT. This maxi scooter is powered by 150cc, which generates a maximum power of 13.4 Bhp @ 8500 RPM, and its maximum torque is 14 NM @ 6000 RPM. Honda ADV 150 mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 125 Kg and top speed is approximately 120 Kmph (Approx). Check Honda ADV 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-adv-1506087db62e7faf.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_ADV_150_2021.avif?v=1787076313"
     },
     "mileage": {},
     "showroom": ""
@@ -9965,7 +9965,7 @@ export const bikes: OBike[] = [
     "description": "Honda Super Cub C125 ABS Price in Bangladesh is 450000 BDT. This cub bike is powered by 125cc, which generates a maximum power of 0 Bhp @ 0 RPM, and its maximum torque is 0 NM @ 0 RPM. Honda Super Cub C125 ABS mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with Info-Not-Available tyres. Weight is 109 KG and top speed is approximately 90 Kmph (Approx). Check Honda Super Cub C125 ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-super-cub-c125-abs60bdf8dd136df.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Super_Cub_C125.webp?v=1787076314"
     },
     "mileage": {},
     "showroom": ""
@@ -10059,7 +10059,7 @@ export const bikes: OBike[] = [
     "description": "Honda Vario 160 ABS Price in Bangladesh is 445000 BDT. This maxi scooter is powered by 160cc, which generates a maximum power of 15.15 Bhp @ 8500 RPM, and its maximum torque is 13.8 NM @ 7000 RPM. Honda Vario 160 ABS mileage is approximately 35 Kmpl (Approx). It has a Disc Brake braking system with tubeless tyres. Weight is 119 kg and top speed is approximately 120 Kmph (Approx). Check Honda Vario 160 ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-vario-16068032e0acca1f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Vario_160_ABS.jpg?v=1787076312"
     },
     "mileage": {},
     "showroom": ""
@@ -10153,7 +10153,7 @@ export const bikes: OBike[] = [
     "description": "Honda CB150R Streetfire Price in Bangladesh is 380000 BDT. This naked sports is powered by 150cc, which generates a maximum power of 16.7 Bhp @ 9000 RPM, and its maximum torque is 13.8 NM @ 7000 RPM. Honda CB150R Streetfire mileage is approximately 35 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 136 kg and top speed is approximately 135 Kmph (Approx). Check Honda CB150R Streetfire comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-cb150r-streetfire602cd75d2fb47.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_CB150R_Streetfire.jpg?v=1787076539"
     },
     "mileage": {},
     "showroom": ""
@@ -10247,7 +10247,7 @@ export const bikes: OBike[] = [
     "description": "Honda NX200 Price in Bangladesh is 315000 BDT. This adventure is powered by 200cc, which generates a maximum power of 16.27 Bhp @ 8500 RPM, and its maximum torque is 15.1 NM @ 6000 RPM. Honda NX200 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 147 kg and top speed is approximately 130 Kmph (Approx). Check Honda NX200 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-nx2006926ad49205ac.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_NX200.png?v=1787076539"
     },
     "mileage": {},
     "showroom": ""
@@ -10341,7 +10341,7 @@ export const bikes: OBike[] = [
     "description": "Honda Hornet 2.0 Price in Bangladesh is 289000 BDT. This standard is powered by 180cc, which generates a maximum power of 16.37 Bhp @ 8500 RPM, and its maximum torque is 15.5 NM @ 6000 RPM. Honda Hornet 2.0 mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 142 Kg and top speed is approximately 125 Kmph (Approx). Check Honda Hornet 2.0 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-hornet-206700d747caf17.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Hornet_2.0.png?v=1787076539"
     },
     "mileage": {},
     "showroom": ""
@@ -10435,7 +10435,7 @@ export const bikes: OBike[] = [
     "description": "Honda X-Blade 160 Fi ABS Price in Bangladesh is 240000 BDT. This standard is powered by 160cc, which generates a maximum power of 13.94 Bhp @ 8500 RPM, and its maximum torque is 14.7 NM @ 6000 RPM. Honda X-Blade 160 Fi ABS mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 144 Kg and top speed is approximately 125 Kmph (Approx). Check Honda X-Blade 160 Fi ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-x-blade-160-fi-abs67bc1dd5cd0dc.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_X-Blade_160_Fi.jpg?v=1787076539"
     },
     "mileage": {},
     "showroom": ""
@@ -10529,7 +10529,7 @@ export const bikes: OBike[] = [
     "description": "Honda X-Blade 160 ABS Price in Bangladesh is 232000 BDT. This standard is powered by 160cc, which generates a maximum power of 13.9 Bhp @ 8500 RPM, and its maximum torque is 13.9 NM @ 6000 RPM. Honda X-Blade 160 ABS mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 141 kg and top speed is approximately 115 Kmph (Approx). Check Honda X-Blade 160 ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-x-blade-160-abs6088f14d90bc8.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_X-Blade_160_Fi.jpg?v=1787076539"
     },
     "mileage": {},
     "showroom": ""
@@ -10623,7 +10623,7 @@ export const bikes: OBike[] = [
     "description": "Honda Activa 125 Fi BS6 Price in Bangladesh is 225000 BDT. This scooter is powered by 125cc, which generates a maximum power of 8.8 Bhp @ 6500 RPM, and its maximum torque is 10.3 NM @ 5000 RPM. Honda Activa 125 Fi BS6 mileage is approximately 50 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 111 Kg and top speed is approximately 100 Kmph (Approx). Check Honda Activa 125 Fi BS6 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-activa-125-fi-bs660850a7766064.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Activa_125_Fi.jpg?v=1787076748"
     },
     "mileage": {},
     "showroom": ""
@@ -10717,7 +10717,7 @@ export const bikes: OBike[] = [
     "description": "Honda SP160 (Double Disc) Price in Bangladesh is 225000 BDT. This standard is powered by 160cc, which generates a maximum power of 12.72 Bhp @ 7500 RPM, and its maximum torque is 14.58 NM @ 5500 RPM. Honda SP160 (Double Disc) mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 141 Kg and top speed is approximately 120 Kmph (Approx). Check Honda SP160 (Double Disc) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-sp160655b138241cb1.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_SP160_Double_Disc.jpg?v=1787076747"
     },
     "mileage": {},
     "showroom": ""
@@ -10811,14 +10811,14 @@ export const bikes: OBike[] = [
     "description": "Honda Dio Price in Bangladesh is 199000 BDT. This scooter is powered by 110cc, which generates a maximum power of 8 Bhp @ 7000 RPM, and its maximum torque is 8.91 NM @ 5500 RPM. Honda Dio mileage is approximately 45 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 103 Kg and top speed is approximately 90 Kmph (Approx). Check Honda Dio comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-dio602d03d5a69d4.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Dio.jpg?v=1787076748"
     },
     "mileage": {},
     "showroom": ""
   },
   {
     "slug": "honda-sp160-single-disc",
-    "name": "Honda SP160 (Single Disc)",
+    "name": "Honda SP160",
     "brand": "Honda",
     "cc": "160",
     "bike_type": "Standard",
@@ -10905,7 +10905,7 @@ export const bikes: OBike[] = [
     "description": "Honda SP160 (Single Disc) Price in Bangladesh is 199000 BDT. This standard is powered by 160cc, which generates a maximum power of 12.72 Bhp @ 7500 RPM, and its maximum torque is 14 NM @ 5500 RPM. Honda SP160 (Single Disc) mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 139 Kg and top speed is approximately 120 Kmph (Approx). Check Honda SP160 (Single Disc) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-sp160-single-disc66fbda19a35f0.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_SP160_Single_Disc.jpg?v=1787077076"
     },
     "mileage": {},
     "showroom": ""
@@ -10999,7 +10999,7 @@ export const bikes: OBike[] = [
     "description": "New Honda XBlade 160 Price in Bangladesh is 195000 BDT. This standard is powered by 160cc, which generates a maximum power of 13.9 Bhp @ 8500 RPM, and its maximum torque is 13.9 NM @ 6000 RPM. New Honda XBlade 160 mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 140 Kg and top speed is approximately 120 Kmph (Approx). Check New Honda XBlade 160 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-honda-xblade-160694808761de34.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Honda_XBlade_160.jpg?v=1787077076"
     },
     "mileage": {},
     "showroom": ""
@@ -11093,7 +11093,7 @@ export const bikes: OBike[] = [
     "description": "Honda X-Blade 160 Price in Bangladesh is 192500 BDT. This standard is powered by 160cc, which generates a maximum power of 13.9 Bhp @ 8500 RPM, and its maximum torque is 13.9 NM @ 6000 RPM. Honda X-Blade 160 mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 140 Kg and top speed is approximately 120 Kmph (Approx). Check Honda X-Blade 160 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-x-blade-160602e3e8cd10e0.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_XBlade_160.jpg?v=1787077078"
     },
     "mileage": {},
     "showroom": ""
@@ -11187,7 +11187,7 @@ export const bikes: OBike[] = [
     "description": "New Honda SP125 Price in Bangladesh is 167000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.72 Bhp @ 7500 RPM, and its maximum torque is 10.9 NM @ 6000 RPM. New Honda SP125 mileage is approximately 65 Kmpl (Approx). It has a Combi Brake System braking system with tubeless tyres. Weight is 117 kg and top speed is approximately 100 Kmph (Approx). Check New Honda SP125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-sp125-dlx68c297341bd92.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_SP_125_BS6.avif?v=1787077077"
     },
     "mileage": {},
     "showroom": ""
@@ -11281,7 +11281,7 @@ export const bikes: OBike[] = [
     "description": "Honda SP125 Price in Bangladesh is 165000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.65 Bhp @ 7500 RPM, and its maximum torque is 10.9 NM @ 6000 RPM. Honda SP125 mileage is approximately 65 Kmpl (Approx). It has a Combi Brake System braking system with tubeless tyres. Weight is 116 kg and top speed is approximately 100 Kmph (Approx). Check Honda SP125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-sp125655853cb9d480.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_SP_125_BS6.avif?v=1787077077"
     },
     "mileage": {},
     "showroom": ""
@@ -11375,7 +11375,7 @@ export const bikes: OBike[] = [
     "description": "Honda CB Shine SP Price in Bangladesh is 151000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.16 Bhp @ 7500 RPM, and its maximum torque is 10.3 NM @ 5500 RPM. Honda CB Shine SP mileage is approximately 50 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 124 kg and top speed is approximately 100 Kmph (Approx). Check Honda CB Shine SP comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-cb-shine-sp602cd84d0a73b.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_CB_Shine_SP.jpg?v=1787078139"
     },
     "mileage": {},
     "showroom": ""
@@ -11469,7 +11469,7 @@ export const bikes: OBike[] = [
     "description": "Honda Livo 110 Disc CBS Price in Bangladesh is 145000 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.31 Bhp @ 7500 RPM, and its maximum torque is 9.09 NM @ 5000 RPM. Honda Livo 110 Disc CBS mileage is approximately 60 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 111 Kg and top speed is approximately 85 Kmph (Approx). Check Honda Livo 110 Disc CBS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-livo-110-disc-cbs6996d2c3d3518.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Livo_110.png?v=1787078138"
     },
     "mileage": {},
     "showroom": ""
@@ -11563,7 +11563,7 @@ export const bikes: OBike[] = [
     "description": "Honda Dream 110 Price in Bangladesh is 125000 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.25 Bhp @ 7500 RPM, and its maximum torque is 9.09 NM @ 5500 RPM. Honda Dream 110 mileage is approximately 60 Kmpl (Approx). It has a Drum Brake braking system with tubeless tyres. Weight is 107 Kg and top speed is approximately 90 Kmph (Approx). Check Honda Dream 110 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-dream-11060d858d5590c5.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Dream_110.png?v=1787078137"
     },
     "mileage": {},
     "showroom": ""
@@ -11657,7 +11657,7 @@ export const bikes: OBike[] = [
     "description": "Honda Shine 100 DX Price in Bangladesh is 117000 BDT. This commuter is powered by 100cc, which generates a maximum power of 7.28 Bhp @ 7500 RPM, and its maximum torque is 8.04 NM @ 5000 RPM. Honda Shine 100 DX mileage is approximately 40 Kmpl (Approx). It has a Combi Brake System braking system with tubeless tyres. Weight is 103 kg and top speed is approximately 90 Kmph (Approx). Check Honda Shine 100 DX comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-shine-100-dx6884731e526ce.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Shine_100_DX.jpg?v=1787078135"
     },
     "mileage": {},
     "showroom": ""
@@ -11751,7 +11751,7 @@ export const bikes: OBike[] = [
     "description": "Honda Shine 100 Price in Bangladesh is 111000 BDT. This commuter is powered by 100cc, which generates a maximum power of 7.28 Bhp @ 7500 RPM, and its maximum torque is 8.05 NM @ 5000 RPM. Honda Shine 100 mileage is approximately 55 Kmpl (Approx). It has a Combi Brake System braking system with tubeless tyres. Weight is 99 kg and top speed is approximately 85 Kmph (Approx). Check Honda Shine 100 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/honda-shine-100660912ba1aadd.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Honda_Shine_100.jpg?v=1787078137"
     },
     "mileage": {},
     "showroom": ""
@@ -11845,7 +11845,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar F250 Price in Bangladesh is 365100 BDT. This sports is powered by 250cc, which generates a maximum power of 24.1 Bhp @ 8750 RPM, and its maximum torque is 21.5 NM @ 6500 RPM. Bajaj Pulsar F250 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 164 kg and top speed is approximately 130 Kmph (Approx). Check Bajaj Pulsar F250 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-f2506805dbf99794d.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_F250.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -11939,7 +11939,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar N250 Fi ABS (With USD) Price in Bangladesh is 360000 BDT. This naked sports is powered by 250cc, which generates a maximum power of 24.16 Bhp @ 8750 RPM, and its maximum torque is 21.5 NM @ 6500 RPM. Bajaj Pulsar N250 Fi ABS (With USD) mileage is approximately 30 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 164 kg and top speed is approximately 140 Kmph (Approx). Check Bajaj Pulsar N250 Fi ABS (With USD) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250-fi-abs-with69634a010ef68.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_N250_Fi.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12033,7 +12033,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar F250 (Red) Price in Bangladesh is 350100 BDT. This sports is powered by 250cc, which generates a maximum power of 24.1 Bhp @ 8750 RPM, and its maximum torque is 21.5 NM @ 6500 RPM. Bajaj Pulsar F250 (Red) mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 164 kg and top speed is approximately 130 Kmph (Approx). Check Bajaj Pulsar F250 (Red) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-f250-red68073640ba4e9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_F250_red.jpg?v=1787081825"
     },
     "mileage": {},
     "showroom": ""
@@ -12127,7 +12127,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar N250 Price in Bangladesh is 330100 BDT. This naked sports is powered by 250cc, which generates a maximum power of 24.2 Bhp @ 8750 RPM, and its maximum torque is 21.5 NM @ 6500 RPM. Bajaj Pulsar N250 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 162 kg and top speed is approximately 135 Kmph (Approx). Check Bajaj Pulsar N250 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n250655eea6963372.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_N250.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12221,7 +12221,7 @@ export const bikes: OBike[] = [
     "description": "New Bajaj Pulsar N160 (Dual Channel ABS & USD) Price in Bangladesh is 281000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15.78 Bhp @ 8750 RPM, and its maximum torque is 14.65 NM @ 6750 RPM. New Bajaj Pulsar N160 (Dual Channel ABS & USD) mileage is approximately 45 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 152 kg and top speed is approximately 100 Kmph (Approx). Check New Bajaj Pulsar N160 (Dual Channel ABS & USD) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-bajaj-pulsar-n160-dual-ch69634afa286e9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Bajaj_Pulsar_N160_fi.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12315,7 +12315,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Avenger 160 ABS Price in Bangladesh is 274000 BDT. This cruiser is powered by 160cc, which generates a maximum power of 14.8 Bhp @ 8500 RPM, and its maximum torque is 13.7 NM @ 7000 RPM. Bajaj Avenger 160 ABS mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 156 kg and top speed is approximately 115 Kmph (Approx). Check Bajaj Avenger 160 ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-avenger-160-abs603171090eb5f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Avenger.jpg?v=1787082225"
     },
     "mileage": {},
     "showroom": ""
@@ -12409,7 +12409,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar N160 Price in Bangladesh is 267000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15.69 Bhp @ 8750 RPM, and its maximum torque is 14.65 NM @ 6750 RPM. Bajaj Pulsar N160 mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 154 Kg and top speed is approximately 125 Kmph (Approx). Check Bajaj Pulsar N160 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n16062b3931d61313.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Bajaj_Pulsar_N160.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12503,7 +12503,7 @@ export const bikes: OBike[] = [
     "description": "New Bajaj Pulsar N160 Price in Bangladesh is 237000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15.49 Bhp @ 8750 RPM, and its maximum torque is 14.65 NM @ 6750 RPM. New Bajaj Pulsar N160 mileage is approximately 40 Kmpl (Approx). It has a Dual-Channel braking system with tubeless tyres. Weight is 154 Kg and top speed is approximately 125 Kmph (Approx). Check New Bajaj Pulsar N160 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/new-bajaj-pulsar-n16067f61ca83be98.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Bajaj_Pulsar_N160.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12597,7 +12597,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar N160 Twin Disc Carburetor Price in Bangladesh is 229000 BDT. This standard is powered by 160cc, which generates a maximum power of 15.69 Bhp @ 8750 RPM, and its maximum torque is 14.65 NM @ 6750 RPM. Bajaj Pulsar N160 Twin Disc Carburetor mileage is approximately 40 Kmpl (Approx). It has a Disc Brake braking system with tubeless tyres. Weight is 154 Kg and top speed is approximately 120 Kmph (Approx). Check Bajaj Pulsar N160 Twin Disc Carburetor comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-n160-twin-disc-carburetor667bc49ae4194.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/New_Bajaj_Pulsar_N160_disc.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12691,7 +12691,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar 150 Twin Disc ABS Price in Bangladesh is 227000 BDT. This standard is powered by 150cc, which generates a maximum power of 13.8 Bhp @ 8000 RPM, and its maximum torque is 13.4 NM @ 6000 RPM. Bajaj Pulsar 150 Twin Disc ABS mileage is approximately 40 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 144 Kg and top speed is approximately 120 Kmph (Approx). Check Bajaj Pulsar 150 Twin Disc ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/pulsar-150-twin-disc-abs607fe5b6376be.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Pulsar_150_Twin_Disc.jpg?v=1787081827"
     },
     "mileage": {},
     "showroom": ""
@@ -12785,7 +12785,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar 150 Twin Disc Price in Bangladesh is 217000 BDT. This standard is powered by 150cc, which generates a maximum power of 13.8 Bhp @ 8000 RPM, and its maximum torque is 13.4 NM @ 6000 RPM. Bajaj Pulsar 150 Twin Disc mileage is approximately 40 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 120 Kmph (Approx). Check Bajaj Pulsar 150 Twin Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-150-twin-disc603f1d82242fe.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Pulsar_150_Twin_Disc.jpg?v=1787081827"
     },
     "mileage": {},
     "showroom": ""
@@ -12879,7 +12879,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar 150 Single Disc ABS Price in Bangladesh is 210000 BDT. This standard is powered by 150cc, which generates a maximum power of 13.8 Bhp @ 8000 RPM, and its maximum torque is 13.4 NM @ 6000 RPM. Bajaj Pulsar 150 Single Disc ABS mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 120 Kmph (Approx). Check Bajaj Pulsar 150 Single Disc ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-150-single-disc-a67d25bfcba251.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_150.webp?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -12973,7 +12973,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar 150 Single Disc Price in Bangladesh is 205200 BDT. This standard is powered by 150cc, which generates a maximum power of 13.8 Bhp @ 8000 RPM, and its maximum torque is 13.4 NM @ 6000 RPM. Bajaj Pulsar 150 Single Disc mileage is approximately 45 Kmpl (Approx). It has a Single disc braking system with tubeless tyres. Weight is 144 kg and top speed is approximately 120 Kmph (Approx). Check Bajaj Pulsar 150 Single Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-150-single-disc656841a5e020c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_150.webp?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -13067,7 +13067,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Pulsar NS125 Price in Bangladesh is 169850 BDT. This commuter is powered by 125cc, which generates a maximum power of 12 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7000 RPM. Bajaj Pulsar NS125 mileage is approximately 45 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is 144 Kg and top speed is approximately 110 Kmph (Approx). Check Bajaj Pulsar NS125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-pulsar-ns-125607e83f0d4862.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Pulsar_NS125.png?v=1787081828"
     },
     "mileage": {},
     "showroom": ""
@@ -13161,7 +13161,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Discover 125 Disc Price in Bangladesh is 162000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.8 Bhp @ 8000 RPM, and its maximum torque is 10.8 NM @ 5500 RPM. Bajaj Discover 125 Disc mileage is approximately 50 Kmpl (Approx). It has a Single disc braking system with tubeless tyres. Weight is 120 kg and top speed is approximately 90 Kmph (Approx). Check Bajaj Discover 125 Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-discover-125-disc603f2826de59f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Discover_125_Disc.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -13255,7 +13255,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Discover 110 Disc Price in Bangladesh is 149600 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.5 Bhp @ 7000 RPM, and its maximum torque is 9.81 NM @ 5000 RPM. Bajaj Discover 110 Disc mileage is approximately 50 Kmpl (Approx). It has a Single disc braking system with tubetyre tyres. Weight is 120 Kg and top speed is approximately 100 Kmph (Approx). Check Bajaj Discover 110 Disc comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-discover-110-disc65619651de5d1.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Discover_100_Disc.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -13349,7 +13349,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Platina 110 ES Price in Bangladesh is 140100 BDT. This commuter is powered by 110cc, which generates a maximum power of 8.4 Bhp @ 7000 RPM, and its maximum torque is 9.81 NM @ 5000 RPM. Bajaj Platina 110 ES mileage is approximately 55 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 108 kg and top speed is approximately 90 Kmph (Approx). Check Bajaj Platina 110 ES comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-platina-110-es68904df9a0ff5.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Platina_100_ES.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -13443,7 +13443,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj Platina 100 ES Price in Bangladesh is 134350 BDT. This commuter is powered by 100cc, which generates a maximum power of 8.1 Bhp @ 7500 RPM, and its maximum torque is 8.06 NM @ 5000 RPM. Bajaj Platina 100 ES mileage is approximately 50 Kmpl (Approx). It has a Drum Brakes braking system with tubetyre tyres. Weight is 108 Kg and top speed is approximately 80 Kmph (Approx). Check Bajaj Platina 100 ES comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-platina-es603f306900b82.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_Platina_100_ES.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -13537,7 +13537,7 @@ export const bikes: OBike[] = [
     "description": "Bajaj CT 100 ES Price in Bangladesh is 120100 BDT. This commuter is powered by 100cc, which generates a maximum power of 7.6 Bhp @ 7500 RPM, and its maximum torque is 8.24 NM @ 5500 RPM. Bajaj CT 100 ES mileage is approximately 55 Kmpl (Approx). It has a Drum Brake braking system with tubetyre tyres. Weight is 110 Kg and top speed is approximately 90 Kmph (Approx). Check Bajaj CT 100 ES comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/bajaj-ct-100-es65df15499fc6d.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Bajaj_CT_100_ES.jpg?v=1787081826"
     },
     "mileage": {},
     "showroom": ""
@@ -15229,7 +15229,7 @@ export const bikes: OBike[] = [
     "description": "KTM RC 125 2022 Price in Bangladesh is 443000 BDT. This sports is powered by 125cc, which generates a maximum power of 14.4 Bhp @ 9250 RPM, and its maximum torque is 12 NM @ 8000 RPM. KTM RC 125 2022 mileage is approximately 40 Kmpl (Approx). It has a Bosch 9.1 MB 1-Channel ABS braking system with tubeless tyres. Weight is 160 kg and top speed is approximately 120 Kmph (Approx). Check KTM RC 125 2022 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/ktm-rc-125-2022630e584d6425f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/KTM_RC_125_2022.jpg?v=1787118370"
     },
     "mileage": {},
     "showroom": ""
@@ -15323,7 +15323,7 @@ export const bikes: OBike[] = [
     "description": "KTM Duke 125 European Edition Price in Bangladesh is 370000 BDT. This naked sports is powered by 125cc, which generates a maximum power of 14.5 Bhp @ 10000 RPM, and its maximum torque is 12 NM @ 7500 RPM. KTM Duke 125 European Edition mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 139 Kg and top speed is approximately 120 Kmph (Approx). Check KTM Duke 125 European Edition comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/ktm-duke-125-european-edition642e8c4bad9f9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/KTM_Duke_125_European.avif?v=1787118370"
     },
     "mileage": {},
     "showroom": ""
@@ -15417,7 +15417,7 @@ export const bikes: OBike[] = [
     "description": "KTM Duke 125 Indian Price in Bangladesh is 300000 BDT. This naked sports is powered by 125cc, which generates a maximum power of 14.3 Bhp @ 9250 RPM, and its maximum torque is 12 NM @ 8000 RPM. KTM Duke 125 Indian mileage is approximately 45 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 148 Kg and top speed is approximately 120 Kmph (Approx). Check KTM Duke 125 Indian comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/ktm-duke-125-indian642e8bddca608.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/KTM_Duke_125_indian.jpg?v=1787118370"
     },
     "mileage": {},
     "showroom": ""
@@ -21903,7 +21903,7 @@ export const bikes: OBike[] = [
     "description": "FKM Street Scrambler 165 SX Price in Bangladesh is 199900 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15 Bhp @ 8000 RPM, and its maximum torque is 14.5 NM @ 7500 RPM. FKM Street Scrambler 165 SX mileage is approximately 40 Kmpl (Approx). It has a Disc Brake braking system with tubeless tyres. Weight is 140 Kg and top speed is approximately 130 Kmph (Approx). Check FKM Street Scrambler 165 SX comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/fkm-street-scrambler-165-sx60871eeb2dce3.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/FKM_Street_Scrambler_165.jpg?v=1787083193"
     },
     "mileage": {},
     "showroom": ""
@@ -21997,7 +21997,7 @@ export const bikes: OBike[] = [
     "description": "FKM Street Fighter Price in Bangladesh is 164900 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15 Bhp @ 8000 RPM, and its maximum torque is 14.5 NM @ 7500 RPM. FKM Street Fighter mileage is approximately 40 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 140 Kg and top speed is approximately 130 Kmph (Approx). Check FKM Street Fighter comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/fkm-street-fighter60871f5c56233.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/FKM_Street_Fighter.jpg?v=1787083192"
     },
     "mileage": {},
     "showroom": ""
