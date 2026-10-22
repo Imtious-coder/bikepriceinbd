@@ -13631,7 +13631,7 @@ export const bikes: OBike[] = [
     "description": "Runner Bolt 165R Price in Bangladesh is 189000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 13.2 Bhp @ 7500 RPM, and its maximum torque is 14 NM @ 6500 RPM. Runner Bolt 165R mileage is approximately 40 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 150 Kg and top speed is approximately 135 Kmph (Approx). Check Runner Bolt 165R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-bolt-165r603ccbb72deef.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/bolt.jpg?v=1792647950"
     },
     "mileage": {},
     "showroom": ""
@@ -13725,7 +13725,7 @@ export const bikes: OBike[] = [
     "description": "Runner Skooty 125 Price in Bangladesh is 169000 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.66 Bhp @ 7000 RPM, and its maximum torque is 10.5 NM @ 5500 RPM. Runner Skooty 125 mileage is approximately 40 Kmpl (Approx). It has a Single Disc braking system with tubetyre tyres. Weight is 112 Kg and top speed is approximately 95 Kmph (Approx). Check Runner Skooty 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-skooty-12568b9cfcc42389.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/skooty.jpg?v=1792647950"
     },
     "mileage": {},
     "showroom": ""
@@ -13819,7 +13819,7 @@ export const bikes: OBike[] = [
     "description": "Runner Knight Rider V2 Price in Bangladesh is 167000 BDT. This standard is powered by 150cc, which generates a maximum power of 11.7 Bhp @ 7500 RPM, and its maximum torque is 12.2 NM @ 5500 RPM. Runner Knight Rider V2 mileage is approximately 40 Kmpl (Approx). It has a Disc Braking System braking system with tubeless tyres. Weight is 143 kg and top speed is approximately 120 Kmph (Approx). Check Runner Knight Rider V2 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-knight-rider-v260892dd39477a.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/knight_rider_v2.jpg?v=1792647951"
     },
     "mileage": {},
     "showroom": ""
@@ -13913,7 +13913,7 @@ export const bikes: OBike[] = [
     "description": "Runner Knight Rider Price in Bangladesh is 159000 BDT. This standard is powered by 150cc, which generates a maximum power of 11.92 Bhp @ 7500 RPM, and its maximum torque is 12.2 NM @ 5500 RPM. Runner Knight Rider mileage is approximately 40 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 143 kg and top speed is approximately 120 Kmph (Approx). Check Runner Knight Rider comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-knight-rider60892e1754443.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/knight_rider.jpg?v=1792647950"
     },
     "mileage": {},
     "showroom": ""
@@ -14007,7 +14007,7 @@ export const bikes: OBike[] = [
     "description": "Runner Turbo 125 Matt Price in Bangladesh is 155000 BDT. This commuter is powered by 125cc, which generates a maximum power of 11.26 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7000 RPM. Runner Turbo 125 Matt mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with tubetyre tyres. Weight is 133 KG and top speed is approximately 90 Kmph (Approx). Check Runner Turbo 125 Matt comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-turbo-12560892e698c3bc.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/turbo.jpg?v=1792648078"
     },
     "mileage": {},
     "showroom": ""
@@ -14101,7 +14101,7 @@ export const bikes: OBike[] = [
     "description": "Runner Turbo 125 V2 Price in Bangladesh is 155000 BDT. This commuter is powered by 125cc, which generates a maximum power of 11.25 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7000 RPM. Runner Turbo 125 V2 mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 133 KG and top speed is approximately 100 Kmph (Approx). Check Runner Turbo 125 V2 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-turbo-125-v261a5a153654e7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/turbo.jpg?v=1792648078"
     },
     "mileage": {},
     "showroom": ""
@@ -14195,7 +14195,7 @@ export const bikes: OBike[] = [
     "description": "Runner Turbo 125 V2 Price in Bangladesh is 155000 BDT. This commuter is powered by 125cc, which generates a maximum power of 11.25 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7000 RPM. Runner Turbo 125 V2 mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is 133 KG and top speed is approximately 100 Kmph (Approx). Check Runner Turbo 125 V2 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-turbo-125-v261a5a153654e7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/turbo.jpg?v=1792648078"
     },
     "mileage": {},
     "showroom": ""
@@ -14289,7 +14289,7 @@ export const bikes: OBike[] = [
     "description": "Runner Kite Plus Price in Bangladesh is 120000 BDT. This moped is powered by 110cc, which generates a maximum power of 6.43 Bhp @ 7500 RPM, and its maximum torque is 7 NM @ 5500 RPM. Runner Kite Plus mileage is approximately 45 Kmpl (Approx). It has a Normal Braking System braking system with tubetyre tyres. Weight is 100 kg and top speed is approximately 80 Kmph (Approx). Check Runner Kite Plus comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/runner-kite-plus60893040a4084.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/kiteplus.jpg?v=1792648342"
     },
     "mileage": {},
     "showroom": ""
