@@ -131,6 +131,7 @@ interface OOthers {
 
 interface OImages {
   primary: string;
+  gallery?: string[];
 }
 
 interface OMileage {
@@ -164,6 +165,7 @@ export interface OBike {
   availability: string;
   description: string;
   colors: string[];
+  colorImages?: Record<string, string>;
   images: OImages;
   mileage: OMileage;
   showroom: string | null;

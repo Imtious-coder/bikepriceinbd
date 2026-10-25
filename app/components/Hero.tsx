@@ -442,22 +442,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <style>{`
-        .hero-scene {
-          background: url('/hero-bangladesh-motorcycle.png') right 60% / auto 115% no-repeat;
-        }
-        .hero-mobile-scene {
-          background: url('/hero-bangladesh-motorcycle.png') right 65% / auto 115% no-repeat;
-          mask-image: linear-gradient(to bottom, transparent, black 12%, black 85%, transparent);
-        }
-        @media (max-width: 1023px) {
-          .hero-scene { opacity: 0.18; }
-        }
-        @keyframes fade-in-up {
-          from { opacity: 0; transform: translateY(8px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
     </section>
   );
 }

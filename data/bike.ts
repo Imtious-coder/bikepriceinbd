@@ -1471,8 +1471,19 @@ export const bikes: OBike[] = [
       "Black",
       "Red"
     ],
+    "colorImages": {
+  "Blue": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589",
+  "Grey": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589",
+  "Black": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-b5916a10-5272-4688-8004-9026805afd08.webp?v=1786304747",
+  "Red": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589"
+},
     "images": {
-      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-b5916a10-5272-4688-8004-9026805afd08.webp?v=1786304747"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/product_2Fmedium-b5916a10-5272-4688-8004-9026805afd08.webp?v=1786304747",
+      "gallery": [
+    "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589",
+    "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589",
+    "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/blue67fb5f2ecd6da.webp?v=1792949589"
+  ]
     },
     "mileage": {},
     "showroom": ""
@@ -6675,7 +6686,7 @@ export const bikes: OBike[] = [
     "description": "Hero Karizma XMR 210 Price in Bangladesh is 425000 BDT. This sports is powered by 200cc, which generates a maximum power of 25.15 Bhp @ 9250 RPM, and its maximum torque is 20.4 NM @ 7250 RPM. Hero Karizma XMR 210 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 163.5 kg and top speed is approximately 140 Kmph (Approx). Check Hero Karizma XMR 210 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://bdrider.com/storage/companies/gallery/fd59fe3a-65d2-46ca-a75c-fa49ce2ef8a5.png"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/karizma_xmr.png?v=1792951978"
     },
     "mileage": {},
     "showroom": ""

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BikeDetailShowcase from "./BikeDetailShowcase";
 
 
 type SpecRecord = Record<string, string> | undefined | null;
@@ -221,17 +222,17 @@ function findBikeWithFallback(rawSlug: string) {
 }
 
 const SPEC_SECTION_STYLES = [
-  { bg: "bg-blue-50/60", border: "border-blue-100", accent: "text-blue-600" },
-  { bg: "bg-slate-50", border: "border-slate-200", accent: "text-slate-600" },
-  { bg: "bg-sky-50/60", border: "border-sky-100", accent: "text-sky-600" },
-  { bg: "bg-indigo-50/60", border: "border-indigo-100", accent: "text-indigo-600" },
-  { bg: "bg-cyan-50/60", border: "border-cyan-100", accent: "text-cyan-600" },
-  { bg: "bg-blue-50", border: "border-blue-200", accent: "text-blue-700" },
+  { bg: "bg-blue-50/70", border: "border-blue-100", accent: "text-blue-700" },
+  { bg: "bg-emerald-50/70", border: "border-emerald-100", accent: "text-emerald-700" },
+  { bg: "bg-amber-50/70", border: "border-amber-100", accent: "text-amber-700" },
+  { bg: "bg-violet-50/70", border: "border-violet-100", accent: "text-violet-700" },
+  { bg: "bg-rose-50/70", border: "border-rose-100", accent: "text-rose-700" },
+  { bg: "bg-cyan-50/70", border: "border-cyan-100", accent: "text-cyan-700" },
 ];
 
-function getLastUpdatedLabel(daysAgo: number = 2): string {
-  const date = new Date();
-  date.setDate(date.getDate() - daysAgo);
+function getLastUpdatedLabel(updatedAt: string): string {
+  const date = new Date(updatedAt);
+  if (Number.isNaN(date.getTime())) return updatedAt;
   return date.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",
@@ -537,6 +538,10 @@ export default async function BikeDetailPage({
 
   const faqs = generateBikeFaqs(bike);
   const imageSrc = getImageUrl(bike.images?.primary);
+  const gallerySources = [
+    imageSrc,
+    ...(bike.images.gallery ?? []).filter((source) => source?.trim()).map(getImageUrl),
+  ];
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -565,6 +570,7 @@ const productSchema = {
   },
 };
 
+const brandSlug = bike.brand.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -579,7 +585,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 2,
       name: bike.brand,
-      item: `${BASE_URL}/bikes`,
+      item: `${BASE_URL}/brands/${brandSlug}`,
     },
     {
       "@type": "ListItem",
@@ -634,21 +640,35 @@ const breadcrumbSchema = {
   const similarBikes = bikes
     .filter((b) => b.brand === bike.brand && b.slug !== bike.slug)
     .slice(0, 4);
+  const variants = bikes
+    .filter((candidate) => candidate.brand === bike.brand && (
+      candidate.slug === bike.slug ||
+      candidate.name.startsWith(`${bike.name} `) ||
+      bike.name.startsWith(`${candidate.name} `)
+    ))
+    .sort((a, b) => Number(b.slug === bike.slug) - Number(a.slug === bike.slug))
+    .slice(0, 5)
+    .map((candidate) => ({
+      slug: candidate.slug,
+      name: candidate.name,
+      price: candidate.price,
+      image: getImageUrl(candidate.images?.primary),
+    }));
 
   return (
-    <div className="min-h-screen bg-[#F6F9FC] pb-24 lg:pb-8 relative top-[65px] md:top-[116px]">
+    <div className="relative top-[65px] min-h-screen bg-[#f4f8fc] pb-24 md:top-[116px] lg:pb-8">
       {/* Breadcrumb */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav className="flex items-center gap-2 text-sm text-slate-400">
+      <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 overflow-hidden whitespace-nowrap text-[11px] text-slate-500 sm:text-sm">
           <Link href="/" className="hover:text-blue-600 transition-colors">
             Home
           </Link>
           <span>/</span>
-          <span className="hover:text-blue-600 transition-colors">
+          <Link href={`/brands/${brandSlug}`} className="hover:text-blue-600 transition-colors">
             {bike.brand}
-          </span>
+          </Link>
           <span>/</span>
-          <span className="text-slate-700 font-medium">{bike.name}</span>
+          <span className="truncate font-medium text-slate-700" aria-current="page">{bike.name}</span>
         </nav>
       </div>
 
@@ -663,212 +683,49 @@ const breadcrumbSchema = {
                 faqSchema,
               ]),
             }}/>
-        <div className="bg-white rounded-2xl border border-blue-100 shadow-[0_8px_30px_-12px_rgba(30,64,175,0.18)] overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Image Panel */}
-            <div className="relative bg-gradient-to-b from-slate-50 to-blue-50/60 min-h-80 lg:min-h-[520px] p-8 flex items-center justify-center [perspective:1200px]">
-              <div className="relative w-full h-full transition-transform duration-700 ease-out hover:[transform:rotateY(-6deg)_rotateX(2deg)]">
-                <Image
-                  src={imageSrc}
-                  alt={`${bike.name} bike price in Bangladesh`}
-                  width={520}
-                  height={380}
-                  className="object-contain w-full h-full max-h-96 mx-auto drop-shadow-[0_16px_20px_rgba(15,23,42,0.18)]"
-                  priority
-                />
-              </div>
-              {/* Badges */}
-              <div className="absolute top-5 left-5 flex flex-col gap-2">
-                {bike.bike_type && (
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/90 backdrop-blur border border-blue-200 text-blue-700 shadow-sm">
-                    {bike.bike_type}
-                  </span>
-                )}
-                {bike.availability === "upcoming" && (
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-600 text-white shadow-sm">
-                    Upcoming
-                  </span>
-                )}
-              </div>
-            </div>
-
-            {/* info panel */}
-            <div className="p-8 lg:p-10 flex flex-col gap-6">
-              {/* Brand + Name */}
-<div>
-  <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-1">
-    {bike.brand}
-  </p>
-  <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-    {bike.name} Price in Bangladesh 2026
-  </h1>
-
-  {/* Last Updated */}
-  <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
-    <VerifiedIcon className="h-4 w-4 flex-shrink-0 text-blue-500 mb-[2px]" />
-    <span>
-      Price last updated on{" "}
-      <span className="font-semibold text-slate-700">
-        {getLastUpdatedLabel()}
-      </span>
-    </span>
-  </div>
-</div>
-
-              {/* Price */}
-              <div className="bg-blue-50/60 border border-blue-100 rounded-xl px-5 py-4 flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-0.5">
-                    Price in Bangladesh
-                  </p>
-                  <p className="text-3xl font-extrabold text-slate-900">
-                    {formatPrice(bike.price)}
-                  </p>
-                </div>
-                <svg
-                  className="w-8 h-8 text-blue-200"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-
-              {/* Highlight spec strip */}
-              {highlightSpecs.length > 0 && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  {highlightSpecs.map((spec) => (
-                    <div
-                      key={spec.label}
-                      className="bg-blue-50 border border-blue-100 rounded-xl px-3 py-3 text-center transition-all duration-300 hover:border-blue-300 hover:-translate-y-0.5 hover:shadow-[0_6px_16px_-6px_rgba(37,99,235,0.3)]"
-                    >
-                      <p className="text-[10px] text-blue-600 uppercase tracking-wider mb-1">
-                        {spec.label}
-                      </p>
-                      <p className="text-sm font-bold text-slate-900">
-                        {spec.value}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {/* Mileage */}
-              {hasMileage && (
-                <div className="grid grid-cols-2 gap-3">
-                  {bike.mileage?.city && (
-                    <div className="bg-blue-50 border border-blue-100 rounded-xl px-4 py-3">
-                      <p className="text-xs text-blue-600 uppercase tracking-wider mb-0.5">
-                        City Mileage
-                      </p>
-                      <p className="text-xl font-bold text-slate-900">
-                        {bike.mileage.city}
-                      </p>
-                    </div>
-                  )}
-                  {bike.mileage?.highway && (
-                    <div className="bg-blue-100/50 border border-blue-200 rounded-xl px-4 py-3">
-                      <p className="text-xs text-blue-700 uppercase tracking-wider mb-0.5">
-                        Highway Mileage
-                      </p>
-                      <p className="text-xl font-bold text-slate-900">
-                        {bike.mileage.highway}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* Colors */}
-              {hasColors && (
-                <div>
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
-                    Available Colors
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {bike.colors.map((color) => (
-                      <span
-                        key={color}
-                        className="flex items-center gap-2 text-xs px-3 py-1.5 rounded-full bg-slate-50 text-slate-700 font-medium border border-blue-100 transition-all hover:border-blue-300"
-                      >
-                        <span
-                          className="w-3 h-3 rounded-full border border-slate-200 shadow-inner"
-                          style={{ backgroundColor: colorSwatch(color) }}
-                        />
-                        {color}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Dynamic Overview */}
-              <div>
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
-                  Overview
-                </p>
-
-                <p className="text-slate-600 leading-relaxed text-sm">
-                  {generateBikeDescription(bike)}
-                </p>
-              </div>
-
-              {/* CTA buttons (desktop) */}
-              <div className="hidden lg:flex gap-3 mt-2">
-                <a
-                  href="tel:+8800000000"
-                  className="flex-1 text-center px-5 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm hover:bg-blue-500 transition-all shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.4)]"
-                >
-                  Call for Best Price
-                </a>
-                <Link
-                  href="/"
-                  className="flex-1 text-center px-5 py-3 rounded-full bg-blue-50 border border-blue-100 text-blue-700 font-semibold text-sm hover:bg-blue-100 hover:border-blue-300 transition-all"
-                >
-                  Compare Bikes
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <BikeDetailShowcase
+          bike={bike}
+          gallerySources={gallerySources}
+          variants={variants}
+          highlightSpecs={highlightSpecs}
+          overview={generateBikeDescription(bike)}
+          lastUpdatedLabel={getLastUpdatedLabel(bike.updated_at)}
+          hasShowroom={!!hasShowroom}
+          hasSimilarBikes={similarBikes.length > 0}
+        />
 
         {/* SEO Content */}
-          <div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-8 space-y-8">
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
 
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <section id="price-in-bangladesh" className="scroll-mt-28 rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+              <h2 className="mb-2 text-base font-bold text-slate-900 sm:text-lg">
                 {bike.name} Price in Bangladesh
               </h2>
 
-              <p className="text-slate-600 leading-7">
+              <p className="text-sm leading-relaxed text-slate-600">
                 The current price of the {bike.name} in Bangladesh is {bike.price}.
                 Check the latest price, availability and specifications before buying.
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <section className="rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+              <h2 className="mb-2 text-base font-bold text-slate-900 sm:text-lg">
                 {bike.name} Engine & Performance
               </h2>
 
-              <p className="text-slate-600 leading-7">
+              <p className="text-sm leading-relaxed text-slate-600">
                 The {bike.name} is powered by a {bike.cc}cc engine.
                 It produces {bike.engine.maximum_power} and
                 {bike.engine.maximum_torque}.
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <section id="mileage" className="scroll-mt-28 rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+              <h2 className="mb-2 text-base font-bold text-slate-900 sm:text-lg">
                 {bike.name} Mileage
               </h2>
 
-              <p className="text-slate-600 leading-7">
+              <p className="text-sm leading-relaxed text-slate-600">
                 The {bike.name} offers an approximate mileage of{" "}
                 {bike.mileage?.city || bike.mileage_top_speed?.mileage || "N/A"}.
                 Actual mileage can vary depending on riding conditions,
@@ -876,23 +733,23 @@ const breadcrumbSchema = {
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <section className="rounded-2xl bg-white p-4 shadow-sm sm:p-6">
+              <h2 className="mb-2 text-base font-bold text-slate-900 sm:text-lg">
                 {bike.name} Top Speed
               </h2>
 
-              <p className="text-slate-600 leading-7">
+              <p className="text-sm leading-relaxed text-slate-600">
                 The approximate top speed of the {bike.name} is{" "}
                 {bike.mileage_top_speed?.top_speed || "N/A"}.
               </p>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <section className="rounded-2xl bg-white p-4 shadow-sm sm:col-span-2 sm:p-6">
+              <h2 className="mb-2 text-base font-bold text-slate-900 sm:text-lg">
                 {bike.name} Features
               </h2>
 
-              <p className="text-slate-600 leading-7">
+              <p className="text-sm leading-relaxed text-slate-600">
                 The {bike.name} comes with features including{" "}
                 {bike.electricals?.head_light} lighting,
                 {bike.brakes?.braking_system} and{" "}
@@ -904,7 +761,7 @@ const breadcrumbSchema = {
 
         {/* Specifications */}
 {specSections.length > 0 && (
-  <div className="mt-8 space-y-6">
+  <div id="specifications" className="mt-3 scroll-mt-28 space-y-3">
     {specSections.map((section, i) => {
       const style = SPEC_SECTION_STYLES[i % SPEC_SECTION_STYLES.length];
       const anchorId = section.title
@@ -917,15 +774,15 @@ const breadcrumbSchema = {
           key={section.title}
           id={anchorId}
           aria-labelledby={`${anchorId}-heading`}
-          className={`scroll-mt-24 rounded-2xl border ${style.border} ${style.bg} shadow-sm overflow-hidden`}
+          className={`scroll-mt-28 overflow-hidden rounded-2xl border shadow-sm ${style.bg} ${style.border}`}
         >
-          <div className="px-8 pt-6 pb-4">
+          <div className="px-4 pb-3 pt-5 sm:px-6">
             <p className={`text-xs font-semibold uppercase tracking-wider ${style.accent} mb-1`}>
               Specifications
             </p>
             <h2
               id={`${anchorId}-heading`}
-              className="text-xl font-bold text-slate-900"
+              className="text-base font-bold text-slate-900 sm:text-xl"
             >
               {bike.name} {section.title} Specifications
             </h2>
@@ -935,14 +792,14 @@ const breadcrumbSchema = {
               ([key, value], j) => (
                 <div
                   key={key}
-                  className={`grid grid-cols-2 px-8 py-4 transition-colors ${
-                    j % 2 === 0 ? "bg-transparent" : "bg-white/50"
-                  } hover:bg-white/70`}
+                  className={`grid grid-cols-[minmax(0,0.45fr)_minmax(0,0.55fr)] gap-3 px-4 py-3 transition-colors sm:px-6 ${
+                    j % 2 === 0 ? "bg-white/70" : "bg-transparent"
+                  } hover:bg-white/90`}
                 >
-                  <span className="text-sm font-semibold text-slate-500">
+                  <span className="break-words text-xs font-semibold text-slate-600 sm:text-sm">
                     {formatLabel(key)}
                   </span>
-                  <span className="text-sm text-slate-900 font-medium">
+                  <span className="break-words text-xs font-medium text-slate-900 sm:text-sm">
                     {value}
                   </span>
                 </div>
@@ -957,7 +814,7 @@ const breadcrumbSchema = {
 
         {/* Showroom */}
         {hasShowroom && (
-          <div className="mt-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-8">
+          <div id="showroom" className="mt-3 scroll-mt-28 rounded-2xl border border-blue-100 bg-white p-4 shadow-sm sm:p-6">
             <h2 className="text-xl font-bold text-slate-900 mb-4">Showroom</h2>
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 bg-blue-50 border border-blue-100 rounded-xl flex-shrink-0 flex items-center justify-center">
@@ -990,14 +847,14 @@ const breadcrumbSchema = {
 
         {/* FAQ */}
           {faqs.length > 0 && (
-            <section className="mt-8">
-              <div className="bg-white rounded-2xl border border-blue-100 shadow-sm p-6 md:p-8">
+            <section className="mt-3">
+              <div className="rounded-2xl border border-blue-100 bg-white p-4 shadow-sm sm:p-6">
                 <div className="mb-6">
                   <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">
                     Frequently Asked Questions
                   </p>
 
-                  <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
+                  <h2 className="text-lg font-bold text-slate-900 sm:text-2xl">
                     {bike.name} Frequently Asked Questions
                   </h2>
 
@@ -1008,7 +865,7 @@ const breadcrumbSchema = {
                 </div>
 
                 <div className="divide-y divide-slate-200">
-                  {faqs.map((faq, index) => (
+                  {faqs.map((faq) => (
                     <details
                       key={faq.question}
                       className="group py-5 first:pt-0 last:pb-0"
@@ -1035,21 +892,21 @@ const breadcrumbSchema = {
 
         {/* Similar Bikes */}
         {similarBikes.length > 0 && (
-          <div className="mt-8">
+          <div id="similar-bikes" className="mt-5 scroll-mt-28">
             <h2 className="text-xl font-bold text-slate-900 mb-4">
               More from <span className="text-blue-600">{bike.brand}</span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="scrollbar-hide flex snap-x gap-3 overflow-x-auto pb-2 lg:grid lg:grid-cols-4 lg:overflow-visible">
               {similarBikes.map((sb) => (
                 <Link
                   key={sb.slug}
                   href={`/bikes/${sb.slug}`}
-                  className="group block [perspective:1000px]"
+                  className="group block w-[210px] shrink-0 snap-start sm:w-[250px] lg:w-auto"
                 >
-                  <div className="rounded-xl overflow-hidden bg-white border border-blue-100 transition-all duration-500 group-hover:-translate-y-1.5 group-hover:scale-[1.02] group-hover:[transform:rotateX(3deg)_rotateY(-3deg)] group-hover:border-blue-300 group-hover:shadow-[0_16px_32px_-14px_rgba(37,99,235,0.35)]">
+                  <div className="overflow-hidden rounded-xl border border-blue-100 bg-white transition-all duration-300 group-hover:-translate-y-1 group-hover:border-blue-300 group-hover:shadow-md">
                     <div className="relative h-32 bg-gradient-to-b from-slate-50 to-blue-50/60">
                       <Image
-                        src={sb.images?.primary || "/placeholder-bike.png"}
+                        src={getImageUrl(sb.images?.primary)}
                         alt={sb.name}
                         fill
                         className="object-contain p-3 group-hover:scale-110 transition-transform duration-500"
@@ -1077,7 +934,7 @@ const breadcrumbSchema = {
         {/* Back link */}
         <div className="mt-10 mb-4 flex justify-center">
           <Link
-            href="/"
+            href="/bikes"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-50 border border-blue-100 text-blue-700 font-semibold text-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all"
           >
             <svg
@@ -1099,19 +956,11 @@ const breadcrumbSchema = {
       </main>
 
       {/* Sticky mobile CTA */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-t border-blue-100 px-4 py-3 flex gap-3">
-        <a
-          href="tel:+8800000000"
-          className="flex-1 text-center px-5 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm shadow-[0_4px_14px_rgba(37,99,235,0.3)]"
-        >
-          Call for Best Price
+      <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center gap-3 border-t border-blue-100 bg-white/95 px-4 py-2.5 shadow-[0_-8px_24px_-16px_rgba(15,23,42,0.3)] backdrop-blur lg:hidden">
+        <div className="min-w-0 flex-1"><strong className="block truncate text-base font-extrabold text-blue-600">{formatPrice(bike.price)}</strong><span className="block text-[10px] text-slate-500">Official Price in Bangladesh</span></div>
+        <a href={hasShowroom ? "#showroom" : "/contact"} className="flex min-h-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 px-4 text-center text-xs font-bold text-white shadow-sm">
+          {hasShowroom ? "View Showrooms" : "Contact Us"}
         </a>
-        <Link
-          href="/"
-          className="flex-1 text-center px-5 py-3 rounded-full bg-blue-50 border border-blue-100 text-blue-700 font-semibold text-sm"
-        >
-          Compare
-        </Link>
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import { bikes } from "@/data/bike";
 import { OBike } from "@/types/bike";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BrandShowcase, { type BrandBike } from "./BrandShowcase";
 
 const BASE_URL = "https://bikepriceinbangladesh.com";
 
@@ -63,26 +63,6 @@ function ArrowRightIcon({ className = "" }: { className?: string }) {
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
       <path d="M5 12h14" />
       <path d="m13 6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function BikePlaceholderIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-      <circle cx="5.5" cy="17.5" r="3.5" />
-      <circle cx="18.5" cy="17.5" r="3.5" />
-      <path d="M5.5 17.5 9 10h5l3.5 7.5" />
-      <path d="M9 10 7 6h3" />
-    </svg>
-  );
-}
-
-function TagIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-      <path d="M12.59 2.59 20 10a2 2 0 0 1 0 2.83l-6.17 6.17a2 2 0 0 1-2.83 0L3 11V4a2 2 0 0 1 2-2h7.59Z" />
-      <circle cx="7.5" cy="7.5" r="1.25" fill="currentColor" stroke="none" />
     </svg>
   );
 }
@@ -219,22 +199,18 @@ export default async function BrandPage({ params }: PageProps) {
     ? priceToNumber(pricedBikes[pricedBikes.length - 1].price)
     : 0;
 
-  const priceSegments = [
-    { label: "Under ৳1.5 Lakh", min: 0, max: 150000 },
-    { label: "৳1.5 – 3 Lakh", min: 150000, max: 300000 },
-    { label: "৳3 – 5 Lakh", min: 300000, max: 500000 },
-    { label: "Above ৳5 Lakh", min: 500000, max: Infinity },
-  ].map((seg) => ({
-    ...seg,
-    count: pricedBikes.filter((b) => {
-      const p = priceToNumber(b.price);
-      return p >= seg.min && p < seg.max;
-    }).length,
-  }));
-
-  const popularBikes = sortedByPrice.slice(0, 4);
   const specSampleBikes = brandBikes.slice(0, 8);
   const faqs = generateBrandFaqs(brandName, brandBikes);
+  const clientBikes: BrandBike[] = brandBikes.map((bike) => ({
+    slug: bike.slug,
+    name: bike.name,
+    cc: bike.cc,
+    mileage: getMileage(bike),
+    priceValue: priceToNumber(bike.price),
+    type: bike.bike_type,
+    image: getImageUrl(bike.images?.primary),
+  }));
+  const intro = `Looking for the latest ${brandName} bike price in Bangladesh? Below you'll find an up-to-date price list, specifications, mileage, and reviews for every ${brandName} motorcycle currently sold in the Bangladeshi market${brandOrigin ? `, a brand originating from ${brandOrigin}` : ""}${pricedBikes.length ? `, with prices ranging from ${formatBDT(minPrice)} to ${formatBDT(maxPrice)}.` : "."}`;
 
   // ─── Structured data ───
   const breadcrumbSchema = {
@@ -270,7 +246,7 @@ export default async function BrandPage({ params }: PageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-[#F6F9FC] pt-32 sm:pt-36 pb-20">
+    <div className="min-h-screen bg-[#F6F9FC] pb-20 pt-16 md:pt-32">
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
@@ -279,187 +255,16 @@ export default async function BrandPage({ params }: PageProps) {
         }}
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-slate-400 mb-6">
-          <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-          <span>/</span>
-          <Link href="/brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-          <span>/</span>
-          <span className="text-slate-700 font-medium">{brandName}</span>
-        </nav>
-
-        {/* H1 + intro */}
-        <div className="mb-10">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700 mb-3">
-            <TagIcon className="h-3.5 w-3.5" />
-            {brandBikes.length} models tracked
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-            {brandName} Bike Price in <span className="text-blue-600">Bangladesh 2026</span>
-          </h1>
-          <p className="mt-4 max-w-2xl text-slate-500 leading-relaxed">
-            Looking for the latest {brandName} bike price in Bangladesh? Below
-            you'll find an up-to-date price list, specifications, mileage,
-            and reviews for every {brandName} motorcycle currently sold in
-            the Bangladeshi market
-            {brandOrigin ? `, a brand originating from ${brandOrigin}` : ""}
-            {pricedBikes.length > 0
-              ? `, with prices ranging from ${formatBDT(minPrice)} to ${formatBDT(maxPrice)}.`
-              : "."}
-          </p>
-        </div>
-
-        {/* ── Price List ── */}
-        <section aria-labelledby="price-list-heading" className="mb-14">
-          <h2 id="price-list-heading" className="text-2xl font-extrabold text-slate-900 mb-4">
-            {brandName} Bike Price List
-          </h2>
-          <div className="overflow-x-auto rounded-xl border border-blue-100 bg-white shadow-sm">
-            <table className="w-full min-w-[560px] border-collapse text-left text-sm">
-              <thead>
-                <tr className="border-b border-blue-100 bg-blue-50/50">
-                  <th scope="col" className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    {brandName} Bike
-                  </th>
-                  <th scope="col" className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-500">CC</th>
-                  <th scope="col" className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-500">Mileage</th>
-                  <th scope="col" className="px-4 py-3 text-right text-xs font-semibold uppercase tracking-wide text-slate-500">Price</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-blue-50">
-                {sortedByPrice.map((bike) => (
-                  <tr key={bike.slug} className="hover:bg-blue-50/40 transition-colors">
-                    <td className="px-4 py-3 font-semibold text-slate-900">
-                      <Link href={`/bikes/${bike.slug}`} className="hover:text-blue-600 hover:underline">
-                        {bike.name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 text-slate-600">{bike.cc ? `${bike.cc}cc` : "—"}</td>
-                    <td className="px-4 py-3 text-slate-500">{getMileage(bike)}</td>
-                    <td className="px-4 py-3 text-right font-semibold text-slate-900">
-                      {formatPrice(bike.price)}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* ── Available Models (cards) ── */}
-        <section aria-labelledby="available-models-heading" className="mb-14">
-          <h2 id="available-models-heading" className="text-2xl font-extrabold text-slate-900 mb-4">
-            {brandName} Motorcycles Available in Bangladesh
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {brandBikes.map((bike) => (
-              <Link
-                key={bike.slug}
-                href={`/bikes/${bike.slug}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-blue-100 bg-white transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-lg"
-              >
-                <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-slate-50">
-                  {bike.images?.primary ? (
-                    <Image
-                      src={getImageUrl(bike.images.primary)}
-                      alt={`${bike.name} price in Bangladesh`}
-                      fill
-                      className="object-contain p-4 transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 25vw"
-                    />
-                  ) : (
-                    <BikePlaceholderIcon className="h-14 w-14 text-slate-300" />
-                  )}
-                </div>
-                <div className="flex flex-1 flex-col p-4">
-                  <span className="text-[11px] font-semibold uppercase tracking-wide text-blue-600">
-                    {bike.bike_type || brandName}
-                  </span>
-                  <h3 className="mt-0.5 line-clamp-2 text-sm font-bold text-slate-900">
-                    {bike.name}
-                  </h3>
-                  <span className="mt-auto pt-3 text-base font-extrabold text-slate-900">
-                    {formatPrice(bike.price)}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* ── Price Range ── */}
-        <section aria-labelledby="price-range-heading" className="mb-14">
-          <h2 id="price-range-heading" className="text-2xl font-extrabold text-slate-900 mb-4">
-            {brandName} Bike Price Range in Bangladesh
-          </h2>
-          <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-sm">
-            <p className="text-slate-600 leading-relaxed mb-6">
-              {pricedBikes.length > 0
-                ? `${brandName} bikes in Bangladesh are currently priced between ${formatBDT(minPrice)} and ${formatBDT(maxPrice)}, covering ${pricedBikes.length} models across different budgets.`
-                : `Pricing details for ${brandName} models are being updated.`}
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {priceSegments.map((seg) => (
-                <div
-                  key={seg.label}
-                  className="rounded-xl border border-blue-100 bg-blue-50/40 p-4 text-center"
-                >
-                  <p className="text-2xl font-extrabold text-blue-600">{seg.count}</p>
-                  <p className="mt-1 text-xs font-medium text-slate-500">{seg.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Popular Bikes ── */}
-        {popularBikes.length > 0 && (
-          <section aria-labelledby="popular-bikes-heading" className="mb-14">
-            <h2 id="popular-bikes-heading" className="text-2xl font-extrabold text-slate-900 mb-1">
-              Popular {brandName} Bikes
-            </h2>
-            <p className="text-sm text-slate-500 mb-4">
-              A snapshot of currently listed {brandName} models, from most to least affordable.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {popularBikes.map((bike, i) => (
-                <Link
-                  key={bike.slug}
-                  href={`/bikes/${bike.slug}`}
-                  className="group relative flex flex-col overflow-hidden rounded-xl border border-blue-100 bg-white transition-all hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-lg"
-                >
-                  <span className="absolute left-3 top-3 z-10 flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
-                    {i + 1}
-                  </span>
-                  <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-slate-50">
-                    <Image
-                      src={getImageUrl(bike.images?.primary)}
-                      alt={bike.name}
-                      fill
-                      className="object-contain p-4"
-                      sizes="(max-width: 768px) 100vw, 25vw"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-sm font-bold text-slate-900 line-clamp-2">{bike.name}</h3>
-                    <span className="mt-1 block text-sm font-extrabold text-slate-900">
-                      {formatPrice(bike.price)}
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+        <BrandShowcase brandName={brandName} intro={intro} bikes={clientBikes} />
 
         {/* ── Specifications ── */}
-        <section aria-labelledby="specs-heading" className="mb-14">
-          <h2 id="specs-heading" className="text-2xl font-extrabold text-slate-900 mb-4">
+        <section aria-labelledby="specs-heading" className="mt-4 scroll-mt-32 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6">
+          <h2 id="specs-heading" className="mb-4 text-lg font-extrabold text-slate-950 sm:text-xl">
             {brandName} Bike Specifications
           </h2>
-          <div className="overflow-x-auto rounded-xl border border-blue-100 bg-white shadow-sm">
-            <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+          <div className="hidden overflow-x-auto rounded-xl border border-slate-200 md:block">
+            <table className="w-full border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b border-blue-100 bg-blue-50/50">
                   <th scope="col" className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-slate-500">Model</th>
@@ -490,6 +295,19 @@ export default async function BrandPage({ params }: PageProps) {
               </tbody>
             </table>
           </div>
+          <div className="grid gap-2 md:hidden">
+            {specSampleBikes.map((bike) => (
+              <div key={bike.slug} className="rounded-xl border border-slate-200 bg-slate-50/60 p-3">
+                <Link href={`/bikes/${bike.slug}`} className="text-sm font-bold text-blue-700 hover:underline">{bike.name}</Link>
+                <dl className="mt-2 grid grid-cols-2 gap-x-3 gap-y-2 text-xs">
+                  <div><dt className="text-slate-500">Engine</dt><dd className="font-semibold text-slate-900">{bike.engine?.displacement ? `${bike.engine.displacement}cc` : bike.cc ? `${bike.cc}cc` : "—"}</dd></div>
+                  <div><dt className="text-slate-500">Max Power</dt><dd className="font-semibold text-slate-900">{bike.engine?.maximum_power || "—"}</dd></div>
+                  <div><dt className="text-slate-500">Transmission</dt><dd className="font-semibold text-slate-900">{bike.transmission?.no_of_gears ? `${bike.transmission.no_of_gears}-Speed` : "—"}</dd></div>
+                  <div><dt className="text-slate-500">Weight</dt><dd className="font-semibold text-slate-900">{bike.dimensions?.weight || "—"}</dd></div>
+                </dl>
+              </div>
+            ))}
+          </div>
           {brandBikes.length > specSampleBikes.length && (
             <p className="mt-3 text-sm text-slate-400">
               Showing {specSampleBikes.length} of {brandBikes.length} models.
@@ -499,11 +317,11 @@ export default async function BrandPage({ params }: PageProps) {
         </section>
 
         {/* ── Reviews ── */}
-        <section aria-labelledby="reviews-heading" className="mb-14">
-          <h2 id="reviews-heading" className="text-2xl font-extrabold text-slate-900 mb-4">
+        <section aria-labelledby="reviews-heading" className="mt-4 scroll-mt-32 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6">
+          <h2 id="reviews-heading" className="mb-4 text-lg font-extrabold text-slate-950 sm:text-xl">
             {brandName} Bike Reviews
           </h2>
-          <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-sm">
+          <div className="rounded-xl border border-blue-100 bg-blue-50/30 p-4 sm:p-6">
             <div className="flex items-start gap-4">
               <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
                 <StarIcon className="h-5 w-5" />
