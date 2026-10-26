@@ -564,7 +564,7 @@ export default function BrandShowcase({ brandName, intro, bikes }: Props) {
         )}
       </div>
 
-      <div className="mt-4 grid items-start gap-4 lg:grid-cols-[minmax(0,1fr)_230px] overflow-scroll w-full">
+      <div className="mt-4 grid items-start gap-4 lg:grid-cols-[minmax(0,1fr)_230px] w-full grid-cols-1">
         <section
           aria-labelledby="price-list-heading"
           className="min-w-0 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-5"
