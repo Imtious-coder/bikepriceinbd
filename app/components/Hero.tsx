@@ -171,6 +171,7 @@ export default function Hero() {
         }}
       />
 
+      <div className="hero-mobile-scene pointer-events-none absolute inset-0 opacity-20 lg:hidden" aria-hidden="true" />
       <div
         className="pointer-events-none absolute inset-0 hidden overflow-hidden lg:block"
         aria-hidden="true"
@@ -219,7 +220,7 @@ export default function Hero() {
               method="get"
               role="search"
               onSubmit={handleSubmit}
-              className="flex w-full items-center gap-1 rounded-xl border border-blue-200 bg-white p-1 shadow-[0_8px_30px_-12px_rgba(37,99,235,0.25)] transition-shadow duration-300 focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100 focus-within:shadow-md lg:gap-2 lg:rounded-full lg:p-2"
+              className="flex w-full items-center gap-1 rounded-full border border-blue-200 bg-white p-1 shadow-[0_8px_30px_-12px_rgba(37,99,235,0.25)] transition-shadow duration-300 focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-100 focus-within:shadow-md lg:gap-2 lg:rounded-full lg:p-2"
             >
               <label htmlFor="bike-search" className="sr-only">
                 Search bikes by name or brand
@@ -260,7 +261,7 @@ export default function Hero() {
               />
               <button
                 type="submit"
-                className="flex h-8 w-9 flex-shrink-0 items-center justify-center rounded-lg bg-blue-600 px-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 sm:px-6 lg:h-auto lg:w-auto lg:rounded-full lg:px-4 lg:py-3 lg:text-sm"
+                className="flex h-8 w-9 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 px-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 sm:px-6 lg:h-auto lg:w-auto lg:rounded-full lg:px-4 lg:py-3 lg:text-sm"
               >
                 <span className="lg:hidden" aria-hidden="true">
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -326,11 +327,6 @@ export default function Hero() {
             )}
           </div>
         </div>
-        <div
-          className="hero-mobile-scene hidden"
-          role="img"
-          aria-label="Sports motorcycle in front of the Bangladesh skyline"
-        />
         <div className="relative z-0 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <nav
             aria-label="Explore motorcycles"

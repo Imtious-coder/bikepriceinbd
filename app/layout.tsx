@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} pb-[calc(68px+env(safe-area-inset-bottom))] md:pb-0`}>
         <MotoHeader />
         {children}
         <GoogleAnalytics />

@@ -195,7 +195,6 @@ export default function BrandShowcase({ brandName, intro, bikes }: Props) {
   const [showAllMobile, setShowAllMobile] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [moreOpen, setMoreOpen] = useState(false);
-  const [bottomMoreOpen, setBottomMoreOpen] = useState(false);
   const [mobileSortOpen, setMobileSortOpen] = useState(false);
 
   useEffect(() => {
@@ -928,74 +927,6 @@ export default function BrandShowcase({ brandName, intro, bikes }: Props) {
           )}
         </div>
       </section>
-      <nav
-        aria-label="Mobile site navigation"
-        className="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-5 border-t border-slate-200 bg-white/95 px-2 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(15,23,42,0.08)] backdrop-blur md:hidden"
-      >
-        <Link
-          href="/"
-          className="flex flex-col items-center gap-0.5 py-2 text-[10px] text-slate-600"
-        >
-          <Icon name="home" className="h-5 w-5" />
-          Home
-        </Link>
-        <a
-          href="#price-list-heading"
-          aria-current="page"
-          className="flex flex-col items-center gap-0.5 rounded-t-lg bg-blue-50 py-2 text-[10px] font-bold text-blue-600"
-        >
-          <Icon name="price" className="h-5 w-5" />
-          Prices
-        </a>
-        <Link
-          href="/brands"
-          className="flex flex-col items-center gap-0.5 py-2 text-[10px] text-slate-600"
-        >
-          <Icon name="bike" className="h-5 w-5" />
-          Brands
-        </Link>
-        <Link
-          href="/compare"
-          className="flex flex-col items-center gap-0.5 py-2 text-[10px] text-slate-600"
-        >
-          <Icon name="specs" className="h-5 w-5" />
-          Compare
-        </Link>
-        <button
-          type="button"
-          onClick={() => setBottomMoreOpen((open) => !open)}
-          aria-expanded={bottomMoreOpen}
-          className="flex flex-col items-center gap-0.5 py-2 text-[10px] text-slate-600"
-        >
-          <Icon name="more" className="h-5 w-5" />
-          More
-        </button>
-        {bottomMoreOpen && (
-          <div className="absolute bottom-full right-2 mb-2 w-40 rounded-xl border border-slate-200 bg-white p-2 shadow-lg">
-            <a
-              href="#specs-heading"
-              onClick={() => setBottomMoreOpen(false)}
-              className="block rounded-lg px-3 py-2 text-xs text-slate-700 hover:bg-blue-50"
-            >
-              Specifications
-            </a>
-            <a
-              href="#reviews-heading"
-              onClick={() => setBottomMoreOpen(false)}
-              className="block rounded-lg px-3 py-2 text-xs text-slate-700 hover:bg-blue-50"
-            >
-              Reviews
-            </a>
-            <a
-              href="#faq-heading"
-              onClick={() => setBottomMoreOpen(false)}
-              className="block rounded-lg px-3 py-2 text-xs text-slate-700 hover:bg-blue-50"
-            >
-              FAQs
-            </a>
-          </div>
-        )}
-      </nav>
     </>
   );
 }

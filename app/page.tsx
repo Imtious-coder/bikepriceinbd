@@ -1,292 +1,51 @@
 "use client";
 
-import { bikes } from "@/data/bike";
-import { OBike } from "@/types/bike";
-import Image from "next/image";
-import Link from "next/link";
-import { useMemo, useState } from "react";
 import BrowseByCategory from "./components/Brand";
+import BikeListings from "./components/BikeListings";
+import BikePriceTable from "./components/BikePriceTable";
 import CompareBikes from "./components/CompareBikes";
-import MotoHeader from "./components/Header";
+import Faq from "./components/Faq";
 import PromoBanner from "./components/Hero";
+import LatestBikePrices from "./components/LatestBikePrices";
 import Popularbikes from "./components/Popularbikes";
 import RidersReviews from "./components/RidersReviews";
 import Trustedshowrooms from "./components/Trustedshowrooms";
-import LatestBikePrices from "./components/LatestBikePrices";
-import BikePriceTable from "./components/BikePriceTable";
-import Faq from "./components/Faq";
-
-function formatPrice(price?: string): string {
-  if (!price || price.trim() === "") return "Price on request";
-  // price arrives pre-formatted, e.g. "4,29,950 BDT" — don't parseInt it,
-  // that only reads up to the first comma and returns garbage.
-  const cleaned = price.replace(/BDT/gi, "").trim();
-  return cleaned ? `৳ ${cleaned}` : "Price on request";
-}
-
-function BikeCard({ bike }: { bike: OBike }) {
-  return (
-    <Link
-      href={`/bikes/${bike.slug}`}
-      className="group block [perspective:1200px] min-h-[353px]"
-    >
-      <div className=" min-h-[353px] relative rounded-2xl overflow-hidden bg-white border border-blue-100 shadow-[0_4px_16px_-6px_rgba(30,64,175,0.12)] transition-all duration-500 ease-out group-hover:-translate-y-1.5 group-hover:scale-[1.015] group-hover:shadow-[0_18px_36px_-12px_rgba(30,64,175,0.22)] group-hover:border-blue-300">
-        {/* Image */}
-        <div className="relative h-52 bg-gradient-to-b from-slate-50 to-blue-50/60 overflow-hidden">
-          <Image
-            src={bike.images.primary}
-            alt={bike.name}
-            fill
-            className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out drop-shadow-[0_8px_12px_rgba(15,23,42,0.15)]"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-          <span className="absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-white/90 backdrop-blur border border-blue-200 text-blue-700 shadow-sm">
-            {bike.bike_type}
-          </span>
-          {bike.availability === "upcoming" && (
-            <span className="absolute top-3 right-3 text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-600 text-white shadow-sm">
-              Upcoming
-            </span>
-          )}
-        </div>
-
-        {/* Content */}
-        <div className="relative p-4">
-          <p className="text-xs font-semibold text-blue-600 mb-2">
-            {bike.brand}
-          </p>
-          <h3 className="text-slate-900 font-bold text-md leading-snug mb-3 group-hover:text-blue-700 transition-colors">
-            {bike.name}
-          </h3>
-
-          {/* Mileage row */}
-          {bike.mileage && (bike.mileage.city || bike.mileage.highway) && (
-            <div className="flex gap-3 mb-4">
-              {bike.mileage.city && (
-                <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                  <svg
-                    className="w-3.5 h-3.5 text-blue-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16"
-                    />
-                  </svg>
-                  City {bike.mileage.city}
-                </div>
-              )}
-              {bike.mileage.highway && (
-                <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                  <svg
-                    className="w-3.5 h-3.5 text-blue-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4"
-                    />
-                  </svg>
-                  Highway {bike.mileage.highway}
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Price */}
-          <div className="flex items-center justify-between">
-            <span className="text-md font-extrabold text-slate-900 tracking-tight">
-              {bike?.price}
-            </span>
-            <span className="text-sm text-blue-600 font-semibold group-hover:underline group-hover:text-blue-700">
-              All Details →
-            </span>
-          </div>
-        </div>
-
-        {/* Signature: throttle-fill bar, quiet until hover */}
-        <div className="absolute bottom-0 h-[3px] w-full bg-blue-50">
-          <div className="h-full w-full origin-left scale-x-0 bg-blue-600 transition-transform duration-500 ease-out group-hover:scale-x-100" />
-        </div>
-      </div>
-    </Link>
-  );
-}
 
 export default function HomePage() {
-  // Derive brand list dynamically from bike data
-  const allBrands = useMemo(
-    () => Array.from(new Set(bikes.map((b) => b.brand))),
-    [],
-  );
-
-  const defaultBrand = useMemo(() => {
-    const bajaj = allBrands.find((b) => b.toLowerCase() === "suzuki");
-    return bajaj ?? allBrands[0] ?? "All";
-  }, [allBrands]);
-
-  const [activeBrand, setActiveBrand] = useState<string>(defaultBrand);
-  const [brandSearch, setBrandSearch] = useState<string>("");
-
-  const filteredBikes =
-    activeBrand === "All"
-      ? bikes
-      : bikes.filter((b) => b.brand === activeBrand);
-
-  const filterOptions = ["All", ...allBrands];
-
-  const visibleFilterOptions = useMemo(() => {
-    const query = brandSearch.trim().toLowerCase();
-    if (!query) return filterOptions;
-    return filterOptions.filter(
-      (brand) => brand === "All" || brand.toLowerCase().includes(query),
-    );
-  }, [filterOptions, brandSearch]);
-
   return (
     <div className="min-h-screen bg-[#F6F9FC]">
-      <MotoHeader />
       <PromoBanner />
 
       {/* <section className="w-full bg-blue-50/60 py-10 sm:py-14">
-  <div className="mx-auto max-w-4xl px-4">
-    <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8">
-      <h4 className="text-sm leading-relaxed text-slate-500 sm:text-base">
-        Looking for the latest bike price in Bangladesh? Bike Price in
-        Bangladesh provides updated motorcycle prices, specifications,
-        mileage, features and reviews for popular bikes available in the
-        Bangladeshi market. Browse bikes from{" "}
-        <span className="font-semibold text-slate-700">
-          Honda, Yamaha, Bajaj, Suzuki, Hero, TVS, Royal Enfield, CFMOTO
-        </span>{" "}
-        and other leading motorcycle brands.
-      </h4>
-      <h4 className="mt-4 text-sm leading-relaxed text-slate-500 sm:text-base">
-        You can find bikes by brand, budget, engine capacity and motorcycle
-        type. Compare different models side by side to find the best bike
-        for your budget and requirements.
-      </h4>
-    </div>
-  </div>
-</section> */}
+        <div className="mx-auto max-w-4xl px-4">
+          <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8">
+            <h4 className="text-sm leading-relaxed text-slate-500 sm:text-base">
+              Looking for the latest bike price in Bangladesh? Bike Price in
+              Bangladesh provides updated motorcycle prices, specifications,
+              mileage, features and reviews for popular bikes available in the
+              Bangladeshi market. Browse bikes from{" "}
+              <span className="font-semibold text-slate-700">
+                Honda, Yamaha, Bajaj, Suzuki, Hero, TVS, Royal Enfield, CFMOTO
+              </span>{" "}
+              and other leading motorcycle brands.
+            </h4>
+            <h4 className="mt-4 text-sm leading-relaxed text-slate-500 sm:text-base">
+              You can find bikes by brand, budget, engine capacity and motorcycle
+              type. Compare different models side by side to find the best bike
+              for your budget and requirements.
+            </h4>
+          </div>
+        </div>
+      </section> */}
+
       <BrowseByCategory />
       <LatestBikePrices />
       <BikePriceTable />
-
-      {/* Filter bar (brand-based) + search */}
-      <div className="bg-white border-b border-blue-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-          {/* Search input */}
-          <div className="relative flex-shrink-0 w-full sm:w-56">
-            <svg
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-400 pointer-events-none"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-            <input
-              type="text"
-              value={brandSearch}
-              onChange={(e) => setBrandSearch(e.target.value)}
-              placeholder="Search brand..."
-              className="w-full pl-9 pr-8 py-2 rounded-full text-sm font-medium bg-slate-50 border border-slate-200  text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all duration-300"
-            />
-            {brandSearch && (
-              <button
-                onClick={() => setBrandSearch("")}
-                aria-label="Clear brand search"
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center text-slate-400 hover:text-blue-600 transition-colors"
-              >
-                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            )}
-          </div>
-
-          {/* Divider (desktop only) */}
-          <div className="hidden sm:block w-px h-6 bg-blue-100 flex-shrink-0" />
-
-          {/* Brand filter buttons */}
-          <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
-            {visibleFilterOptions.length > 0 ? (
-              visibleFilterOptions.map((brand) => (
-                <button
-                  key={brand}
-                  onClick={() => setActiveBrand(brand)}
-                  className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                    activeBrand === brand
-                      ? "bg-blue-600 text-white shadow-[0_4px_14px_rgba(37,99,235,0.35)]"
-                      : "bg-blue-50 text-blue-700 hover:bg-blue-100"
-                  }`}
-                >
-                  {brand}
-                </button>
-              ))
-            ) : (
-              <span className="text-sm text-slate-400 px-2">
-                No brands match &quot;{brandSearch}&quot;
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* Grid */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <p className="text-sm text-slate-500 mb-6">
-          Showing{" "}
-          <span className="font-semibold text-slate-900">
-            {filteredBikes.length}
-          </span>{" "}
-          bikes
-          {activeBrand !== "All" && (
-            <>
-              {" "}
-              from{" "}
-              <span className="font-semibold text-blue-600">{activeBrand}</span>
-            </>
-          )}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 [transform-style:preserve-3d]">
-          {filteredBikes.map((bike) => (
-            <BikeCard key={bike.slug} bike={bike} />
-          ))}
-        </div>
-      </main> 
-
-      {/* Compare */}
+      <BikeListings />
       <CompareBikes />
-
-      {/* Showroom */}
       <Trustedshowrooms />
-
-      {/* Popular Bikes */}
-      <Popularbikes />
-
-      {/* Reviews */}
+      {/* <Popularbikes /> */}
       <RidersReviews />
-
       <Faq />
     </div>
   );

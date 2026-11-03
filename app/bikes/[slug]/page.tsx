@@ -956,7 +956,7 @@ const breadcrumbSchema = {
       </main>
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center gap-3 border-t border-blue-100 bg-white/95 px-4 py-2.5 shadow-[0_-8px_24px_-16px_rgba(15,23,42,0.3)] backdrop-blur lg:hidden">
+      <div className="fixed bottom-[calc(51px+env(safe-area-inset-bottom))] left-0 right-0 z-50 flex items-center gap-3 border-t border-blue-100 bg-white/95 px-4 py-2.5 shadow-[0_-8px_24px_-16px_rgba(15,23,42,0.3)] backdrop-blur md:bottom-0 lg:hidden">
         <div className="min-w-0 flex-1"><strong className="block truncate text-base font-extrabold text-blue-600">{formatPrice(bike.price)}</strong><span className="block text-[10px] text-slate-500">Official Price in Bangladesh</span></div>
         <a href={hasShowroom ? "#showroom" : "/contact"} className="flex min-h-10 shrink-0 items-center justify-center rounded-lg bg-blue-600 px-4 text-center text-xs font-bold text-white shadow-sm">
           {hasShowroom ? "View Showrooms" : "Contact Us"}

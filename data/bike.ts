@@ -6598,6 +6598,100 @@ export const bikes: OBike[] = [
     "showroom": ""
   },
   {
+    "slug": "hero-xtreme-250R-price",
+    "name": "Hero Xtreme 250R Price",
+    "brand": "Hero",
+    "cc": "250",
+    "bike_type": "Naked",
+    "distributor": "HMCL Niloy Bangladesh Limited",
+    "model_year": "2024",
+    "brand_origin": "India",
+    "made_in": "India",
+    "assembly": "Bangladesh",
+    "launched": "2026-30-10",
+    "updated_at": "2026-30-10",
+    "price": "3,90,000 BDT",
+    "engine": {
+      "type": "4 Stroke, 4 Valve, Single Cylinder Liquid Cooled, DOHC",
+      "displacement": "249.03",
+      "maximum_power": "29.5 BHP @ 9250 RPM",
+      "maximum_torque": "25 Nm @ 7250 RPM",
+      "bore": "73 mm",
+      "stroke": "59.5 mm",
+      "compression_ratio": "N/A",
+      "valves": "4",
+      "fuel_supply": "Fuel Injection",
+      "no_of_cylinders": "1",
+      "engine_cooling": "Liquid Cooled",
+      "starting_method": "Electric",
+      "engine_oil_grade": "N/A",
+      "engine_oil_capacity": "N/A"
+    },
+    "transmission": {
+      "transmission_type": "Manual",
+      "clutch_type": "Wet type-Assist & Slip",
+      "no_of_gears": "6",
+      "drive_type": "Chain Drive"
+    },
+    "mileage_top_speed": {
+      "mileage": "30 Kmpl (Approx)",
+      "top_speed": "150 Kmph (Approx)"
+    },
+    "chassis_suspension": {
+      "chassis_type": "Steel Trellis Frame",
+      "front_suspension": "Dia 43 mm, Upside Down Front Fork",
+      "rear_suspension": "Gas Charged Mono Shock, 6 Step Pre-load Adjustable"
+    },
+    "brakes": {
+      "front_brake_type": "Disc Brake",
+      "rear_brake_type": "Disc Brake",
+      "front_brake_diameter": "N/A",
+      "rear_brake_diameter": "N/A",
+      "braking_system": "Dual Channel Switchable ABS with 2 modes"
+    },
+    "wheel_tyres": {
+      "front_tyre_size": "110/70 17 M/C 54H",
+      "rear_tyre_size": "150/60 17 M/C 66W",
+      "tyre_type": "tubeless",
+      "wheel_type": "Alloy"
+    },
+    "dimensions": {
+      "overall_length": "2023 Mm",
+      "overall_width": "828 Mm",
+      "height": "1062 Mm",
+      "weight": "167.7 kg",
+      "ground_clearance": "N/A",
+      "fuel_tank_capacity": "11.5 L",
+      "Wheelbase": "N/A",
+      "seat_height": "806 Mm"
+    },
+    "electricals": {
+      "battery_type": "mf",
+      "battery_voltage": "12V 6Ah",
+      "head_light": "Class-D LED Projector Headlamp, With LED DRLs",
+      "tail_light": "led",
+      "indicators": "led"
+    },
+    "others": {
+      "speedometer": "digital",
+      "odometer": "digital",
+      "rpm_meter": "Digital",
+      "handle_type": "N/A",
+      "seat_type": "Split-Seat",
+      "passenger_grab_rail": "yes",
+      "engine_kill_switch": "yes",
+      "additional_feature": "N/A"
+    },
+    "availability": "Available In Bangladesh",
+    "description": "",
+    "colors": [],
+    "images": {
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hero250r.webp?v=1793685790"
+    },
+    "mileage": {},
+    "showroom": ""
+  },
+  {
     "slug": "hero-karizma-xmr-210",
     "name": "Hero Karizma XMR 210",
     "brand": "Hero",
@@ -17496,7 +17590,7 @@ export const bikes: OBike[] = [
     "description": "GPX Demon GR250R Price in Bangladesh is 414900 BDT. This sports is powered by 250cc, which generates a maximum power of 29 Bhp @ 9500 RPM, and its maximum torque is 23 NM @ 7500 RPM. GPX Demon GR250R mileage is approximately 30 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 158 kg and top speed is approximately 135 Kmph (Approx). Check GPX Demon GR250R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/gpx-demon-gr250r68b41a8e199f1.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/gpx_demon_gr250r.jpg?v=1793684561"
     },
     "mileage": {},
     "showroom": ""
@@ -17590,7 +17684,7 @@ export const bikes: OBike[] = [
     "description": "GPX Demon GR165RR Da Corsa Price in Bangladesh is 374999 BDT. This sports is powered by 160cc, which generates a maximum power of 19.7 Bhp @ 8000 RPM, and its maximum torque is 18 NM @ 8000 RPM. GPX Demon GR165RR Da Corsa mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 155 kgs and top speed is approximately 140 Kmph (Approx). Check GPX Demon GR165RR Da Corsa comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/gpx-demon-gr165rr-da-corsa6607b37b30f87.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/gpx_demon_gr165rr.jpg?v=1793684561"
     },
     "mileage": {},
     "showroom": ""
@@ -17684,7 +17778,7 @@ export const bikes: OBike[] = [
     "description": "GPX Demon GR165RR Price in Bangladesh is 370000 BDT. This sports is powered by 160cc, which generates a maximum power of 19.2 Bhp @ 10500 RPM, and its maximum torque is 15 NM @ 7500 RPM. GPX Demon GR165RR mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 155 kg and top speed is approximately 135 Kmph (Approx). Check GPX Demon GR165RR comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/gpx-demon-gr165rr62ad7f4251f04.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/gpx_demon_gr_165_r.webp?v=1793684617"
     },
     "mileage": {},
     "showroom": ""
@@ -17778,7 +17872,7 @@ export const bikes: OBike[] = [
     "description": "GPX Demon GR165R Price in Bangladesh is 324000 BDT. This sports is powered by 160cc, which generates a maximum power of 17.8 Bhp @ 9000 RPM, and its maximum torque is 16 NM @ 6500 RPM. GPX Demon GR165R mileage is approximately 35 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 155 kg and top speed is approximately 140 Kmph (Approx). Check GPX Demon GR165R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/gpx-demon-gr165r608a4e33de329.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/gpx_demon_gr_165_r.webp?v=1793684617"
     },
     "mileage": {},
     "showroom": ""
@@ -17872,7 +17966,7 @@ export const bikes: OBike[] = [
     "description": "QJMotor Monster SRK 180 Price in Bangladesh is 259999 BDT. This naked sports is powered by 180cc, which generates a maximum power of 18.2 Bhp @ 9500 RPM, and its maximum torque is 15.2 NM @ 6000 RPM. QJMotor Monster SRK 180 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 145 Kg and top speed is approximately 140 Kmph (Approx). Check QJMotor Monster SRK 180 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/qj-srk-monster-18067fb848d7c238.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/qj_motors_monster_180.png?v=1793683554"
     },
     "mileage": {},
     "showroom": ""
@@ -17966,7 +18060,7 @@ export const bikes: OBike[] = [
     "description": "QJMotor X Rider SRV 160 Price in Bangladesh is 239999 BDT. This cruiser is powered by 160cc, which generates a maximum power of 17 Bhp @ 9250 RPM, and its maximum torque is 14 NM @ 7250 RPM. QJMotor X Rider SRV 160 mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 150 kg and top speed is approximately 120 Kmph (Approx). Check QJMotor X Rider SRV 160 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/qj-motor-x-rider-srv-1606811f972c889c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/qj-motor-x-rider-srv-160.webp?v=1793683554"
     },
     "mileage": {},
     "showroom": ""
@@ -18060,7 +18154,7 @@ export const bikes: OBike[] = [
     "description": "QJMOTOR SRK 421 Price in Bangladesh is  BDT. This naked sports is powered by 400cc, which generates a maximum power of 76.44 Bhp @ 14000 RPM, and its maximum torque is 39.6 NM @ 13200 RPM. QJMOTOR SRK 421 mileage is approximately 25 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 181 kg and top speed is approximately 225 Kmph (Approx). Check QJMOTOR SRK 421 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/qjmotor-srk-4216a2e57e81c9dd.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/qj_motors_xrk_421.png?v=1793683555"
     },
     "mileage": {},
     "showroom": ""
@@ -18154,7 +18248,7 @@ export const bikes: OBike[] = [
     "description": "Keeway RKR 165 Price in Bangladesh is 215000 BDT. This sports is powered by 160cc, which generates a maximum power of 17.6 Bhp @ 9500 RPM, and its maximum torque is 14 NM @ 7000 RPM. Keeway RKR 165 mileage is approximately 35 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 153 Kg and top speed is approximately 130 Kmph (Approx). Check Keeway RKR 165 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/keeway-rkr-1656088ff4853bae.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/keeway_rkr_165.jpg?v=1793684141"
     },
     "mileage": {},
     "showroom": ""
@@ -18248,7 +18342,7 @@ export const bikes: OBike[] = [
     "description": "Keeway K-Light Price in Bangladesh is 167500 BDT. This cruiser is powered by 150cc, which generates a maximum power of 11 Bhp @ 8500 RPM, and its maximum torque is 10 NM @ 7500 RPM. Keeway K-Light mileage is approximately 0 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 156 kg and top speed is approximately 115 Kmph (Approx). Check Keeway K-Light comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/keeway-k-light6088febf4a659.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/keeway_k_light.jpg?v=1793684141"
     },
     "mileage": {},
     "showroom": ""
@@ -18342,7 +18436,7 @@ export const bikes: OBike[] = [
     "description": "Keeway RK 125 Price in Bangladesh is 109500 BDT. This commuter is powered by 125cc, which generates a maximum power of 10 Bhp @ 8500 RPM, and its maximum torque is 9 NM @ 7500 RPM. Keeway RK 125 mileage is approximately 55 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 116 kg and top speed is approximately 100 Kmph (Approx). Check Keeway RK 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/keeway-rk-12565f8060dd4792.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/keeway_rk_125.jpg?v=1793684141"
     },
     "mileage": {},
     "showroom": ""
@@ -18436,7 +18530,7 @@ export const bikes: OBike[] = [
     "description": "Keeway RKS 100 Price in Bangladesh is 99900 BDT. This commuter is powered by 100cc, which generates a maximum power of 7.3 Bhp @ 7500 RPM, and its maximum torque is 7.6 NM @ 5500 RPM. Keeway RKS 100 mileage is approximately 60 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 125 Kg and top speed is approximately 110 Kmph (Approx). Check Keeway RKS 100 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/keeway-rks-100608902b5879ab.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/keeway_rks_100.jpg?v=1793684141"
     },
     "mileage": {},
     "showroom": ""
@@ -19188,7 +19282,7 @@ export const bikes: OBike[] = [
     "description": "Vespa VXL 150 (Yellow) Price in Bangladesh is 350000 BDT. This scooter is powered by 150cc, which generates a maximum power of 9.8 Bhp @ 6750 RPM, and its maximum torque is 10.9 NM @ 5000 RPM. Vespa VXL 150 (Yellow) mileage is approximately 45 Kmpl (Approx). It has a Drum Brake braking system with tubeless tyres. Weight is 114 Kg and top speed is approximately 90 Kmph (Approx). Check Vespa VXL 150 (Yellow) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/vespa-vxl-15062035800f36f7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Sports_Matte_Yellow.jpg?v=1793684073"
     },
     "mileage": {},
     "showroom": ""
@@ -19282,7 +19376,7 @@ export const bikes: OBike[] = [
     "description": "Vespa VXL 125 (CBS) Price in Bangladesh is 350000 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.78 Bhp @ 7500 RPM, and its maximum torque is 9.6 NM @ 5500 RPM. Vespa VXL 125 (CBS) mileage is approximately 45 Kmpl (Approx). It has a CBS Braking System braking system with tubeless tyres. Weight is 115 KG and top speed is approximately 90 Kmph (Approx). Check Vespa VXL 125 (CBS) comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/vespa-vxl-125-cbs668a6098847d2.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Vespa_vxl_125_CBS.jpg?v=1793683834"
     },
     "mileage": {},
     "showroom": ""
@@ -19376,7 +19470,7 @@ export const bikes: OBike[] = [
     "description": "Vespa VXL 125 Price in Bangladesh is 320000 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.4 Bhp @ 7250 RPM, and its maximum torque is 9.9 NM @ 6250 RPM. Vespa VXL 125 mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with Info-Not-Available tyres. Weight is N/A and top speed is approximately 90 Kmph (Approx). Check Vespa VXL 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/vespa-vxl-12560893a6b22b64.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Vespa_vxl_125.jpg?v=1793683833"
     },
     "mileage": {},
     "showroom": ""
@@ -19470,7 +19564,7 @@ export const bikes: OBike[] = [
     "description": "VESPA VXL 125 PEARL WHITE Price in Bangladesh is 320000 BDT. This scooter is powered by 125cc, which generates a maximum power of 9.52 Bhp @ 0 RPM, and its maximum torque is 9.9 NM @ 0 RPM. VESPA VXL 125 PEARL WHITE mileage is approximately 45 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 114KG and top speed is approximately 90 Kmph (Approx). Check VESPA VXL 125 PEARL WHITE comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/vespa-vxl-125-pearl-white6a4a47ed9c879.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Vespa_vxl_125_pearl_white.jpg?v=1793683833"
     },
     "mileage": {},
     "showroom": ""

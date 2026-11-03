@@ -4,6 +4,7 @@ import { bikes } from "@/data/bike";
 import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import MobileBottomNav from "./MobileBottomNav";
 
 type DropdownItem = { label: string; href: string; sublabel?: string };
 type NavItem = { label: string; href: string; dropdown?: DropdownItem[] };
@@ -883,6 +884,8 @@ export default function MotoHeader() {
           </div>
         </div>
       </header>
+
+      <MobileBottomNav />
 
       <style>{`
         @keyframes wheelSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

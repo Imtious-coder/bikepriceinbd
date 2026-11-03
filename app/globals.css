@@ -30,7 +30,7 @@
 }
 
 .hero-mobile-scene {
-  background: url('/hero-bangladesh-motorcycle.png') right 65% / auto 115% no-repeat;
+  background: url('/hero-bangladesh-motorcycle.png') right center / auto 100% no-repeat;
   mask-image: linear-gradient(to bottom, transparent, black 12%, black 85%, transparent);
 }
 
