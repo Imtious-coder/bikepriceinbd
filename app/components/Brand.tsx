@@ -26,6 +26,8 @@ const BRAND_LOGOS: Record<string, string> = {
   Runner: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_3.png?v=1786299052",
   CFMOTO: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_3.jpg?v=1786299052",
   TVS: "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/images_2.png?v=1786299052",
+  "H Power": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/H_Power_Logo.png?v=1795154299",
+  "Royal Enfield": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Royal_Enfield_Logo.png?v=1795154496",
 };
 
 function slugifyBrand(brand: string) {

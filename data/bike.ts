@@ -15616,7 +15616,7 @@ export const bikes: OBike[] = [
     "description": "Hyosung GV350-2 Price in Bangladesh is 585000 BDT. This cruiser is powered by 350cc, which generates a maximum power of 31.51 Bhp @ 8500 RPM, and its maximum torque is 30 NM @ 6500 RPM. Hyosung GV350-2 mileage is approximately 25 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 172 kg and top speed is approximately 135 Kmph (Approx). Check Hyosung GV350-2 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hyosung-gv350-2694b9fcd36008.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hyosung_gv350s.webp?v=1795151616"
     },
     "mileage": {},
     "showroom": ""
@@ -15710,7 +15710,7 @@ export const bikes: OBike[] = [
     "description": "Hyosung GV300R Price in Bangladesh is 535000 BDT. This cruiser is powered by 300cc, which generates a maximum power of 22 Bhp @ 8500 RPM, and its maximum torque is 25.6 NM @ 6500 RPM. Hyosung GV300R mileage is approximately 25 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 187.0 Kg and top speed is approximately 150 Kmph (Approx). Check Hyosung GV300R comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hyosung-gv300r67e2444b05b52.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hyosung_GV300R.jpg?v=1795151402"
     },
     "mileage": {},
     "showroom": ""
@@ -15804,7 +15804,7 @@ export const bikes: OBike[] = [
     "description": "Hyosung GV300S Price in Bangladesh is 485000 BDT. This cruiser is powered by 300cc, which generates a maximum power of 21.6 Bhp @ 8500 RPM, and its maximum torque is 25.6 NM @ 6500 RPM. Hyosung GV300S mileage is approximately 25 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 172 Kg and top speed is approximately 150 Kmph (Approx). Check Hyosung GV300S comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hyosung-aquila-gv3006561c07a0fc40.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hyosung_gv300s.jpg?v=1795151404"
     },
     "mileage": {},
     "showroom": ""
@@ -15898,7 +15898,7 @@ export const bikes: OBike[] = [
     "description": "HYOSUNG GV250DRA Price in Bangladesh is 445000 BDT. This cruiser is powered by 250cc, which generates a maximum power of 19.8 Bhp @ 9000 RPM, and its maximum torque is 21.8 NM @ 8500 RPM. HYOSUNG GV250DRA mileage is approximately 30 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 185 kg and top speed is approximately 128 Kmph (Approx). Check HYOSUNG GV250DRA comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/hyosung-gv250dra665ef19cb166b.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/hyosung_GV250dra.jpg?v=1795151404"
     },
     "mileage": {},
     "showroom": ""
@@ -18624,7 +18624,7 @@ export const bikes: OBike[] = [
     "description": "Taro GP 1 V4 Price in Bangladesh is 375000 BDT. This sports is powered by 160cc, which generates a maximum power of 21.5 Bhp @ 8500 RPM, and its maximum torque is 18 NM @ 6500 RPM. Taro GP 1 V4 mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 150 Kg and top speed is approximately 130 Kmph (Approx). Check Taro GP 1 V4 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-gp-1-v462f133975df46.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Taro_GP_1_V4.jpg?v=1795152519"
     },
     "mileage": {},
     "showroom": ""
@@ -18718,7 +18718,7 @@ export const bikes: OBike[] = [
     "description": "Taro Xsuv Fi ABS Price in Bangladesh is 360000 BDT. This maxi scooter is powered by 150cc, which generates a maximum power of 15.56 Bhp @ 8250 RPM, and its maximum torque is 14.7 NM @ 6500 RPM. Taro Xsuv Fi ABS mileage is approximately 45 Kmpl (Approx). It has a Single Channel ABS braking system with tubeless tyres. Weight is 162kg and top speed is approximately 100 Kmph (Approx). Check Taro Xsuv Fi ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-xsuv-fi-abs68778a7ce7de4.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_Xsuv_fi_abs.jpg?v=1795152382"
     },
     "mileage": {},
     "showroom": ""
@@ -18812,7 +18812,7 @@ export const bikes: OBike[] = [
     "description": "Taro GP 1 V3 Price in Bangladesh is 356000 BDT. This sports is powered by 150cc, which generates a maximum power of 19 Bhp @ 9500 RPM, and its maximum torque is 16.5 NM @ 9000 RPM. Taro GP 1 V3 mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 150 Kg and top speed is approximately 140 Kmph (Approx). Check Taro GP 1 V3 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-gp-1-v3603ddf9d08c77.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_gp_1_v3.png?v=1795152385"
     },
     "mileage": {},
     "showroom": ""
@@ -18906,7 +18906,7 @@ export const bikes: OBike[] = [
     "description": "Taro Venom Price in Bangladesh is 350000 BDT. This naked sports is powered by 160cc, which generates a maximum power of 0 Bhp @ 0 RPM, and its maximum torque is 0 NM @ 0 RPM. Taro Venom mileage is approximately 35 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is N/A and top speed is approximately 130 Kmph (Approx). Check Taro Venom comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-venom63ce216ea3ca7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_venom.webp?v=1795152384"
     },
     "mileage": {},
     "showroom": ""
@@ -19000,7 +19000,7 @@ export const bikes: OBike[] = [
     "description": "Taro Vampire 150 Fi ABS Price in Bangladesh is 335000 BDT. This maxi scooter is powered by 150cc, which generates a maximum power of 15.56 Bhp @ 8250 RPM, and its maximum torque is 14.7 NM @ 6500 RPM. Taro Vampire 150 Fi ABS mileage is approximately 45 Kmpl (Approx). It has a Single Disc braking system with tubeless tyres. Weight is N/A and top speed is approximately 95 Kmph (Approx). Check Taro Vampire 150 Fi ABS comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-vampire-150-fi-abs68777f57441c9.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_vampire_150_fi_abs.jpg?v=1795152383"
     },
     "mileage": {},
     "showroom": ""
@@ -19094,7 +19094,7 @@ export const bikes: OBike[] = [
     "description": "Taro GP 1 Special Edition Price in Bangladesh is 321000 BDT. This sports is powered by 150cc, which generates a maximum power of 16 Bhp @ 8500 RPM, and its maximum torque is 14.5 NM @ 7000 RPM. Taro GP 1 Special Edition mileage is approximately 40 Kmpl (Approx). It has a CBS Braking, Single Channel ABS braking system with tubeless tyres. Weight is 150 Kg and top speed is approximately 120 Kmph (Approx). Check Taro GP 1 Special Edition comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-gp-1-special-edition603def840b683.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_gp_1_special_edition.jpg?v=1795152384"
     },
     "mileage": {},
     "showroom": ""
@@ -19188,7 +19188,7 @@ export const bikes: OBike[] = [
     "description": "Taro Imola 150 Price in Bangladesh is 185000 BDT. This scooter is powered by 150cc, which generates a maximum power of 11.5 Bhp @ 8000 RPM, and its maximum torque is 12.1 NM @ 6000 RPM. Taro Imola 150 mileage is approximately 45 Kmpl (Approx). It has a CBS Braking braking system with tubeless tyres. Weight is N/A and top speed is approximately 110 Kmph (Approx). Check Taro Imola 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/taro-imola-1506253ef15ec55f.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/taro_lmola_150.webp?v=1795152383"
     },
     "mileage": {},
     "showroom": ""
@@ -19658,7 +19658,7 @@ export const bikes: OBike[] = [
     "description": "Roadmaster Delight Price in Bangladesh is 84900 BDT. This commuter is powered by 100cc, which generates a maximum power of 6 Bhp @ 8000 RPM, and its maximum torque is 0 NM @ 0 RPM. Roadmaster Delight mileage is approximately 60 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 102.5 Kg and top speed is approximately 80 Kmph (Approx). Check Roadmaster Delight comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/roadmaster-delight60891a759c8ce.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/roadmaster_delight.jpg?v=1795151300"
     },
     "mileage": {},
     "showroom": ""
@@ -19752,7 +19752,7 @@ export const bikes: OBike[] = [
     "description": "Roadmaster Prime 100 Price in Bangladesh is 76900 BDT. This commuter is powered by 100cc, which generates a maximum power of 6 Bhp @ 8000 RPM, and its maximum torque is 6.5 NM @ 5000 RPM. Roadmaster Prime 100 mileage is approximately 60 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 102 Kg and top speed is approximately 90 Kmph (Approx). Check Roadmaster Prime 100 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/roadmaster-prime-10060891ad17fa1c.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/roadmaster_prime_80.webp?v=1795151300"
     },
     "mileage": {},
     "showroom": ""
@@ -19846,7 +19846,7 @@ export const bikes: OBike[] = [
     "description": "Roadmaster Rex Price in Bangladesh is 70900 BDT. This commuter is powered by 80cc, which generates a maximum power of 6 Bhp @ 8000 RPM, and its maximum torque is 0 NM @ 0 RPM. Roadmaster Rex mileage is approximately 60 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 88.8 Kg and top speed is approximately 80 Kmph (Approx). Check Roadmaster Rex comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/roadmaster-rex60891e0f7caea.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/roadmaster_rex.jpg?v=1795151302"
     },
     "mileage": {},
     "showroom": ""
@@ -19940,7 +19940,7 @@ export const bikes: OBike[] = [
     "description": "Roadmaster Prime 80 Price in Bangladesh is 60900 BDT. This commuter is powered by 80cc, which generates a maximum power of 6 Bhp @ 8000 RPM, and its maximum torque is 0 NM @ 0 RPM. Roadmaster Prime 80 mileage is approximately 65 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 87.5 Kg and top speed is approximately 70 Kmph (Approx). Check Roadmaster Prime 80 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/roadmaster-prime-80608a543f50362.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/roadmaster_prime_80.webp?v=1795151300"
     },
     "mileage": {},
     "showroom": ""
@@ -21350,7 +21350,7 @@ export const bikes: OBike[] = [
     "description": "Speeder NSX 165R V3 Price in Bangladesh is 369900 BDT. This sports is powered by 160cc, which generates a maximum power of 21.5 Bhp @ 10500 RPM, and its maximum torque is 17.5 NM @ 9000 RPM. Speeder NSX 165R V3 mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 153 Kg and top speed is approximately 140 Kmph (Approx). Check Speeder NSX 165R V3 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-nsx-165r-v3655c8fca08229.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder_nsx_165r_v3.jpg?v=1795151867"
     },
     "mileage": {},
     "showroom": ""
@@ -21444,7 +21444,7 @@ export const bikes: OBike[] = [
     "description": "Speeder NSX 165R V2 Price in Bangladesh is 299900 BDT. This sports is powered by 160cc, which generates a maximum power of 18 Bhp @ 10000 RPM, and its maximum torque is 14.6 NM @ 8500 RPM. Speeder NSX 165R V2 mileage is approximately 40 Kmpl (Approx). It has a Dual Channel ABS braking system with tubeless tyres. Weight is 153 Kg and top speed is approximately 125 Kmph (Approx). Check Speeder NSX 165R V2 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-nsx-165r65f54174920c7.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder_nsx_165r_v3.jpg?v=1795151867"
     },
     "mileage": {},
     "showroom": ""
@@ -21538,7 +21538,7 @@ export const bikes: OBike[] = [
     "description": "Speeder Countryman Price in Bangladesh is 254000 BDT. This cafe racer is powered by 160cc, which generates a maximum power of 15.9 Bhp @ 8000 RPM, and its maximum torque is 17 NM @ 0 RPM. Speeder Countryman mileage is approximately 40 Kmpl (Approx). It has a Dual Disc braking system with tubeless tyres. Weight is 130 Kg and top speed is approximately 115 Kmph (Approx). Check Speeder Countryman comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-countryman603df6086e464.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder_countryman.png?v=1795151868"
     },
     "mileage": {},
     "showroom": ""
@@ -21632,7 +21632,7 @@ export const bikes: OBike[] = [
     "description": "Speeder Big Monster 165 FI Price in Bangladesh is 179500 BDT. This naked sports is powered by 160cc, which generates a maximum power of 15.3 Bhp @ 8000 RPM, and its maximum torque is 14.6 NM @ 6000 RPM. Speeder Big Monster 165 FI mileage is approximately 40 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 135 Kg and top speed is approximately 120 Kmph (Approx). Check Speeder Big Monster 165 FI comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-big-monster-165-fi603df89e6ce11.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder_big_monster_165_fl.jpg?v=1795151867"
     },
     "mileage": {},
     "showroom": ""
@@ -21726,7 +21726,7 @@ export const bikes: OBike[] = [
     "description": "Speeder Mugen 150 Price in Bangladesh is 149500 BDT. This scooter is powered by 150cc, which generates a maximum power of 7.5 Bhp @ 7500 RPM, and its maximum torque is 10.5 NM @ 6000 RPM. Speeder Mugen 150 mileage is approximately 40 Kmpl (Approx). It has a Normal Braking System braking system with tubeless tyres. Weight is 110 Kg and top speed is approximately 95 Kmph (Approx). Check Speeder Mugen 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-mugen-15061a7279e10884.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder-mugen-150-black-bdbiker.png?v=1795152168"
     },
     "mileage": {},
     "showroom": ""
@@ -21820,7 +21820,7 @@ export const bikes: OBike[] = [
     "description": "Speeder Volex 125 Price in Bangladesh is 124500 BDT. This scooter is powered by 125cc, which generates a maximum power of 8.6 Bhp @ 7500 RPM, and its maximum torque is 7.2 NM @ 6000 RPM. Speeder Volex 125 mileage is approximately 40 Kmpl (Approx). It has a Double Disc braking system with tubeless tyres. Weight is 100 Kg and top speed is approximately 100 Kmph (Approx). Check Speeder Volex 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-volex-125603e0c6e8e944.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/speeder_volex_125.jpg?v=1795151867"
     },
     "mileage": {},
     "showroom": ""
@@ -21914,7 +21914,7 @@ export const bikes: OBike[] = [
     "description": "Speeder Force 110 Price in Bangladesh is 114500 BDT. This cafe racer is powered by 100cc, which generates a maximum power of 7.6 Bhp @ 7500 RPM, and its maximum torque is 8.1 NM @ 6000 RPM. Speeder Force 110 mileage is approximately 50 Kmpl (Approx). It has a Single Disc braking system with Info-Not-Available tyres. Weight is 98 KG and top speed is approximately 80 Kmph (Approx). Check Speeder Force 110 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/speeder-force-1106860fa7d4d56d.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/Speeder_Force_110.jpg?v=1795152322"
     },
     "mileage": {},
     "showroom": ""
@@ -22948,7 +22948,7 @@ export const bikes: OBike[] = [
     "description": "PHP Merkaba Plus 150 Price in Bangladesh is 175000 BDT. This standard is powered by 150cc, which generates a maximum power of 11.2 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7500 RPM. PHP Merkaba Plus 150 mileage is approximately 55 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 112 Kg and top speed is approximately 90 Kmph (Approx). Check PHP Merkaba Plus 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/php-merkaba-plus-15060890eb5f1dff.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/php_merkaba_plus_150.jpg?v=1795151710"
     },
     "mileage": {},
     "showroom": ""
@@ -23042,7 +23042,7 @@ export const bikes: OBike[] = [
     "description": "Php Commando 150 Price in Bangladesh is 165000 BDT. This cafe racer is powered by 150cc, which generates a maximum power of 0 Bhp @ 0 RPM, and its maximum torque is 0 NM @ 0 RPM. Php Commando 150 mileage is approximately 35 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is N/A and top speed is approximately 110 Kmph (Approx). Check Php Commando 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/php-commando-15060890dc40b6dc.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/php_commando_150.jpg?v=1795151710"
     },
     "mileage": {},
     "showroom": ""
@@ -23136,7 +23136,7 @@ export const bikes: OBike[] = [
     "description": "PHP Merkaba 150 Price in Bangladesh is 140000 BDT. This cruiser is powered by 150cc, which generates a maximum power of 11.2 Bhp @ 8500 RPM, and its maximum torque is 11 NM @ 7500 RPM. PHP Merkaba 150 mileage is approximately 55 Kmpl (Approx). It has a No braking system with tubeless tyres. Weight is 115 Kg and top speed is approximately 90 Kmph (Approx). Check PHP Merkaba 150 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/php-merkaba-15060890e6516181.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/php_merkaba_150.jpg?v=1795151709"
     },
     "mileage": {},
     "showroom": ""
@@ -23230,7 +23230,7 @@ export const bikes: OBike[] = [
     "description": "PHP Pride 125 Price in Bangladesh is 130000 BDT. This commuter is powered by 125cc, which generates a maximum power of 10 Bhp @ 8500 RPM, and its maximum torque is 9 NM @ 7000 RPM. PHP Pride 125 mileage is approximately 35 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 96 Kg and top speed is approximately 90 Kmph (Approx). Check PHP Pride 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/php-pride-12560890ef8050d6.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/php_pride_125.webp?v=1795151710"
     },
     "mileage": {},
     "showroom": ""
@@ -23324,7 +23324,7 @@ export const bikes: OBike[] = [
     "description": "PHP Super 125 Price in Bangladesh is 99900 BDT. This commuter is powered by 125cc, which generates a maximum power of 10.1 Bhp @ 7500 RPM, and its maximum torque is 9.4 NM @ 5000 RPM. PHP Super 125 mileage is approximately 40 Kmpl (Approx). It has a No braking system with tubetyre tyres. Weight is 95 kg and top speed is approximately 100 Kmph (Approx). Check PHP Super 125 comparison, pros and cons, image gallery, and price history to learn more before buying this motorcycle.",
     "colors": [],
     "images": {
-      "primary": "https://www.bikebd.com/den/storage/app/files/shares/images/productimages/php-super-12560890f2c12a60.webp"
+      "primary": "https://cdn.shopify.com/s/files/1/0644/7595/5297/files/php_super_125.webp?v=1795151710"
     },
     "mileage": {},
     "showroom": ""
