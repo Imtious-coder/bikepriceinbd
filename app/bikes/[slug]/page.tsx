@@ -760,8 +760,13 @@ const breadcrumbSchema = {
           </div>
 
         {/* Specifications */}
-{specSections.length > 0 && (
-  <div id="specifications" className="mt-3 scroll-mt-28 space-y-3">
+  <div id="specifications" tabIndex={-1} className="mt-3 scroll-mt-28 space-y-3">
+    {specSections.length === 0 && (
+      <section className="rounded-2xl border border-blue-100 bg-white p-4 shadow-sm sm:p-6">
+        <h2 className="text-xl font-bold text-slate-900">Specifications</h2>
+        <p className="mt-2 text-sm text-slate-600">Specifications are unavailable for this bike.</p>
+      </section>
+    )}
     {specSections.map((section, i) => {
       const style = SPEC_SECTION_STYLES[i % SPEC_SECTION_STYLES.length];
       const anchorId = section.title
@@ -810,7 +815,6 @@ const breadcrumbSchema = {
       );
     })}
   </div>
-)}
 
         {/* Showroom */}
         {hasShowroom && (

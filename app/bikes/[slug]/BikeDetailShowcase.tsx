@@ -3,7 +3,8 @@
 import type { OBike } from "@/types/bike";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import type { PointerEvent } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Variant = { slug: string; name: string; price: string; image: string };
 type Highlight = { label: string; value: string };
@@ -123,8 +124,6 @@ function DetailIcon({
 }
 
 type IconName =
-  | "compare"
-  | "heart"
   | "share"
   | "showroom"
   | "price"
@@ -147,17 +146,6 @@ function Icon({
   className?: string;
 }) {
   const paths: Record<IconName, React.ReactNode> = {
-    compare: (
-      <>
-        <circle cx="6" cy="6" r="2" />
-        <circle cx="18" cy="6" r="2" />
-        <circle cx="12" cy="18" r="2" />
-        <path d="M8 6h8M7 8l4 8m6-8-4 8" />
-      </>
-    ),
-    heart: (
-      <path d="M20.8 8.5c0 4.2-8.8 10-8.8 10s-8.8-5.8-8.8-10a4.7 4.7 0 0 1 8.8-2.2 4.7 4.7 0 0 1 8.8 2.2Z" />
-    ),
     share: (
       <>
         <circle cx="18" cy="5" r="2" />
@@ -184,12 +172,7 @@ function Icon({
       </>
     ),
     specs: (
-      <>
-        <path d="M4 7h16M4 12h16M4 17h16" />
-        <circle cx="9" cy="7" r="2" fill="white" />
-        <circle cx="15" cy="12" r="2" fill="white" />
-        <circle cx="8" cy="17" r="2" fill="white" />
-      </>
+      <path d="M8 3h8l3 3v15H5V3h3Zm8 0v4h3M8 11h8m-8 4h8m-8 3h5" />
     ),
     features: (
       <>
@@ -266,27 +249,53 @@ export default function BikeDetailShowcase({
   hasSimilarBikes,
 }: Props) {
   const gallery = gallerySources.filter(Boolean);
-  const colors = bike.colors?.length > 0 ? bike.colors : ["Current color"];
-  const colorImageFor = (color: string) =>
-    Object.entries(bike.colorImages ?? {})
-      .find(
-        ([name, source]) =>
-          name.trim().toLowerCase() === color.trim().toLowerCase() &&
-          source.trim(),
-      )?.[1]
-      ?.trim();
+  const hasColors = bike.colors?.length > 0;
+  const colors = hasColors ? bike.colors : ["Current color"];
+  const imagesByColor = colors.map((color) => {
+    const sources = Object.entries(bike.colorImages ?? {}).find(
+      ([name]) => name.trim().toLowerCase() === color.trim().toLowerCase(),
+    )?.[1];
+    const images = Array.isArray(sources) ? sources : [sources ?? ""];
+    return images.map((source) => source.trim()).filter(Boolean);
+  });
   const [activePhoto, setActivePhoto] = useState(0);
-  const [activeColor, setActiveColor] = useState<number | null>(null);
-  const selectedColorImage =
-    activeColor === null ? null : colorImageFor(colors[activeColor]);
-  const displayedGallery =
-    activeColor === null
-      ? gallery
-      : [selectedColorImage || gallery[0], ...gallery.slice(1)];
+  const [activeColor, setActiveColor] = useState<number | null>(hasColors ? 0 : null);
+  const selectedColorImages = activeColor === null ? [] : imagesByColor[activeColor] ?? [];
+  const displayedGallery = selectedColorImages.length
+    ? [...selectedColorImages, ...gallery.slice(1)]
+    : gallery;
   const safeActivePhoto = Math.min(activePhoto, Math.max(0, displayedGallery.length - 1));
+  const activePhotoAlt = `${bike.name}${activeColor !== null && safeActivePhoto < selectedColorImages.length ? ` in ${colors[activeColor]}` : ""}, image ${safeActivePhoto + 1} of ${displayedGallery.length}`;
+  const galleryDialog = useRef<HTMLDialogElement>(null);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const pageThumbnails = useRef<HTMLDivElement>(null);
+  const modalThumbnails = useRef<HTMLDivElement>(null);
+  const swipeStart = useRef<{ x: number; y: number } | null>(null);
+  const didSwipe = useRef(false);
+
+  useEffect(() => {
+    const strip = (galleryOpen ? modalThumbnails : pageThumbnails).current;
+    const selected = strip?.querySelector('[aria-pressed="true"]');
+    if (!strip || !selected) return;
+
+    const stripBounds = strip.getBoundingClientRect();
+    const selectedBounds = selected.getBoundingClientRect();
+    const offset = selectedBounds.left < stripBounds.left
+      ? selectedBounds.left - stripBounds.left
+      : Math.max(0, selectedBounds.right - stripBounds.right);
+    if (offset) strip.scrollBy({ left: offset });
+  }, [galleryOpen, safeActivePhoto]);
+
+  useEffect(() => {
+    if (!galleryOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [galleryOpen]);
   const [expandedOverview, setExpandedOverview] = useState(false);
   const [shareMessage, setShareMessage] = useState("");
-  const [wishlisted, setWishlisted] = useState(false);
   const [extraFees, setExtraFees] = useState(0);
   const [onRoadTotal, setOnRoadTotal] = useState<number | null>(null);
   const basePrice = Number(bike.price.replace(/[^\d]/g, "")) || 0;
@@ -300,38 +309,44 @@ export default function BikeDetailShowcase({
       ? (principal * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -tenure))
       : principal / tenure;
 
-  useEffect(() => {
-    try {
-      const saved = JSON.parse(
-        localStorage.getItem("bikebd-wishlist") || "[]",
-      ) as string[];
-      setWishlisted(Array.isArray(saved) && saved.includes(bike.slug));
-    } catch {
-      setWishlisted(false);
-    }
-  }, [bike.slug]);
+  function scrollToSpecifications() {
+    const section = document.getElementById("specifications");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  function toggleWishlist() {
-    try {
-      const saved = JSON.parse(
-        localStorage.getItem("bikebd-wishlist") || "[]",
-      ) as string[];
-      const next = new Set(Array.isArray(saved) ? saved : []);
-      if (next.has(bike.slug)) next.delete(bike.slug);
-      else next.add(bike.slug);
-      localStorage.setItem("bikebd-wishlist", JSON.stringify([...next]));
-      setWishlisted(next.has(bike.slug));
-    } catch {
-      setShareMessage("Wishlist is unavailable in this browser");
-    }
+    section?.focus({ preventScroll: true });
+    section?.scrollIntoView({ behavior: reduceMotion ? "instant" : "smooth" });
   }
 
   function movePhoto(direction: -1 | 1) {
     if (!displayedGallery.length) return;
     setActivePhoto(
       (index) =>
-        (index + direction + displayedGallery.length) % displayedGallery.length,
+        (Math.min(index, displayedGallery.length - 1) + direction + displayedGallery.length) % displayedGallery.length,
     );
+  }
+
+  function startSwipe(event: PointerEvent<HTMLElement>) {
+    if (!event.isPrimary) return;
+    didSwipe.current = false;
+    swipeStart.current = event.pointerType === "touch"
+      ? { x: event.clientX, y: event.clientY }
+      : null;
+  }
+
+  function finishSwipe(event: PointerEvent<HTMLElement>) {
+    if (!event.isPrimary || !swipeStart.current) return;
+    const { x, y } = swipeStart.current;
+    swipeStart.current = null;
+    const horizontal = event.clientX - x;
+    const vertical = event.clientY - y;
+    if (Math.abs(horizontal) < 40 || Math.abs(horizontal) <= Math.abs(vertical)) return;
+
+    didSwipe.current = true;
+    movePhoto(horizontal < 0 ? 1 : -1);
+  }
+
+  function cancelSwipe(event: PointerEvent<HTMLElement>) {
+    if (event.isPrimary) swipeStart.current = null;
   }
 
   async function shareBike() {
@@ -379,60 +394,99 @@ export default function BikeDetailShowcase({
       <div className="grid min-w-0 grid-cols-1 gap-3 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
         <div className="min-w-0 max-w-full overflow-hidden rounded-2xl bg-white p-2 shadow-sm sm:p-3">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-[radial-gradient(circle_at_50%_50%,#fff_10%,#e8f3fd_100%)] sm:aspect-auto sm:h-[390px] lg:h-[420px]">
+            <dialog
+              ref={galleryDialog}
+              aria-label={`${bike.name} photo gallery`}
+              className="fixed inset-0 m-0 h-dvh max-h-none w-full max-w-none overflow-hidden bg-transparent text-white backdrop:bg-slate-950/75 backdrop:backdrop-blur-md"
+              onClose={() => setGalleryOpen(false)}
+              onKeyDown={(event) => {
+                if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+                event.preventDefault();
+                movePhoto(event.key === "ArrowLeft" ? -1 : 1);
+              }}
+            >
+              <div className="flex h-full flex-col gap-3 p-3 sm:gap-4 sm:p-6">
+                <button
+                  type="button"
+                  autoFocus
+                  aria-label="Close photo gallery"
+                  onClick={() => galleryDialog.current?.close()}
+                  className="flex size-11 shrink-0 items-center justify-center self-end rounded-full bg-white text-slate-950 hover:bg-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <path d="m6 6 12 12M18 6 6 18" />
+                  </svg>
+                </button>
+                {galleryOpen && displayedGallery.length > 0 && (
+                  <>
+                    <div
+                      className="relative min-h-0 flex-1 touch-pan-y"
+                      onPointerDown={startSwipe}
+                      onPointerUp={finishSwipe}
+                      onPointerCancel={cancelSwipe}
+                    >
+                      <Image
+                        src={displayedGallery[safeActivePhoto]}
+                        alt={activePhotoAlt}
+                        fill
+                        loading="eager"
+                        className="object-contain"
+                        sizes="100vw"
+                      />
+                    </div>
+                    <div className="flex shrink-0 justify-center">
+                      <div ref={modalThumbnails} className="scrollbar-hide flex max-w-full gap-2 overflow-x-auto overscroll-x-contain p-1">
+                        {displayedGallery.map((source, index) => (
+                          <button
+                            key={index}
+                            type="button"
+                            onClick={() => setActivePhoto(index)}
+                            aria-label={`Show motorcycle photo ${index + 1}`}
+                            aria-pressed={safeActivePhoto === index}
+                            className={`relative h-12 w-16 shrink-0 overflow-hidden rounded-lg border-2 bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:h-16 sm:w-20 ${safeActivePhoto === index ? "border-blue-500" : "border-transparent hover:border-blue-300"}`}
+                          >
+                            <Image src={source} alt="" fill className="object-contain p-1" sizes="80px" />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </dialog>
             {displayedGallery.length > 0 ? (
-            <Image
-              key={displayedGallery[safeActivePhoto]}
-              src={displayedGallery[safeActivePhoto]}
-              alt={`${bike.name}${safeActivePhoto === 0 && selectedColorImage && activeColor !== null ? ` in ${colors[activeColor]}` : ""}, image ${safeActivePhoto + 1} of ${displayedGallery.length}`}
-              fill
-              priority
-              className="object-contain p-3 sm:p-8"
-              sizes="(max-width: 1023px) 100vw, 55vw"
-            />
+              <button
+                type="button"
+                aria-label={`Enlarge ${activePhotoAlt}`}
+                aria-haspopup="dialog"
+                onPointerDown={startSwipe}
+                onPointerUp={finishSwipe}
+                onPointerCancel={cancelSwipe}
+                onClick={(event) => {
+                  if (event.detail && didSwipe.current) return;
+                  galleryDialog.current?.showModal();
+                  setGalleryOpen(true);
+                }}
+                className="absolute inset-0 w-full cursor-zoom-in touch-pan-y rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-600"
+              >
+                <Image
+                  key={displayedGallery[safeActivePhoto]}
+                  src={displayedGallery[safeActivePhoto]}
+                  alt={activePhotoAlt}
+                  fill
+                  priority
+                  className="object-contain p-3 sm:p-8"
+                  sizes="(max-width: 1023px) 100vw, 55vw"
+                />
+              </button>
             ) : (
               <div className="flex h-full items-center justify-center text-sm text-slate-500">Image not available</div>
             )}
-            <button
-              type="button"
-              onClick={() => movePhoto(-1)}
-              aria-label="Previous motorcycle photo"
-              disabled={displayedGallery.length < 2}
-              className="absolute left-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-blue-600 shadow-md transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 sm:left-3"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true"
-              >
-                <path d="m15 18-6-6 6-6" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              onClick={() => movePhoto(1)}
-              aria-label="Next motorcycle photo"
-              disabled={displayedGallery.length < 2}
-              className="absolute right-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-blue-600 shadow-md transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-600 sm:right-3"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                aria-hidden="true"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
-            </button>
-            <span className="absolute bottom-3 right-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-slate-700">
+            <span className="pointer-events-none absolute bottom-3 right-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-slate-700">
               {displayedGallery.length ? safeActivePhoto + 1 : 0} / {displayedGallery.length}
             </span>
           </div>
-          <div className="scrollbar-hide mt-2 flex w-full min-w-0 max-w-full gap-2 overflow-x-auto overscroll-x-contain pb-1 sm:mt-3">
+          <div ref={pageThumbnails} className="scrollbar-hide mt-2 flex w-full min-w-0 max-w-full gap-2 overflow-x-auto overscroll-x-contain pb-1 sm:mt-3">
             {displayedGallery.map((source, index) => (
               <button
                 key={index}
@@ -493,34 +547,26 @@ export default function BikeDetailShowcase({
             <p className="mt-2 text-xs font-semibold text-blue-700">Upcoming</p>
           )}
 
-          <div className="mt-4 flex min-w-0 flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
+          <div className="mt-4 flex min-w-0 flex-col gap-3">
             <div className="min-w-0 max-w-full">
               <p className="text-[11px] text-slate-500">Price in Bangladesh</p>
               <p className="break-words text-xl font-extrabold text-blue-600 min-[380px]:text-2xl sm:text-3xl">
                 {formatPrice(bike.price)}
               </p>
             </div>
-            <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto">
-              <Link
-                href="/compare"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-700"
-              >
-                <Icon name="compare" />
-                Compare
-              </Link>
+            <div className="grid w-full grid-cols-2 gap-2">
               <button
                 type="button"
-                onClick={toggleWishlist}
-                aria-pressed={wishlisted}
-                className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold ${wishlisted ? "border-blue-300 bg-blue-50 text-blue-700" : "border-slate-200 text-slate-700 hover:border-blue-300 hover:text-blue-700"}`}
+                onClick={scrollToSpecifications}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-lg border border-blue-700 bg-blue-700 px-2 py-2 text-sm font-semibold text-white hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
               >
-                <Icon name="heart" />
-                {wishlisted ? "Saved" : "Wishlist"}
+                <Icon name="specs" />
+                Specification
               </button>
               <button
                 type="button"
                 onClick={shareBike}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:border-blue-300 hover:text-blue-700"
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-lg border border-blue-300 bg-blue-50 px-2 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
               >
                 <Icon name="share" />
                 Share
@@ -552,7 +598,7 @@ export default function BikeDetailShowcase({
             ))}
           </div>
 
-          <div className="mt-4 grid min-w-0 grid-cols-1 gap-2 min-[350px]:grid-cols-2">
+          {/* <div className="mt-4 grid min-w-0 grid-cols-1 gap-2 min-[350px]:grid-cols-2">
             <a
               href={hasShowroom ? "#showroom" : "/contact"}
               className="flex min-h-11 items-center justify-center gap-1.5 rounded-lg bg-blue-600 px-2 text-center text-xs font-bold text-white transition hover:bg-blue-700 sm:text-sm"
@@ -567,7 +613,7 @@ export default function BikeDetailShowcase({
               <Icon name="price" />
               Price Details
             </a>
-          </div>
+          </div> */}
 
           <nav
             aria-label="Bike details sections"
@@ -813,8 +859,8 @@ export default function BikeDetailShowcase({
                   className={`w-[75px] shrink-0 rounded-lg border p-1.5 text-center ${activeColor === index ? "border-blue-600 bg-blue-50/50" : "border-slate-200 hover:border-blue-200"}`}
                 >
                   <span className="relative block h-12 rounded-md bg-slate-50">
-                    {(colorImageFor(color) || gallery[0]) && <Image
-                      src={colorImageFor(color) || gallery[0]}
+                    {(imagesByColor[index][0] || gallery[0]) && <Image
+                      src={imagesByColor[index][0] || gallery[0]}
                       alt=""
                       fill
                       className="object-contain p-1"
@@ -827,7 +873,7 @@ export default function BikeDetailShowcase({
                 </button>
               ))}
             </div>
-            {colors.some((color) => !colorImageFor(color)) && (
+            {imagesByColor.some((images) => !images.length) && (
               <p className="mt-1 text-[11px] text-slate-500">
                 Some color photos are coming soon.
               </p>

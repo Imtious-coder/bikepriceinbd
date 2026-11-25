@@ -165,7 +165,7 @@ export interface OBike {
   availability: string;
   description: string;
   colors: string[];
-  colorImages?: Record<string, string>;
+  colorImages?: Record<string, string | string[]>;
   images: OImages;
   mileage: OMileage;
   showroom: string | null;
