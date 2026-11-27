@@ -113,7 +113,7 @@ export const bikes: OBike[] = [
     assembly: "Bangladesh",
     launched: "",
     updated_at: "2026-08-10",
-    price: "5,24,950 BDT",
+    price: "5,29,950 BDT",
     engine: {
       type: "DOHC, liquid-cooled, single-cylinder",
       displacement: "149",
@@ -187,7 +187,7 @@ export const bikes: OBike[] = [
     },
     availability: "",
     description:
-      "Suzuki GSX-R  price in Bangladesh is Tk 524,950. This Bike is powered by 150cc, which generates a Maximum power of 18.90 Bhp @ 10500 rpm, and its maximum torque is 14.00 NM @ 9000 rpm.  Suzuki GSX-R mileage we got in city 35 KM (Approx.) and on highway 40 KM (Approx.) It has a Dual Channel ABS Braking system with Tubeless tyres. Seat Height is 780 mm, and Weight is 131 KG. Top Speed we got 140 KMPH (Approx.) More in this page check Suzuki GSX-R150 comparison, check out the Suzuki GSX-R150 pros cons, view the Suzuki GSX-R150 image player, and see the Suzuki GSX-R150 price history to learn more before buy this  motorcycle.",
+      "Suzuki GSX-R  price in Bangladesh is Tk 529,950. This Bike is powered by 150cc, which generates a Maximum power of 18.90 Bhp @ 10500 rpm, and its maximum torque is 14.00 NM @ 9000 rpm.  Suzuki GSX-R mileage we got in city 35 KM (Approx.) and on highway 40 KM (Approx.) It has a Dual Channel ABS Braking system with Tubeless tyres. Seat Height is 780 mm, and Weight is 131 KG. Top Speed we got 140 KMPH (Approx.) More in this page check Suzuki GSX-R150 comparison, check out the Suzuki GSX-R150 pros cons, view the Suzuki GSX-R150 image player, and see the Suzuki GSX-R150 price history to learn more before buy this  motorcycle.",
     colors: ["Yellow-Black", "Red-Black"],
     images: {
       primary:
